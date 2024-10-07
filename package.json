@@ -1,0 +1,21 @@
+{
+  "name": "dplusplus",
+  "displayName": "D++",
+  "description": "A sleek and modern dark theme for Visual Studio Code",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "1.0.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "D++",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Saqib Bedar-color-theme.json"
+      }
+    ]
+  }
+}
