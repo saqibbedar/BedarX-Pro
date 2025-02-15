@@ -1,37 +1,51 @@
-# D++: A Sleek and Modern Dark Theme for Visual Studio Code
+# [BedarX Pro](https://github.com/saqibbedar/BedarX-Pro) | [GitHub Repo](https://github.com/saqibbedar/BedarX-Pro) 
 
-D++ is a carefully crafted dark theme for Visual Studio Code that combines elegance with functionality. It's designed to provide a comfortable and visually appealing coding environment for long hours of programming.
+A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memory of my beloved father, [`Bedar Bakhshal`](./Public/aboutExtension.md). Designed for both **light** and **dark mode**, this theme brings a sleek, futuristic aesthetic to your coding experience with carefully balanced colors for readability and visual comfort.
 
-## Features
+[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/my_url) 
+[![Version](https://vsmarketplacebadges.dev/version/my_url)](https://marketplace.visualstudio.com/items?itemName=my_url) 
+[![Installs](https://vsmarketplacebadges.dev/installs/my_url)](https://marketplace.visualstudio.com/items?my_url)
 
-- **Balanced Contrast**: Carefully selected colors to reduce eye strain during extended coding sessions.
-- **Syntax Highlighting**: Enhanced readability with thoughtful color choices for different code elements.
-- **UI Consistency**: A cohesive look across all VS Code interface elements.
-- **Language Support**: Optimized for a wide range of programming languages.
+## Theme Previews
 
-## Installation
+### Default - Dark Crimson
 
-1. Open **Extensions** sidebar panel in VS Code. `View → Extensions`
-2. Search for `D++`
-3. Click **Install** to install it
-4. Click **Reload** to reload the editor
-5. Code > Preferences > Color Theme > **D++**
+![ScreenShot](#Pending)
 
-## Feedback and Contributions
+### Dark Amber
 
-Your feedback and contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on our [GitHub repository](https://github.com/saqibbedar/vscode-dark-theme).
+![ScreenShot](#Pending)
 
-## License
+### Light
 
-This theme is released under the [MIT License](LICENSE).
+![ScreenShot](#Pending)
 
----
+## Donation
 
-If you enjoy using D++, consider supporting its development:
+If you like this extension, you can **[Buy Me a Coffee](https://buymeacoffee.com/saqibbedar)**. It will encourage me to make this extension better and better!
 
-<div align="center">
-<a href="https://www.buymeacoffee.com/saqibbedar"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=saqibbedar&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"></a>
-</div>
+Thanks List:
+- To me still.
 
-Your support helps maintain and improve D++ for the entire community. Thank you!
+## CHANGELOG
 
+[CHANGELOG.MD](./CHANGELOG.md)
+
+## CONTRIBUTION
+
+Navigate to ([https://github.com/saqibbedar/BedarX-Pro/blob/main/CONTRIBUTING.md](https://github.com/saqibbedar/BedarX-Pro/blob/main/CONTRIBUTING.md)) for detailed instructions on how to contribute to this theme.
+
+To get started, first fork and clone this repository
+
+`cd` to the `BedarX-Pro` folder
+
+Press `F5` to see live preview, and start editing
+
+### Contributors
+
+This project exists thanks to all the people who contribute.
+[![Contributors](img_url)](img_url)
+
+### Sponsors
+
+Support this project by becoming a sponsor. 

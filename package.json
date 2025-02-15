@@ -1,20 +1,54 @@
 {
-  "name": "dplusplus",
-  "displayName": "D++",
-  "description": "A sleek and modern dark theme for Visual Studio Code",
-  "version": "1.0.0",
+  "name": "material-theme",
+  "displayName": "BedarX Pro",
+  "description": "A ChatGPT inspired, iconic BedarX Pro theme for VS Code",
+  "version": "0.0.1",
+  "publisher": "Saqib Bedar",
+  "icon": "./icon.png",
+  "keywords": [
+    "bedarx pro",
+    "bedarx",
+    "bedarxpro",
+    "theme",
+    "chatgpt theme",
+    "chatgpt"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saqibbedar/BedarX-Pro/issues"
+  },
+  "homepage": "https://github.com/saqibbedar/BedarX-Pro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saqibbedar/BedarX-Pro"
+  },
   "engines": {
-    "vscode": "1.0.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Themes"
   ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "contributes": {
+    "markdown.previewStyles": [],
     "themes": [
       {
-        "label": "D++",
+        "label": "BedarX Pro Dark Amber",
         "uiTheme": "vs-dark",
-        "path": "./themes/Saqib Bedar-color-theme.json"
+        "path": "./themes/dark-amber-color-theme.json"
+      },
+      {
+        "label": "BedarX Pro Dark Crimson",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-crimson-color-theme.json"
+      },
+      {
+        "label": "BedarX Pro Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
       }
     ]
   }

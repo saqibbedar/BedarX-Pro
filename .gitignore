@@ -1,7 +1,3 @@
 node_modules
+template
 *.vsix
-.vscode-test/
-vsc-extension-quickstart.md
-.vscode
-.kuch
-CHANGELOG.md
