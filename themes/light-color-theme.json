@@ -171,7 +171,7 @@
     "breadcrumb.foreground": "#a0a1a7",
     "breadcrumb.focusForeground": "#383a42",
     "editorGroupHeader.tabsBackground": "#f9f9f9",
-    "editorGroupHeader.tabsBorder": "#000",
+    "editorGroupHeader.tabsBorder": "#a0a1a734",
     "tab.activeForeground": "#4078f2",
     "tab.border": "#a0a1a734",
     "tab.activeBackground": "#e3ebff",
