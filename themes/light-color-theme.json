@@ -120,7 +120,7 @@
     "editor.foldBackground": "#add6ff4d",
     "editorOverviewRuler.background": "#25252500",
     "editorOverviewRuler.border": "#7f7f7f4d",
-    "editorError.foreground": "#e51400",
+    "editorError.foreground": "#F10000",
     "editorError.background": "#b73b340d",
     "editorError.border": "#ffffff00",
     "editorWarning.foreground": "#e9a700",
@@ -197,7 +197,7 @@
     "notifications.foreground": "#383a42",
     "notifications.background": "#f9f9f9",
     "notificationToast.border": "#a0a1a7",
-    "notificationsErrorIcon.foreground": "#e51400",
+    "notificationsErrorIcon.foreground": "#F10000",
     "notificationsWarningIcon.foreground": "#e9a700",
     "notificationsInfoIcon.foreground": "#4078f2",
     "notificationCenter.border": "#d5d5d5",
@@ -214,7 +214,7 @@
     "gitDecoration.submoduleResourceForeground": "#1258a7",
     "gitDecoration.untrackedResourceForeground": "#50a14f",
     "editorMarkerNavigation.background": "#ffffff",
-    "editorMarkerNavigationError.background": "#e51400",
+    "editorMarkerNavigationError.background": "#F10000",
     "editorMarkerNavigationWarning.background": "#e9a700",
     "editorMarkerNavigationInfo.background": "#75beff",
     "merge.currentHeaderBackground": "#a0e7d8fd",
@@ -258,7 +258,7 @@
     "minimapGutter.deletedBackground": "#ca4b51",
     "minimap.findMatchHighlight": "#2e94d38d",
     "minimap.selectionHighlight": "#2e94d38d",
-    "minimap.errorHighlight": "#e51400",
+    "minimap.errorHighlight": "#F10000",
     "minimap.warningHighlight": "#e9a700",
     "minimap.background": "#f9f9f9",
     "sideBar.dropBackground": "#f9f9f9",
@@ -284,16 +284,11 @@
         "comment.block.documentation punctuation.definition.bracket",
         "source.ocaml comment constant.regexp meta.separator",
         "markup.other.anchor support.constant",
-        "markup.fenced_code",
-        "markup.fenced_code punctuation.definition",
         "punctuation.definition.heading",
         "comment.line.number-sign",
         "entity.name.function.decorator",
         "storage.type.annotation",
-        "punctuation.definition.annotation",
-        "punctuation.definition.directive",
-        "entity.other.document.begin.yaml",
-        "entity.other.document.end.yaml"
+        "punctuation.definition.annotation"
       ],
       "settings": {
         "foreground": "#a0a1a7"
@@ -441,7 +436,7 @@
         "source.tf meta.template.expression",
         "source.scala entity.name.import",
         "markup.code",
-        "markup.fenced_code.block",
+        // "markup.fenced_code.block",
         "constant.other.enum.java"
       ],
       "settings": {
@@ -457,7 +452,7 @@
         "entity.name.type.cs.annotation.kotlin",
         "comment.block.documentation.phpdoc.php keyword.other.type.php",
         "storage.type.php",
-        "keyword.type",
+        // "keyword.type",
         "storage.type.powershell",
         "comment.block.documentation entity.name.type.cs",
         "storage.type.primitive",
@@ -490,7 +485,7 @@
         "source.scala entity.name.class",
         "markup.raw.monospace",
         "markup.mark",
-        "entity.name.type.cs"
+        // "entity.name.type.cs"
       ],
       "settings": {
         "foreground": "#0184bb"
@@ -517,13 +512,12 @@
         "support.class.math",
         "source.graphql constant.character",
         "source.reason constant.language.list",
-        "source.cpp variable.other.enummember",
         "support.variable.class.hideshow",
         "entity.other.attribute-name.class",
         "meta.tag.attributes entity.other.attribute-name",
         "text.xml entity.other.attribute-name",
         "source.cs entity.other.attribute-name",
-        "constant.other.placeholder",
+        // "constant.other.placeholder",
         "source.vue entity.other.attribute-name",
         "entity.other.attribute-name.mjml",
         "source.vue meta.directive punctuation.separator.key-value",
@@ -768,16 +762,14 @@
     },
     {
       "name": "INVALID",
-      "scope": ["invalid", "invalid.illegal"],
+      "scope": [
+        "invalid", 
+        "invalid.illegal",
+        "source.yaml invalid.illegal",
+        "markup.fenced_code invalid.illegal", // TODO: CONTRIBUTE
+      ],
       "settings": {
-        "foreground": "#e45649"
-      }
-    },
-    {
-      "name": "Primitive",
-      "scope": ["support.type.primitive"],
-      "settings": {
-        "foreground": "#986801"
+        "foreground": "#F10000"
       }
     },
     {
@@ -804,7 +796,6 @@
         "source.sql keyword.other",
         "keyword.other.using.vala",
         "keyword.operator.function.infix",
-        "keyword.control.directive",
         "keyword.other.rust",
         "keyword.other.declaration-specifier.swift",
         "entity.name.function.swift",
@@ -829,8 +820,7 @@
         "meta.import.haskell keyword",
         "source.wsd keyword.other",
         "keyword.other.skinparam",
-        "source.css keyword.control",
-        "source.css keyword.operator",
+        // "source.css keyword.operator",
         "keyword.language.gherkin.feature.scenario",
         "keyword.control.cucumber.table",
         "source.toml entity.other.attribute-name",
@@ -860,224 +850,90 @@
       }
     },
 
-    // YAML START FROM HERE
+    // EXTRA STYLES
     {
-      "name": "STRING",
+      "name": "EXTRA COMMENT",
       "scope": [
-        "source.yaml string",
-        "string.quoted.double.yaml",
-        "string.unquoted.plain.out.yaml",
-        "string.quoted.single.yaml"
+      ],
+      "settings": {
+        "foreground": "#A0A1A7"
+      }
+    }, 
+    {
+      "name": "EXTRA BLACK",
+      "scope": [
+        "variable.other",
+        "keyword.control.flow.block-scalar.folded.yaml",
+        "keyword.control.flow.block-scalar.literal.yaml"
+      ],
+      "settings": {
+        "foreground": "#383A42"
+      }
+    },
+    {
+      "name": "EXTRA PUNCTUATION BLACK",
+      "scope": [
+        "markup.fenced_code",
+        "markup.fenced_code punctuation.definition",
+        "source.yaml punctuation",
+        "entity.other.document.begin.yaml",
+        "entity.other.document.end.yaml"
+      ],
+      "settings": {
+        "foreground": "#383A42"
+      }
+    },
+    {
+      "name": "EXTRA STRING",
+      "scope": [
+        "source.yaml string.quoted.double entity.name.tag", // TODO: MAKE CONTRIBUTION TO OTHER THEMES
+        "markup.fenced_code string.quoted.double.yaml entity.name.tag.yaml", // TODO: MAKE CONTRIBUTION TO OTHER THEMES
+        "support.constant.property-value",
+        "support.constant.font-name.css",
       ],
       "settings": {
         "foreground": "#50A14F"
       }
-    },
+    }, 
     {
-      "name": "CLASS",
+      "name": "EXTRA",
       "scope": [
-        "source.yaml entity.name.tag",
-        "entity.name.tag.yaml"
+        "constant.character.escape", // TODO: MAKE CONTRIBUTION TO OTHER THEMES
+        "source.c constant.other.placeholder",
+        "markup.fenced_code constant.other.placeholder.c"
+      ],
+      "settings": {
+        "foreground": "#67876D"
+      }
+    }, 
+    {
+      "name": "EXTRA CLASS1",
+      "scope": [
+        "entity.name.tag",
+        "source.yaml storage.type.tag-handle",
+        "markup.fenced_code storage.type.tag-handle",
+        "source.yaml support.type.tag-prefix",
+        "markup.fenced_code support.type.tag-prefix.yaml",
+        "entity.name.type",
       ],
       "settings": {
         "foreground": "#e45649"
       }
     },
     {
-      "name": "BLACK",
+      "name": "EXTRA CLASS2",
       "scope": [
-        "source.yaml variable.other"
       ],
       "settings": {
-        "foreground": "#383A42"
+        "foreground": "#c18401"
       }
     },
     {
-      "name": "PUNCTUATION BLACK",
+      "name": "EXTRA DATATYPES",
       "scope": [
-        "source.yaml variable.other",
-        "punctuation.definition.tag.secondary.yaml",
-        "source.yaml keyword.control",
-        "keyword.control.flow.block-scalar.literal.yaml",
-        "keyword.control.flow.block-scalar.folded.yaml",
-        "punctuation.definition.anchor.yaml",
-        "punctuation.definition.alias.yaml"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-
-    // C/C++ START FROM HERE
-    {
-      "name": "STRING",
-      "scope": ["source.c string", "source.cpp string"],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "KEYWORD",
-      "scope": [
-        "storage.type.enum.c",
-        "storage.type.struct.c",
-        "source.c keyword.other",
-        "source.cpp keyword.other",
-        "source.cpp storage.type",
-        "source.c storage.type",
-        "source.cpp storage.modifier",
-        "source.cpp storage.type.template",
-        "keyword.operator.new.cpp",
-        "keyword.operator.delete.cpp"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "PUNCTUATION",
-      "scope": [
-        "source.c punctuation.definition.directive",
-        "source.c keyword.control.directive",
-        "punctuation.definition.directive.c",
-        "source.cpp punctuation.definition.directive",
-        "source.cpp keyword.control.directive"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": [
-        "entity.name.type.c",
-        "entity.name.type.cpp",
-        "meta.tail.enum.c",
-        "entity.name.type.alias.c",
-        "entity.name.type.class.templated.cpp",
-        "meta.body.function.definition.cpp",
-        // "entity.name.namespace.cpp",
-        "entity.name.function.call.cpp",
-        "entity.name.type.template.cpp",
-        "entity.name.type.class.cpp",
-        "entity.name.type.parameter.cpp",
-        "entity.name.type.struct.cpp"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "BLACK",
-      "scope": [
-        "source.c variable.other.enummember",
-        "entity.name.namespace.cpp",
-        "storage.modifier.reference.cpp",
-        "storage.modifier.pointer.cpp",
-        "source.cpp keyword.operator",
-        "source.cpp punctuation.separator.pointer-access",
-        "source.cpp punctuation.separator",
-        "entity.name.function.operator.member.cpp",
-        "entity.name.function.templated.cpp",
-        "entity.name.function.operator.cpp",
-        "keyword.operator.bitwise.shift.cpp",
-        "entity.name.scope-resolution.cpp",
-        "meta.body.function.definition.cpp",
-        "entity.name.scope-resolution.template.call.cpp",
-        "entity.name.scope-resolution.function.call.cpp",
-        "entity.name.scope-resolution.parameter.cpp",
-        "variable.other.enummember.c",
-        "entity.other.attribute-name.pragma.preprocessor.cpp"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": [
-        "source.c entity.name.function",
-        "entity.name.function.member.cpp",
-        "keyword.other.operator.overload.cpp",
-        "entity.name.operator.cpp",
-        "entity.name.function.c"
-      ],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-    {
-      "name": "DATATYPES",
-      "scope": [
-        "source.c constant.other.placeholder",
-        "source.cpp storage.type.built-in",
-        "source.c storage.type.built-in",
-        "storage.type.built-in.primitive.c"
-      ],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "CONSTANTS",
-      "scope": [
-        "entity.name.function.preprocessor.cpp",
-        "entity.name.function.preprocessor.c"
-      ],
-      "settings": {
-        "foreground": "#0184BB"
-      }
-    },
-
-    // C# START FROM HERE
-    {
-      "name": "STRING",
-      "scope": ["source.cs string punctuation.definition.string"],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "TEMPLATE STRING",
-      "scope": [
-        "punctuation.definition.interpolation.begin.cs",
-        "punctuation.definition.interpolation.end.cs"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "KEYWORDS",
-      "scope": [
-        "source.cs storage.type"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": [
-        "source.cs entity.name",
-        "entity.name.type.cs",
-        "storage.modifier.this.cs",
-        "entity.name.type.namespace.cs",
-        "entity.name.type.class.cs",
-        "entity.name.type.interface.cs",
-        "entity.name.type.delegate.cs",
-        "entity.name.type.type-parameter.cs",
-        "entity.name.type.struct.cs",
-        "variable.language.this.cs",
-        "entity.name.type.enum.cs"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "DATATYPES",
-      "scope": [
+        "storage.type.tag.shorthand.yaml",
+        "storage.type.built-in",
+        "support.type.primitive",
         "source.cs keyword.type"
       ],
       "settings": {
@@ -1085,122 +941,113 @@
       }
     },
     {
-      "name": "BLACK",
+      "name": "EXTRA KEYWORDS",
       "scope": [
-        "source.cs entity.name.variable", 
-        "source.cs variable.other",
-        "entity.name.variable.enum-member.cs"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "PUNCTUATION BLACK",
-      "scope": [
-        "punctuation.definition.typeparameters.begin.cs",
-        "punctuation.definition.typeparameters.end.cs"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": ["source.cs entity.name.function"],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-
-    // CSS START FROM HERE
-    {
-      "name": "STRING",
-      "scope": [
-        "invalid.deprecated.color.system.css"
-      ],
-      "settings": {
-        "foreground": "#F10000"
-      }
-    },
-    {
-      "name": "STRING",
-      "scope": [
-        "source.css support.constant",
-        "support.constant.property-value.css",
-        "support.constant.font-name.css"
-      ],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "KEYWORD",
-      "scope": [
+        "keyword.other.directive",
+        "keyword.control.directive",
+        "storage.type",
+        "entity.name.function.preprocessor.c", // TODO: UPDATE THIS IN DARK MODE
+        "storage.modifier",
         "source.css keyword.control"
       ],
       "settings": {
-        "foreground": "#a626a4"
+        "foreground": "#A626A4"
       }
     },
-    {
-      "name": "CLASSES",
+    { // TODO: IN DARK MODE MOVE THIS TO COMMENT SECTION
+      "name": "EXTRA KEYWORDS PUNCTUATION",
       "scope": [
-        "source.css entity.other.attribute-name.pseudo-element",
-        "source.css entity.other.attribute-name.pseudo-element",
-        "source.css entity.other.attribute-name.pseudo-class",
-        "source.css entity.other.attribute-name.class",
-        "entity.other.attribute-name.id.css",
-        "entity.other.attribute-name.pseudo-element.css",
-        "entity.other.attribute-name.pseudo-class.css",
-        "entity.name.tag.css",
-        "entity.other.attribute-name.class.css"
+        "punctuation.definition.directive"
       ],
       "settings": {
-        "foreground": "#E45649"
+        "foreground": "#A626A4"
       }
     },
     {
-      "name": "DATATYPES",
+      "name": "EXTRA LANGUAGE CONSTANTS",
       "scope": [
-        "source.css keyword.other.unit",
-        "keyword.other.unit",
-        "source.css constant.other.color",
-        "constant.other.color",
-        "punctuation.definition.constant.css",
-        "source.css",
-        "meta.at-rule.header.css",
-        "meta.at-rule.media.header.css",
-        "support.constant.color.w3c-standard-color-name.css",
-        "meta.property-value.css",
-        "meta.property-name.css"
+        "constant.language",
+        // "entity.name.function.preprocessor"
       ],
       "settings": {
-        "foreground": "#986801"
+        "foreground": "#0184BB"
       }
     },
     {
-      "name": "BLACK",
+      "name": "EXTRA LANGUAGE OTHER VARIABLES",
       "scope": [
-        "source.css entity.other.attribute-name.id.css punctuation.definition.entity",
-        "source.css variable",
-        "source.css punctuation.definition.entity",
-        "source.css support.type.property-name",
-        "punctuation.definition.entity.css",
-        "support.type.property-name.css",
-        "support.type.property-name.media.css"
+        "variable.other.enummember",
+        "entity.name.variable.enum-member",
       ],
       "settings": {
-        "foreground": "#383A42"
+        // "foreground": "#587B7B",
+        "foreground": "#768CB7"
       }
     },
     {
-      "name": "FUNCTIONS",
-      "scope": ["source.css support.function"],
+      "name": "EXTRA FUNCTIONS",
+      "scope": [
+        "markup.fenced_code keyword.other.operator.overload.cpp" // TODO: CONTRIBUTE
+      ],
       "settings": {
         "foreground": "#4078F2"
       }
     },
+    
+
+    // TODO: START CUSTOMIZING FROM HERE... (CSS START FROM HERE)
+
+    // {
+    //   "name": "CLASSES",
+    //   "scope": [
+    //     "source.css entity.other.attribute-name.pseudo-element",
+    //     "source.css entity.other.attribute-name.pseudo-element",
+    //     "source.css entity.other.attribute-name.pseudo-class",
+    //     "source.css entity.other.attribute-name.class",
+    //     "entity.other.attribute-name.id.css",
+    //     "entity.other.attribute-name.pseudo-element.css",
+    //     "entity.other.attribute-name.pseudo-class.css",
+    //     "entity.name.tag.css",
+    //     "entity.other.attribute-name.class.css"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#E45649"
+    //   }
+    // },
+    // {
+    //   "name": "DATATYPES",
+    //   "scope": [
+    //     "source.css keyword.other.unit",
+    //     "keyword.other.unit",
+    //     "source.css constant.other.color",
+    //     "constant.other.color",
+    //     "punctuation.definition.constant.css",
+    //     "source.css",
+    //     "meta.at-rule.header.css",
+    //     "meta.at-rule.media.header.css",
+    //     "support.constant.color.w3c-standard-color-name.css",
+    //     "meta.property-value.css",
+    //     "meta.property-name.css"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#986801"
+    //   }
+    // },
+    // {
+    //   "name": "BLACK",
+    //   "scope": [
+    //     "source.css entity.other.attribute-name.id.css punctuation.definition.entity",
+    //     "source.css variable",
+    //     "source.css punctuation.definition.entity",
+    //     "source.css support.type.property-name",
+    //     "punctuation.definition.entity.css",
+    //     "support.type.property-name.css",
+    //     "support.type.property-name.media.css"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#383A42"
+    //   }
+    // },
 
     // DART START FROM HERE
     {
@@ -1299,15 +1146,15 @@
     },
 
     // HTML/XML START FROM HERE
-    {
-      "name": "CLASSES",
-      "scope": [
-        "entity.name.tag"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
+    // {
+    //   "name": "CLASSES",
+    //   "scope": [
+    //     "entity.name.tag"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#E45649"
+    //   }
+    // },
     {
       "name": "KEYWORD",
       "scope": [
@@ -1410,15 +1257,6 @@
       }
     },
     {
-      "name": "DATATYPES",
-      "scope": [
-        "source.ts support.type.primitive"
-      ],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
       "name": "KEYWORD",
       "scope": [
         "source.js storage.type",
@@ -1472,20 +1310,6 @@
       ],
       "settings": {
         "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": [
-        "entity.name.function",
-          "meta.require",
-          "support.function.any-method",
-          "meta.function-call",
-          "meta.method-call",
-          "variable.function"   
-      ],
-      "settings": {
-        "foreground": "#4078F2"
       }
     },
     {
@@ -1798,7 +1622,7 @@
         "text.html.markdown",
         "punctuation.definition.italic.markdown",
         "markup.italic.markdown",
-        "markup.fenced_code punctuation.definition"
+        // "markup.fenced_code punctuation.definition"
       ],
       "settings": {
         "foreground": "#383A42"
@@ -2275,102 +2099,6 @@
       "settings": {
         "foreground": "#4078F2"
       }
-    },
-
-    // ALL AT ONCE
-    {
-      "name": "CONSTANTS \n\t",
-      "scope": ["constant.character.escape"],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "LOGICAL CONSTANTS i.e., TRUE,FALSE etc",
-      "scope": ["constant.language"],
-      "settings": {
-        "foreground": "#0184BB"
-      }
-    },
-    {
-      "name": "CONSTANTS Variables",
-      "scope": [
-        "constant.other.caps.python",
-        "constant.other.caps",
-        "variable.other.constant"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "TERMINATORS BLACK",
-      "scope": [
-        "punctuation.separator.namespace",
-        "punctuation.terminator",
-        "punctuation.accessor",
-        "punctuation.separator",
-        "punctuation.section"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "STORAGE TYPE",
-      "scope": [
-        "storage.type"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "KEYWORD TYPE",
-      "scope": [
-        "keyword.type"
-      ],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "KEYWORD EXPRESSION",
-      "scope": [
-        "keyword.operator.expression"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "PUNCTUATION",
-      "scope": [
-        "punctuation.definition.constant"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "PRIMITIVE TYPES",
-      "scope": [
-        "storage.type.primitive"
-      ],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": [
-        "entity.name",
-        "support.class"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
     }
-    
   ]
 }
