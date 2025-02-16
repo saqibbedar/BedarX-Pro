@@ -327,9 +327,6 @@
         "meta.attribute-selector punctuation.definition.entity",
         "markup.other.anchor.string",
         "keyword.operator",
-        "meta.embedded.expression.dart",
-        "keyword.operator.assignment",
-        "keyword.operator.channel.go"
       ],
       "settings": {
         "foreground": "#383a42"
@@ -346,8 +343,8 @@
         "meta.tag.sgml",
         "constant.other.color",
         "entity.name.section",
-        "entity.other.attribute-name.pseudo-class",
-        "entity.other.attribute-name.pseudo-element",
+        // "entity.other.attribute-name.pseudo-class",
+        // "entity.other.attribute-name.pseudo-element",
         "tag.decorator.js entity.name.tag.js",
         "tag.decorator.js punctuation.definition.tag.js",
         "storage.type.function.pug",
@@ -447,15 +444,15 @@
       "name": "ANNOTATION",
       "scope": [
         "support.variable.property",
-        "entity.other.attribute-name.id",
-        "entity.other.attribute-name.id punctuation.definition.entity",
+        // "entity.other.attribute-name.id",
+        // "entity.other.attribute-name.id punctuation.definition.entity",
         "entity.name.type.cs.annotation.kotlin",
         "comment.block.documentation.phpdoc.php keyword.other.type.php",
         "storage.type.php",
         // "keyword.type",
         "storage.type.powershell",
         "comment.block.documentation entity.name.type.cs",
-        "storage.type.primitive",
+        // "storage.type.primitive",
         "source.groovy storage.type",
         "source.haskell storage.type",
         "punctuation.separator.clause-head-body",
@@ -495,12 +492,12 @@
       "name": "CONSTANT",
       "scope": [
         "constant",
-        "variable.other.constant",
+        // "variable.other.constant",
         "support.constant",
-        "punctuation.definition.entity",
-        "constant.character.entity",
+        // "punctuation.definition.entity",
+        // "constant.character.entity",
         "support.variable.magic",
-        "markup.quote",
+        // "markup.quote",
         "entity.name.type.cs.type-parameter.cs",
         "punctuation.bracket.angle",
         "storage.type.scala",
@@ -516,8 +513,7 @@
         "entity.other.attribute-name.class",
         "meta.tag.attributes entity.other.attribute-name",
         "text.xml entity.other.attribute-name",
-        "source.cs entity.other.attribute-name",
-        // "constant.other.placeholder",
+        // "source.cs entity.other.attribute-name",
         "source.vue entity.other.attribute-name",
         "entity.other.attribute-name.mjml",
         "source.vue meta.directive punctuation.separator.key-value",
@@ -644,7 +640,7 @@
       "name": "FUNCTION",
       "scope": [
         "variable.function",
-        "support.type.property-name",
+        // "support.type.property-name",
         "entity.name.function",
         "string.other.link",
         "markup.link",
@@ -682,7 +678,7 @@
         "meta.use.php",
         "support.other.namespace.php",
         "support.type",
-        "support.class",
+        // "support.class",
         "support.function",
         "support.function.construct",
         "markup.changed.git_gutter",
@@ -777,9 +773,9 @@
       "scope": [
         "keyword.begin.tag.ejs",
         "source.python meta.function.decorator.python support.type.python",
-        "source.cs keyword.other",
-        "keyword.other.var.cs",
-        "source.go keyword",
+        // "source.cs keyword.other",
+        // "keyword.other.var.cs",
+        // "source.go keyword",
         "storage.modifier.static.rust",
         "variable.parameter.r",
         "variable.parameter.handlebars",
@@ -787,7 +783,6 @@
         "storage.modifier.package",
         "meta.class.identifier storage.modifier",
         "keyword.operator.other.powershell",
-        "source.css variable.parameter",
         "string.interpolated variable.parameter",
         "source.apacheconf keyword",
         "keyword.other.julia",
@@ -815,7 +810,6 @@
         "entity.name.section.fsharp keyword",
         "namespace.open.fsharp keyword",
         "namespace.open.fsharp entity",
-        "keyword.other.unit",
         "storage.modifier.array.bracket",
         "meta.import.haskell keyword",
         "source.wsd keyword.other",
@@ -864,7 +858,12 @@
       "scope": [
         "variable.other",
         "keyword.control.flow.block-scalar.folded.yaml",
-        "keyword.control.flow.block-scalar.literal.yaml"
+        "keyword.control.flow.block-scalar.literal.yaml",
+        // TODO: CSS START FROM HERE
+        "source.css support.type",
+        "markup.fenced_code support.type",
+        // CSS END
+        "source.dart"
       ],
       "settings": {
         "foreground": "#383A42"
@@ -877,7 +876,11 @@
         "markup.fenced_code punctuation.definition",
         "source.yaml punctuation",
         "entity.other.document.begin.yaml",
-        "entity.other.document.end.yaml"
+        "entity.other.document.end.yaml",
+        // TODO: CSS START FROM HERE
+        "source.css punctuation.definition.entity",
+        "markup.fenced_code punctuation.definition.entity",
+        // CSS END
       ],
       "settings": {
         "foreground": "#383A42"
@@ -888,8 +891,12 @@
       "scope": [
         "source.yaml string.quoted.double entity.name.tag", // TODO: MAKE CONTRIBUTION TO OTHER THEMES
         "markup.fenced_code string.quoted.double.yaml entity.name.tag.yaml", // TODO: MAKE CONTRIBUTION TO OTHER THEMES
+        // TODO: CSS START FROM HERE
         "support.constant.property-value",
         "support.constant.font-name.css",
+        "support.constant.color.w3c-standard-color-name.css",
+        // CSS END
+        "entity.name.import.go"
       ],
       "settings": {
         "foreground": "#50A14F"
@@ -915,6 +922,17 @@
         "source.yaml support.type.tag-prefix",
         "markup.fenced_code support.type.tag-prefix.yaml",
         "entity.name.type",
+        // TODO: CSS START FROM HERE
+        "source.css entity.other.attribute-name.pseudo-element",
+        "markup.fenced_code entity.other.attribute-name.pseudo-element",
+        "source.css entity.other.attribute-name.id",
+        "markup.fenced_code entity.other.attribute-name.id",
+        "source.css entity.other.attribute-name.class",
+        "markup.fenced_code entity.other.attribute-name.class",
+        "source.css entity.other.attribute-name.pseudo-class",
+        "markup.fenced_code entity.other.attribute-name.pseudo-class",
+        // CSS END HERE
+        "support.class"
       ],
       "settings": {
         "foreground": "#e45649"
@@ -934,7 +952,20 @@
         "storage.type.tag.shorthand.yaml",
         "storage.type.built-in",
         "support.type.primitive",
-        "source.cs keyword.type"
+        "source.cs keyword.type",
+        // TODO: CSS START FROM HERE
+        "source.css keyword.other.unit",
+        "markup.fenced_code keyword.other.unit",
+        "source.css constant.other.color",
+        "markup.fenced_code constant.other.color",
+        "source.css meta.property-value",
+        "markup.fenced_code meta.property-value",
+        "source.css variable.parameter.keyframe-list",
+        "markup.fenced_code variable.parameter.keyframe-list",
+        // CSS END
+        "storage.type.primitive",
+        "source.go storage.type",
+        "markup.fenced_code storage.type",
       ],
       "settings": {
         "foreground": "#986801"
@@ -946,20 +977,27 @@
         "keyword.other.directive",
         "keyword.control.directive",
         "storage.type",
-        "entity.name.function.preprocessor.c", // TODO: UPDATE THIS IN DARK MODE
+        "entity.name.function.preprocessor", // TODO: UPDATE THIS IN DARK MODE
         "storage.modifier",
-        "source.css keyword.control"
+        // CSS START FROM HERE
+        "source.css keyword.control",
+        // CSS END
+        "keyword.declaration.dart",
+        "source.dart storage.type.annotation",
+        "markup.fenced_code storage.type.annotation",
+        "meta.embedded.expression.dart",
+        "variable.parameter.dart"
       ],
       "settings": {
         "foreground": "#A626A4"
       }
     },
     { // TODO: IN DARK MODE MOVE THIS TO COMMENT SECTION
-      "name": "EXTRA KEYWORDS PUNCTUATION",
-      "scope": [
-        "punctuation.definition.directive"
-      ],
-      "settings": {
+    "name": "EXTRA KEYWORDS PUNCTUATION",
+    "scope": [
+      "punctuation.definition.directive"
+    ],
+    "settings": {
         "foreground": "#A626A4"
       }
     },
@@ -978,6 +1016,8 @@
       "scope": [
         "variable.other.enummember",
         "entity.name.variable.enum-member",
+        "source.css meta.property-name",
+        "markup.fenced_code meta.property-name",
       ],
       "settings": {
         // "foreground": "#587B7B",
@@ -987,174 +1027,14 @@
     {
       "name": "EXTRA FUNCTIONS",
       "scope": [
-        "markup.fenced_code keyword.other.operator.overload.cpp" // TODO: CONTRIBUTE
+        "markup.fenced_code keyword.other.operator.overload.cpp", // TODO: CONTRIBUTE
       ],
       "settings": {
         "foreground": "#4078F2"
       }
     },
-    
 
-    // TODO: START CUSTOMIZING FROM HERE... (CSS START FROM HERE)
-
-    // {
-    //   "name": "CLASSES",
-    //   "scope": [
-    //     "source.css entity.other.attribute-name.pseudo-element",
-    //     "source.css entity.other.attribute-name.pseudo-element",
-    //     "source.css entity.other.attribute-name.pseudo-class",
-    //     "source.css entity.other.attribute-name.class",
-    //     "entity.other.attribute-name.id.css",
-    //     "entity.other.attribute-name.pseudo-element.css",
-    //     "entity.other.attribute-name.pseudo-class.css",
-    //     "entity.name.tag.css",
-    //     "entity.other.attribute-name.class.css"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#E45649"
-    //   }
-    // },
-    // {
-    //   "name": "DATATYPES",
-    //   "scope": [
-    //     "source.css keyword.other.unit",
-    //     "keyword.other.unit",
-    //     "source.css constant.other.color",
-    //     "constant.other.color",
-    //     "punctuation.definition.constant.css",
-    //     "source.css",
-    //     "meta.at-rule.header.css",
-    //     "meta.at-rule.media.header.css",
-    //     "support.constant.color.w3c-standard-color-name.css",
-    //     "meta.property-value.css",
-    //     "meta.property-name.css"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#986801"
-    //   }
-    // },
-    // {
-    //   "name": "BLACK",
-    //   "scope": [
-    //     "source.css entity.other.attribute-name.id.css punctuation.definition.entity",
-    //     "source.css variable",
-    //     "source.css punctuation.definition.entity",
-    //     "source.css support.type.property-name",
-    //     "punctuation.definition.entity.css",
-    //     "support.type.property-name.css",
-    //     "support.type.property-name.media.css"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#383A42"
-    //   }
-    // },
-
-    // DART START FROM HERE
-    {
-      "name": "STRING",
-      "scope": ["source.dart string"],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": ["support.class.dart"],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "DATATYPES",
-      "scope": ["storage.type.primitive.dart"],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "KEYWORD",
-      "scope": [
-        "keyword.declaration.dart",
-        "source.dart storage.type.annotation",
-        "meta.embedded.expression.dart",
-        "variable.parameter.dart"
-      ],
-      "settings": {
-        "foreground": "#a626a4"
-      }
-    },
-    {
-      "name": "BLACK",
-      "scope": ["source.dart"],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": ["entity.name.function.dart"],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-
-    // GOLANG START FROM HERE
-    {
-      "name": "STRING",
-      "scope": [
-        "source.go string punctuation.definition.string",
-        "entity.name.import.go"
-      ],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": [
-        "entity.name.type.go",
-        "entity.name.type.package.go"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "DATATYPES",
-      "scope": ["keyword.type.go"],
-      "settings": {
-        "foreground": "#a626a4"
-      }
-    },
-    {
-      "name": "BLACK",
-      "scope": [
-        "source.go variable.other.constant",
-        "source.go keyword.operator",
-        "variable.other.constant.go"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": ["source.go entity.name.function"],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-
-    // HTML/XML START FROM HERE
-    // {
-    //   "name": "CLASSES",
-    //   "scope": [
-    //     "entity.name.tag"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#E45649"
-    //   }
-    // },
+    // TODO: START FROM HTML
     {
       "name": "KEYWORD",
       "scope": [
@@ -1169,10 +1049,8 @@
     {
       "name": "CONSTANTS &lt;, &gt; etc",
       "scope": [
-        "text.xml constant.character.entity",
-        "text.xml punctuation.definition.constant",
-        "text.html.derivative constant.character.entity",
-        "text.html.derivative punctuation.definition.entity"
+        "constant.character.entity",
+        "punctuation.definition.entity"
       ],
       "settings": {
         "foreground": "#986801"
