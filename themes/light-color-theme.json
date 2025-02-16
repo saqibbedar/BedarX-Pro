@@ -287,8 +287,8 @@
         "punctuation.definition.heading",
         "comment.line.number-sign",
         "entity.name.function.decorator",
-        "storage.type.annotation",
-        "punctuation.definition.annotation"
+        // "storage.type.annotation",
+        // "punctuation.definition.annotation"
       ],
       "settings": {
         "foreground": "#a0a1a7"
@@ -310,8 +310,7 @@
         "meta.link.inline punctuation.definition.string",
         "source.sql",
         "source meta.brace",
-        "source punctuation",
-        "text.html punctuation",
+        "source punctuation", // TODO: IN DARK MODE PUT THIS TO COMMENT SCOPE
         "meta.bracket.julia",
         "meta.array.julia",
         "entity.name.footnote",
@@ -402,7 +401,7 @@
         "source.ruby",
         "source.coffee.embedded.source",
         "source.coffee",
-        "storage.modifier.import",
+        // "storage.modifier.import",
         "storage.modifier.package",
         "source.groovy.embedded.source",
         "punctuation.definition.variable",
@@ -499,7 +498,7 @@
         "support.variable.magic",
         // "markup.quote",
         "entity.name.type.cs.type-parameter.cs",
-        "punctuation.bracket.angle",
+        // "punctuation.bracket.angle",
         "storage.type.scala",
         "entity.helper.apacheconf",
         "variable.language.crystal",
@@ -526,7 +525,7 @@
     {
       "name": "TAG",
       "scope": [
-        "variable.language",
+        // "variable.language",
         "variable.parameter.function.language.special",
         "punctuation.definition.italic",
         "punctuation.definition.bold",
@@ -542,7 +541,7 @@
         "keyword.other.fn.rust",
         "storage.modifier.static.rust",
         "storage.type.def",
-        "meta.class.identifier storage.modifier",
+        // "meta.class.identifier storage.modifier",
         "source.scala keyword.declaration",
         "comment.block.documentation punctuation.definition.block.tag",
         "comment.block.documentation punctuation.definition.inline.tag",
@@ -660,9 +659,9 @@
         "punctuation.decorator",
         "source.tf support.class",
         "entity.name.function.decorator",
-        "storage.type.annotation",
+        // "storage.type.annotation",
         "support.function.construct",
-        "punctuation.definition.annotation",
+        // "punctuation.definition.annotation",
         "punctuation.definition.directive"
       ],
       "settings": {
@@ -673,7 +672,7 @@
       "name": "SUPPORT",
       "scope": [
         "entity.name",
-        "entity.other",
+        // "entity.other",
         "support.orther.namespace.use.php",
         "meta.use.php",
         "support.other.namespace.php",
@@ -711,7 +710,7 @@
         "source.js constant.other.object.key.js string.unquoted.label.js",
         "source.js punctuation.section.embedded",
         "punctuation.definition.template-expression",
-        "support.class",
+        // "support.class",
         "storage.type.string.python",
         "string.interpolated.pug",
         "support.constant.handlebars",
@@ -779,9 +778,9 @@
         "storage.modifier.static.rust",
         "variable.parameter.r",
         "variable.parameter.handlebars",
-        "storage.modifier.import",
+        // "storage.modifier.import",
         "storage.modifier.package",
-        "meta.class.identifier storage.modifier",
+        // "meta.class.identifier storage.modifier",
         "keyword.operator.other.powershell",
         "string.interpolated variable.parameter",
         "source.apacheconf keyword",
@@ -863,7 +862,21 @@
         "source.css support.type",
         "markup.fenced_code support.type",
         // CSS END
-        "source.dart"
+        "source.dart",
+        "keyword.control.ternary",
+        "storage.type.function.arrow",
+        "keyword.operator.assignment",
+        "keyword.operator.arithmetic",
+        "keyword.operator.comparison",
+        "keyword.operator.increment",
+        "keyword.operator.relational",
+        "keyword.operator.logical",
+        "keyword.operator.bitwise",
+        "keyword.operator.ternary",
+        "keyword.operator.decrement",
+        "keyword.operator.spread",
+        "punctuation.separator.dictionary.pair",
+        "punctuation.separator.dictionary.key-value"
       ],
       "settings": {
         "foreground": "#383A42"
@@ -881,6 +894,7 @@
         "source.css punctuation.definition.entity",
         "markup.fenced_code punctuation.definition.entity",
         // CSS END
+        "text.html punctuation",
       ],
       "settings": {
         "foreground": "#383A42"
@@ -932,7 +946,12 @@
         "source.css entity.other.attribute-name.pseudo-class",
         "markup.fenced_code entity.other.attribute-name.pseudo-class",
         // CSS END HERE
-        "support.class"
+        "support.class",
+        "storage.modifier.import",
+        "storage.type.java",
+        // "variable.other.object.java",
+        "entity.other.inherited-class",
+        "variable.language"
       ],
       "settings": {
         "foreground": "#e45649"
@@ -941,6 +960,8 @@
     {
       "name": "EXTRA CLASS2",
       "scope": [
+        // "variable.other.constant",
+        // "source.java variable.other.object.property"
       ],
       "settings": {
         "foreground": "#c18401"
@@ -966,6 +987,10 @@
         "storage.type.primitive",
         "source.go storage.type",
         "markup.fenced_code storage.type",
+        // TODO: UPDATE THIS HTML TO CLASS COLOR IN DARK MODE
+        "text.html entity.other.attribute-name", 
+        "text.html constant.character",
+        "punctuation.definition.entity.html",
       ],
       "settings": {
         "foreground": "#986801"
@@ -986,7 +1011,11 @@
         "source.dart storage.type.annotation",
         "markup.fenced_code storage.type.annotation",
         "meta.embedded.expression.dart",
-        "variable.parameter.dart"
+        "variable.parameter.dart",
+        "source.js keyword.operator",
+        "markup.fenced_code keyword.operator",
+        "markup.fenced_code storage.type",
+        "keyword.operator.instanceof"
       ],
       "settings": {
         "foreground": "#A626A4"
@@ -1018,6 +1047,9 @@
         "entity.name.variable.enum-member",
         "source.css meta.property-name",
         "markup.fenced_code meta.property-name",
+        "variable.other.object.property",
+        "variable.other.constant",
+        "variable.other.property"
       ],
       "settings": {
         // "foreground": "#587B7B",
@@ -1028,181 +1060,17 @@
       "name": "EXTRA FUNCTIONS",
       "scope": [
         "markup.fenced_code keyword.other.operator.overload.cpp", // TODO: CONTRIBUTE
+        "source.java constant.other.key",
+        "markup.fenced_code constant.other.key"
       ],
       "settings": {
         "foreground": "#4078F2"
-      }
-    },
-
-    // TODO: START FROM HTML
-    {
-      "name": "KEYWORD",
-      "scope": [
-        "text.html entity.other.attribute-name",
-        "meta.attribute.id entity.other.attribute-name",
-        "text.xml entity.other.attribute-name"
-      ],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "CONSTANTS &lt;, &gt; etc",
-      "scope": [
-        "constant.character.entity",
-        "punctuation.definition.entity"
-      ],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "PUNCTUATION BLACK",
-      "scope": [
-        "text.html punctuation",
-        "punctuation.definition.tag.xml"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "BLACK",
-      "scope": [
-        "text.html.derivative",
-        "text.xml"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": ["source.go entity.name.function"],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-
-    // JS/TS START FROM HERE
-    {
-      "name": "STRING",
-      "scope": [
-        "source.js string",
-        "source.js punctuation.definition.string",
-        "source.js string.template",
-        "source.js punctuation.definition.string.template",
-        "source.ts string",
-        "source.ts punctuation.definition.string",
-        "source.ts string.template",
-        "source.ts punctuation.definition.string.template"
-      ],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "TEMPLATE STING",
-      "scope": [
-        "source.js punctuation.definition.template-expression",
-        "source.ts punctuation.definition.template-expression",
-        "punctuation.definition.template-expression.begin.js",
-        "punctuation.definition.template-expression.end.js"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": [
-        "entity.other.inherited-class.js",
-        "entity.other.inherited-class.jsx",
-        "entity.other.inherited-class.tsx",
-        "entity.other.inherited-class.ts",
-        "entity.name.type.class.js",
-        "variable.language.this.js",
-        "variable.language.super.js",
-        "source.ts entity.name",
-        "source.ts entity.other",
-        "source.ts variable.language",
-        "entity.name.type.js",
-        "entity.name.type.module.js",
-        "meta.object-literal.key.js"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "KEYWORD",
-      "scope": [
-        "source.js storage.type",
-        "source.js keyword.operator",
-        "keyword.operator.new.js",
-        "source.js keyword.operator.expression",
-        "storage.type.function.js",
-        "storage.type.js",
-        "source.ts storage.type",
-        "source.ts keyword.operator"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
-    {
-      "name": "BLACK",
-      "scope": [
-        "source.js variable.other",
-        "source.js variable.other.constant",
-        "storage.type.function.arrow.js",
-        "source.js meta.object-literal.key",
-        "source.ts variable.other.constant",
-        "source.ts variable.other",
-        "keyword.operator.ternary.js",
-        "keyword.operator.ternary.js",
-        "keyword.operator.type.annotation.js",
-        "keyword.operator.arithmetic.js",
-        "keyword.operator.comparison.js",
-        "keyword.operator.relational.js",
-        "keyword.operator.type.js",
-        "keyword.operator.logical.js",
-        "keyword.operator.ternary.js",
-        "keyword.operator.ternary.ts",
-        "keyword.operator.type.annotation.ts",
-        "keyword.operator.arithmetic.ts",
-        "keyword.operator.comparison.ts",
-        "keyword.operator.relational.ts",
-        "keyword.operator.type.ts",
-        "keyword.operator.logical.ts",
-        "variable.other.constant.js",
-        "variable.other.constant.ts",
-        "constant.language.import-export-all.js",
-        "constant.language.import-export-all.jsx",
-        "constant.language.import-export-all.ts",
-        "constant.language.import-export-all.tsx",
-        "keyword.operator.bitwise.js",
-        "keyword.operator.bitwise.ts",
-        "storage.type.function.arrow.ts",
-        "storage.type.function.arrow.tsx"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "BUILTIN",
-      "scope": [
-        "source.ts support.type.builtin"
-      ],
-      "settings": {
-        "foreground": "#0184BB"
       }
     },
 
     // JSON START FROM HERE
     {
-      "name": "STRING",
+      "name": "JSON STRING",
       "scope": [
         "source.json string.quoted.double.json",
         "source.json punctuation.definition.string"
@@ -1212,17 +1080,20 @@
       }
     },
     {
-      "name": "CLASSES",
+      "name": "JSON KEY",
       "scope": [
         "source.json punctuation",
-        "source.json support.type.property-name"
+        "source.json support.type.property-name",
+        "markup.fenced_code support.type.property-name.json",
+        "markup.fenced_code punctuation.support.type.property-name.begin.json",
+        "markup.fenced_code punctuation.support.type.property-name.end.json",
       ],
       "settings": {
-        "foreground": "#E45649"
+        "foreground": "#A626A4"
       }
     },
 
-    // KOTLIN START FROM HERE
+    // TODO: START FROM HERE (KOTLIN)
     {
       "name": "STRING",
       "scope": ["source.kotlin string"],
@@ -1234,7 +1105,6 @@
       "name": "TEMPLATE STING",
       "scope": [
         "source.kotlin punctuation.definition.template-expression",
-        "punctuation.definition.template-expression"
       ],
       "settings": {
         "foreground": "#A626A4"
@@ -1278,77 +1148,70 @@
     },
 
     // JAVA START FROM HERE
-    {
-      "name": "STRING",
-      "scope": ["source.java string punctuation.definition.string"],
-      "settings": {
-        "foreground": "#50A14F"
-      }
-    },
-    {
-      "name": "CLASSES",
-      "scope": [
-        "source.java storage.modifier.import",
-        "source.java storage.type",
-        "source.java storage.type.annotation",
-        "source.java punctuation.definition.annotation"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "COMMENTS",
-      "scope": ["source.java punctuation.definition.annotation"],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-    {
-      "name": "DATATYPES",
-      "scope": ["source.java storage.type.primitive"],
-      "settings": {
-        "foreground": "#986801"
-      }
-    },
-    {
-      "name": "PUNCTUATION CLASS",
-      "scope": [
-        "punctuation.definition.annotation.java"
-      ],
-      "settings": {
-        "foreground": "#E45649"
-      }
-    },
-    {
-      "name": "BLACK",
-      "scope": [
-        "source.java variable.other.object.property",
-        "source.java variable.other.definition",
-        "punctuation.bracket.angle.java",
-        "keyword.control.ternary.java",
-        "storage.type.function.arrow.java"
-      ],
-      "settings": {
-        "foreground": "#383A42"
-      }
-    },
-    {
-      "name": "FUNCTIONS",
-      "scope": ["source.java entity.name.function"],
-      "settings": {
-        "foreground": "#4078F2"
-      }
-    },
-    {
-      "name": "KEYWORD",
-      "scope": [
-        "storage.modifier.java"
-      ],
-      "settings": {
-        "foreground": "#A626A4"
-      }
-    },
+    // {
+    //   "name": "CLASSES",
+    //   "scope": [
+    //     "source.java storage.modifier.import",
+    //     "source.java storage.type",
+    //     "source.java storage.type.annotation",
+    //     "source.java punctuation.definition.annotation"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#E45649"
+    //   }
+    // },
+    // {
+    //   "name": "COMMENTS",
+    //   "scope": ["source.java punctuation.definition.annotation"],
+    //   "settings": {
+    //     "foreground": "#4078F2"
+    //   }
+    // },
+    // {
+    //   "name": "DATATYPES",
+    //   "scope": ["source.java storage.type.primitive"],
+    //   "settings": {
+    //     "foreground": "#986801"
+    //   }
+    // },
+    // {
+    //   "name": "PUNCTUATION CLASS",
+    //   "scope": [
+    //     "punctuation.definition.annotation.java"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#E45649"
+    //   }
+    // },
+    // {
+    //   "name": "BLACK",
+    //   "scope": [
+    //     "source.java variable.other.object.property",
+    //     "source.java variable.other.definition",
+    //     "punctuation.bracket.angle.java",
+    //     "keyword.control.ternary.java",
+    //     "storage.type.function.arrow.java"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#383A42"
+    //   }
+    // },
+    // {
+    //   "name": "FUNCTIONS",
+    //   "scope": ["source.java entity.name.function"],
+    //   "settings": {
+    //     "foreground": "#4078F2"
+    //   }
+    // },
+    // {
+    //   "name": "KEYWORD",
+    //   "scope": [
+    //     "storage.modifier.java"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#A626A4"
+    //   }
+    // },
     
     // OBJECTIVE_C START FROM HERE
     {
