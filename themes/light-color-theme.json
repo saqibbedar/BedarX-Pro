@@ -145,7 +145,7 @@
     "panelTitle.activeForeground": "#4078f2",
     "panelTitle.inactiveForeground": "#383a42",
     "badge.background": "#4078f2",
-    "badge.foreground": "#433c3c",
+    "badge.foreground": "#ffffff",
     "terminal.foreground": "#383a42",
     "terminal.selectionBackground": "#4078f23a",
     "terminalCursor.background": "#383a42",
@@ -202,7 +202,7 @@
     "notificationsInfoIcon.foreground": "#4078f2",
     "notificationCenter.border": "#d5d5d5",
     "notificationCenterHeader.foreground": "#FFFFFF",
-    "notificationCenterHeader.background": "#50a14f",
+    "notificationCenterHeader.background": "#4078f2",
     "notifications.border": "#e7e7e7",
     "gitDecoration.addedResourceForeground": "#50a14f",
     "gitDecoration.conflictingResourceForeground": "#6c6cc4",
@@ -232,20 +232,20 @@
     "editorHoverWidget.foreground": "#4078f2",
     "editorHoverWidget.border": "#383a4293",
     "editorHoverWidget.statusBarBackground": "#1c1c1c",
-    "peekView.border": "#007acc",
-    "peekViewEditor.background": "#f2f8fc",
-    "peekViewEditorGutter.background": "#f2f8fc",
-    "peekViewEditor.matchHighlightBackground": "#f5d802de",
-    "peekViewEditor.matchHighlightBorder": "#dbc417",
-    "peekViewResult.background": "#f3f3f3",
-    "peekViewResult.fileForeground": "#1e1e1e",
-    "peekViewResult.lineForeground": "#646465",
-    "peekViewResult.matchHighlightBackground": "#ea5c004d",
-    "peekViewResult.selectionBackground": "#3399ff33",
-    "peekViewResult.selectionForeground": "#6c6c6c",
-    "peekViewTitle.background": "#ffffff",
-    "peekViewTitleDescription.foreground": "#616161e6",
-    "peekViewTitleLabel.foreground": "#333333",
+    "peekView.border": "#4078f2",
+    "peekViewEditor.background": "#f9f9f9",
+    "peekViewEditorGutter.background": "#f9f9f9",
+    "peekViewEditor.matchHighlightBackground": "#e3ebfffa",
+    "peekViewEditor.matchHighlightBorder": "#4078f280",
+    "peekViewResult.background": "#e3ebff",
+    "peekViewResult.fileForeground": "#383a42",
+    "peekViewResult.lineForeground": "#383a42",
+    "peekViewResult.matchHighlightBackground": "#cfddff",
+    "peekViewResult.selectionBackground": "#e3ebff",
+    "peekViewResult.selectionForeground": "#4078f2",
+    "peekViewTitle.background": "#f9f9f9",
+    "peekViewTitleDescription.foreground": "#a0a1a7",
+    "peekViewTitleLabel.foreground": "#4078f2",
     "icon.foreground": "#383a42",
     "checkbox.background": "#f9f9f9",
     "checkbox.foreground": "#383a42",
@@ -277,316 +277,107 @@
   },
   "tokenColors": [
     {
-      "name": "COMMENT",
+      "name": "Comment",
       "scope": [
         "comment",
         "punctuation.definition.comment",
-        "comment.block.documentation punctuation.definition.bracket",
-        "source.ocaml comment constant.regexp meta.separator",
-        "markup.other.anchor support.constant",
-        "punctuation.definition.heading",
-        "comment.line.number-sign",
-        "entity.name.function.decorator"
+        "comment.block.documentation"
       ],
       "settings": {
         "foreground": "#a0a1a7"
       }
     },
     {
-      "name": "TEXT",
+      "name": "Text / General",
       "scope": [
-        "constant.character",
-        "constant.escape",
-        "text.html.markdown",
-        "punctuation.definition.list_item",
-        "keyword.begin.tag.ejs",
-        "constant.name.attribute.tag.pug",
-        "source.clojure meta.symbol",
-        "constant.other.description.jsdoc",
-        "keyword.other.array.phpdoc.php",
-        "keyword.operator.other.powershell",
-        "meta.link.inline punctuation.definition.string",
-        "source.sql",
-        "source meta.brace",
-        "source punctuation", // TODO: IN DARK MODE PUT THIS TO COMMENT SCOPE
-        "meta.bracket.julia",
-        "meta.array.julia",
-        "entity.name.footnote",
-        "source.ocaml punctuation.definition.tag",
-        "source.ocaml entity.name.filename",
-        "source.reason entity.name.filename",
-        "entity.other.attribute-name strong",
-        "binding.fsharp keyword.symbol.fsharp",
-        "entity.name.record.field.elm",
-        "entity.name.record.field.accessor.elm",
-        "storage.modifier.array.bracket",
-        "source.css entity.other",
-        "meta.attribute-selector punctuation.definition.entity",
-        "markup.other.anchor.string",
-        "keyword.operator"
+        "text",
+        "source punctuation",
+        "meta.brace",
+        "meta.array",
+        "meta.structure.dictionary.json",
       ],
       "settings": {
         "foreground": "#383a42"
       }
     },
     {
-      "name": "KEYWORD",
+      "name": "Keyword",
       "scope": [
         "keyword",
         "keyword.control",
-        "keyword.other.template",
-        "keyword.other.substitution",
-        "storage.modifier",
-        "meta.tag.sgml",
-        "constant.other.color",
-        "entity.name.section",
-        "storage.type.function.pug",
-        "text.pug storage.type",
-        "text.pug meta.tag.other",
-        "source.clojure storage.control",
-        "meta.expression.clojure",
-        "punctuation.definition.parameters.varargs",
-        "keyword.package",
-        "keyword.import",
-        "punctuation.definition.keyword",
-        "constant.string.documentation.powershell",
-        "punctuation.section.directive",
-        "storage.type.rust",
-        "punctuation.definition.attribute",
-        "punctuation.definition.preprocessor",
-        "keyword.control punctuation.definition.function",
-        "source.ocaml variable.interpolation string",
-        "source.reason variable.interpolation",
-        "storage.type.modifier",
-        "keyword.other.class.fileds",
-        "source.toml entity.other.attribute-name",
-        "sharing.modifier",
-        "keyword.control.class.ruby",
-        "keyword.control.def.ruby",
-        "storage.modifier.async",
-        "keyword.operator.expression"
+        "keyword.operator",
+        "punctuation.definition.keyword"
       ],
       "settings": {
         "foreground": "#a626a4"
       }
     },
     {
-      "name": "VARIABLE",
+      "name": "Variable / Identifier",
       "scope": [
         "variable",
-        "variable.object",
         "variable.other",
         "variable.parameter",
-        "support",
-        "entity.name.module",
-        "variable.import.parameter",
-        "variable.other.class",
-        "meta.toc-list.id.html",
-        "source.json meta.structure.dictionary.json",
-        "meta.var.clojure",
-        "entity.name.variable",
-        "source.java meta.class.body.java",
-        "entity.name.package.go",
-        "source.c",
-        "source.cpp",
-        "source.go",
-        "source.python",
-        "meta.function-call.arguments.python",
-        "source.ruby",
-        "source.coffee.embedded.source",
-        "source.coffee",
-        "storage.modifier.package",
-        "source.groovy.embedded.source",
-        "punctuation.definition.variable",
-        "source.powershell",
-        "string.quoted.interpolated.vala constant.character.escape.vala",
-        "source.apacheconf",
-        "source.crystal",
-        "string.quoted.double.kotlin entity.string.template.element.kotlin",
-        "entity.name.package.kotlin",
-        "meta.template.expression.kotlin",
-        "parameter.variable.function",
-        "variable.other.constant.elixir",
-        "source.elixir.embedded.source",
-        "source.sql.embedded",
-        "punctuation.definition.placeholder",
-        "source.swift",
-        "source.julia",
-        "source.shell",
-        "variable.other.normal punctuation.definition.variable.shell",
-        "source.reason variable.language",
-        "source.reason variable.language string.other.link",
-        "source.elm meta.value",
-        "source.elm meta.declaration.module",
-        "string.quoted.double.class.other",
-        "source.toml keyword",
-        "support.type.nim",
-        "source.tf meta.template.expression",
-        "source.scala entity.name.import",
-        "markup.code",
-        "constant.other.enum.java"
+        "entity.name.variable"
       ],
       "settings": {
         "foreground": "#383a42"
       }
     },
     {
-      "name": "ANNOTATION",
+      "name": "Annotation",
       "scope": [
+        "annotation",
         "support.variable.property",
-        "entity.name.type.cs.annotation.kotlin",
-        "comment.block.documentation.phpdoc.php keyword.other.type.php",
-        "storage.type.php",
-        "comment.block.documentation entity.name.type.cs",
-        "source.groovy storage.type",
-        "source.haskell storage.type",
-        "punctuation.separator.clause-head-body",
-        "storage.type.core.rust",
-        "storage.class.std.rust",
-        "storage.modifier.lifetime.rust",
-        "entity.name.lifetime.rust",
-        "support.type.vb",
-        "support.type.julia",
-        "constant.other.reference",
-        "source.graphql support.type",
-        "source.reason support.type string",
-        "source.elm storage.type",
-        "storage.type.user-defined",
-        "storage.type.built-in",
-        "support.type.builtin",
-        "source.swift support.type",
-        "support.class.crystal",
-        "storage.type.integral",
-        "source.vala storage.type",
-        "source.hlsl storage.type.basic",
-        "source.hlsl support.type.other",
-        "source.apex storage.type",
-        "source.nim storage.type",
-        "source.tf meta.keyword.string",
-        "source.tf meta.keyword.number",
-        "source.scala entity.name.class",
-        "markup.raw.monospace",
-        "markup.mark"
+        "storage.type.annotation"
       ],
       "settings": {
         "foreground": "#0184bb"
       }
     },
     {
-      "name": "CONSTANT",
+      "name": "Constant",
       "scope": [
         "constant",
         "support.constant",
-        "support.variable.magic",
-        "entity.name.type.cs.type-parameter.cs",
-        "storage.type.scala",
-        "entity.helper.apacheconf",
-        "variable.language.crystal",
-        "support.constant punctuation.definition.variable",
-        "constant.character.math",
-        "support.class.math",
-        "source.graphql constant.character",
-        "source.reason constant.language.list",
-        "support.variable.class.hideshow",
-        "source.vue entity.other.attribute-name",
-        "entity.other.attribute-name.mjml",
-        "source.vue meta.directive punctuation.separator.key-value",
-        "meta.definition.attribute-entry punctuation.separator"
+        "constant.character.numeric"
       ],
       "settings": {
         "foreground": "#986801"
       }
     },
     {
-      "name": "TAG",
+      "name": "Tag / Class",
       "scope": [
-        "punctuation.definition.italic",
-        "punctuation.definition.bold",
-        "variable.language punctuation.definition.variable",
-        "keyword.control.clojure",
-        "storage.modifier.super",
-        "meta.separator",
-        "keyword.other.fn.rust",
-        "storage.modifier.static.rust",
-        "storage.type.def",
-        "source.scala keyword.declaration",
-        "comment.block.documentation punctuation.definition.block.tag",
-        "comment.block.documentation punctuation.definition.inline.tag",
-        "entity.tag.apacheconf",
-        "keyword.other.julia",
-        "source.julia storage.modifier",
-        "constant.language.empty-list.haskell",
-        "keyword.control.fun",
-        "punctuation.terminator.function",
-        "keyword.other.rust",
-        "keyword.control.class",
-        "keyword.control.def",
-        "source.ocaml keyword markup.underline",
-        "source.ocaml storage.type markup.underline",
-        "binding.fsharp keyword",
-        "function.anonymous keyword",
-        "function.anonymous keyword.symbol.fsharp",
-        "meta.embedded.block variable.language punctuation.definition.variable.php",
-        "source.wsd keyword.other.class",
-        "source.wsd keyword.other.linebegin",
-        "keyword.other.skinparam.keyword",
-        "keyword.other.nim",
-        "source.tf support.class.variable",
-        "source.zig keyword.default",
-        "source.zig keyword.structure"
+        "entity.name.tag",
+        "entity.name.class",
+        "support.class",
+        "entity.other.inherited-class"
       ],
       "settings": {
         "foreground": "#e45649"
       }
     },
     {
-      "name": "STRING",
+      "name": "String",
       "scope": [
         "string",
         "punctuation.definition.string",
-        "markup.raw.texttt",
-        "markup.inserted.diff",
-        "source.scala punctuation.definition.character",
-        "constant.character.literal.scala",
-        "source.tf entity.name"
+        "string.interpolated",
       ],
       "settings": {
         "foreground": "#50a14f"
       }
     },
     {
-      "name": "STRINGINTERPOLATED",
+      "name": "Number",
       "scope": [
-        "string.template",
-        "punctuation.definition.string.template",
-        "string.interpolated.python string.quoted.single.python",
-        "string.quoted.double.heredoc",
-        "string.quoted.interpolated.vala",
-        "string.quoted.interpolated.vala punctuation.definition.string",
-        "string.regexp.apacheconf",
-        "markup.inline.raw punctuation.definition.raw",
-        "string.quoted.double.interpolated.crystal",
-        "string.quoted.double.interpolated.crystal punctuation.definition.string",
-        "text.tex markup.raw"
+        "constant.numeric",
+        "constant.integer",
+        "constant.floating-point"
       ],
       "settings": {
-        "foreground": "#50a14f"
-      }
-    },
-    {
-      "name": "NUMBER",
-      "scope": [
-        "constant.integer.apacheconf",
-        "keyword.operator.nullable-type",
-        "constant.language punctuation.definition.variable",
-        "constant.others.fsharp",
-        "string.quoted.double.skinparam.value",
-        "source.toml constant",
-        "source.zig keyword.constant.bool",
-        "source.zig keyword.constant.default"
-      ],
-      "settings": {
-        "foreground": "#0184bb"
+        "foreground": "#986801"
       }
     },
     {
@@ -600,112 +391,51 @@
       }
     },
     {
-      "name": "FUNCTION",
+      "name": "Function / Method",
       "scope": [
         "variable.function",
         "entity.name.function",
         "string.other.link",
-        "markup.link",
         "support.type.vendored",
         "support.other.variable",
-        "meta.function-call.generic.python",
+        "meta.function-call.generic",
+        "support.function.builtin",
         "meta.method-call.groovy meta.method.groovy",
         "meta.class.body.groovy meta.method.body.java storage.type.groovy",
         "punctuation.definition.decorator",
-        "entity.name.function.decorator.python",
+        "entity.name.function.decorator",
         "support.function.any-method",
         "text.tex support.function",
         "text.tex punctuation.definition.function",
-        "entity.name.section.fsharp entity.name.section.fsharp",
         "support.variable.class.function",
         "keyword.control.cucumber.table",
-        "punctuation.decorator",
-        "source.tf support.class",
         "entity.name.function.decorator",
         "support.function.construct",
-        "punctuation.definition.directive",
-        "entity.name.command.shell"
-      ],
-      "settings": {
-        "foreground": "#4078f2"
-      }
-    },
-    {
-      "name": "SUPPORT",
-      "scope": [
-        "entity.name",
-        "support.orther.namespace.use.php",
-        "meta.use.php",
-        "support.other.namespace.php",
-        "support.type",
         "support.function",
-        "support.function.construct",
-        "markup.changed.git_gutter",
-        "markup.underline.link",
-        "markup.underline.link.image",
-        "markup.underline",
-        "meta.symbol.namespace.clojure",
-        "entity.mime-type.apacheconf",
-        "keyword.operator.function.infix",
-        "entity.name.function.infix",
-        "text.tex support.function.verb",
-        "text.tex support.function.texttt",
-        "source.reason constant.language.unit",
-        "source.ocaml constant.language constant.numeric",
-        "source.reason entity.other.attribute-name constant.language constant.numeric",
-        "constant.language.unit.fsharp",
-        "source.wsd support.class.preprocessings",
-        "keyword.language.gherkin.feature.scenario",
-        "source.nim keyword.other.common.function",
-        "entity.name.scope-resolution.function.call",
-        "entity.name.function.perl"
+        "punctuation.decorator",
+        "punctuation.definition.directive"
       ],
       "settings": {
         "foreground": "#4078f2"
       }
     },
     {
-      "name": "MISC",
+      "name": "Support",
       "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js",
-        "source.js punctuation.section.embedded",
-        "punctuation.definition.template-expression",
-        "storage.type.string.python",
-        "string.interpolated.pug",
-        "support.constant.handlebars",
-        "source.clojure punctuation.section.set",
-        "source.clojure punctuation.section.metadata",
-        "entity.global.clojure",
-        "punctuation.definition.interpolation",
-        "punctuation.section.embedded.end.ruby source.ruby",
-        "support.constant.math",
-        "entity.namespace.r",
-        "meta.method-call.groovy storage.type.groovy",
-        "source.scala entity.name.class.declaration",
-        "support.function.macro.julia",
-        "string.replacement.apacheconf",
-        "storage.modifier.using.vala",
-        "constant.other.haskell",
-        "string.quoted.other.literal.upper.crystal punctuation.definition.string",
-        "meta.embedded.line.crystal punctuation.section.embedded",
-        "meta.embedded.line.crystal punctuation.section.embedded source.crystal",
-        "punctuation.section.embedded",
-        "punctuation.section.tag",
-        "variable.other.bracket punctuation.definition.variable",
-        "string.interpolated.dollar punctuation.definition.string",
-        "constant.character.escape punctuation.definition.keyword",
-        "source.ocaml entity.name.class constant.numeric",
-        "source.reason entity.name.class",
-        "keyword.format.specifier.fsharp",
-        "support.module.elm",
-        "source.vala storage.type",
-        "support.variable.class.group",
-        "entity.name.type.cs.class",
-        "source.tf meta.keyword.list",
-        "source.tf meta.keyword.number",
-        "source.scala entity.name.class",
-        "markup.raw.monospace",
-        "markup.mark"
+        "support.type",
+        "support.class",
+        "support.function.construct"
+      ],
+      "settings": {
+        "foreground": "#4078f2"
+      }
+    },
+    {
+      "name": "Miscellaneous",
+      "scope": [
+        "meta",
+        "markup",
+        "markup.raw"
       ],
       "settings": {
         "foreground": "#383a42"
@@ -724,74 +454,23 @@
       }
     },
     {
-      "name": "NORMAL",
+      "name": "RegExp",
       "scope": [
-        "keyword.begin.tag.ejs",
-        // "source.python meta.function.decorator.python support.type.python"
-        "storage.modifier.static.rust",
-        "variable.parameter.r",
-        "variable.parameter.handlebars",
-        "storage.modifier.package",
-        "keyword.operator.other.powershell",
-        "string.interpolated variable.parameter",
-        "source.apacheconf keyword",
-        "keyword.other.julia",
-        "storage.modifier.using.vala",
-        "source.objc keyword.other.property.attribute",
-        "source.sql keyword.other",
-        "keyword.other.using.vala",
-        "keyword.operator.function.infix",
-        "keyword.other.rust",
-        "keyword.other.declaration-specifier.swift",
-        "entity.name.function.swift",
-        "keyword.control.class",
-        "keyword.control.def",
-        "punctuation.definition.variable",
-        "entity.name.section.latex",
-        "source.ocaml keyword markup.underline",
-        "source.ocaml constant.language constant.numeric",
-        "source.reason entity.other.attribute-name constant.language constant.numeric",
-        "keyword.format.specifier.fsharp",
-        "entity.name.section.fsharp",
-        "binding.fsharp keyword",
-        "binding.fsharp keyword.symbol",
-        "record.fsharp keyword",
-        "keyword.symbol.fsharp",
-        "entity.name.section.fsharp keyword",
-        "namespace.open.fsharp keyword",
-        "namespace.open.fsharp entity",
-        "storage.modifier.array.bracket",
-        "meta.import.haskell keyword",
-        "source.wsd keyword.other",
-        "keyword.other.skinparam",
-        "keyword.language.gherkin.feature.scenario",
-        "keyword.control.cucumber.table",
-        "source.toml entity.other.attribute-name",
-        "source.toml keyword",
-        "keyword.other.nim",
-        "source.nim keyword.other.common.function",
-        "source.nim keyword.other",
-        "source.scala keyword.declaration",
-        "source.scala entity.name.class.declaration",
-        "source.css punctuation.section",
-        "punctuation.section.embedded",
-        "source.c punctuation.section",
-        "source.cpp punctuation.section",
-        "source.java punctuation.section",
-        "source.php punctuation.section",
-        "source.powershell punctuation.section",
-        "source.r punctuation.section",
-        "source.ruby punctuation.section",
-        "source.swift punctuation.section",
-        "source.zig keyword.constant.bool",
-        "source.zig keyword.default",
-        "source.zig keyword.statement",
-        "source.zig keyword.constant.default"
+        "constant.character.set.regexp",
+        "constant.other.set.regexp",
+        "keyword.operator.quantifier.regexp",
+        "support.other.match.begin.regexp",
+        "constant.character.escape.regexp",
+        "support.other.match.end.regexp",
+        "string.regexp.quoted",
+        "string.regexp.interpolated.ruby",
+        "punctuation.section.regexp.ruby"
       ],
       "settings": {
-        "fontStyle": ""
+        "foreground": "#D16969"
       }
     },
+    
 
     // EXTRA STYLES
     {
@@ -835,7 +514,16 @@
         "string.unquoted.argument.shell",
         "variable.other.constant.js",
         "variable.other.constant.ts",
-        "variable.other.constant.tsx"
+        "variable.other.constant.tsx",
+        "keyword.operator.arrow",
+        "keyword.operator.increment-decrement",
+        "keyword.operator.class",
+        "keyword.operator.c",
+        "source.powershell keyword.operator",
+        "source.sass keyword.operator",
+        "source.swift keyword.operator",
+        "source.ts keyword.operator.type",
+        "source.tsx keyword.operator.type"
       ],
       "settings": {
         "foreground": "#383A42"
@@ -950,7 +638,8 @@
         "source.objc storage.type.built-in",
         "storage.type.powershell",
         "source.sass constant.language.color.rgb-value",
-        "source.sass support.type.property-name"
+        "source.sass support.type.property-name",
+        "punctuation.definition.constant.xml",
       ],
       "settings": {
         "foreground": "#986801"
@@ -991,7 +680,9 @@
         "keyword.operator.logical.ruby",
         "keyword.other.rust",
         "keyword.other.fn.rust",
-        "source.sql keyword.other"
+        "source.sql keyword.other",
+        "storage.type.annotation.java",
+        "source.swift punctuation.definition"
       ],
       "settings": {
         "foreground": "#A626A4"
@@ -1045,7 +736,10 @@
         "constant.other.bareword.perl",
         "source.ruby constant.language.symbol",
         "variable.other.readwrite.instance.ruby",
-        "support.variable.property.js"
+        "support.variable.property.js",
+        "support.variable.property.ts",
+        "support.variable.property.tsx",
+        "support.variable.automatic.powershell"
       ],
       "settings": {
         // "foreground": "#587B7B",
@@ -1086,23 +780,6 @@
       ],
       "settings": {
         "foreground": "#e45649ef"
-      }
-    },
-    { // RegExp
-      "name": "RegExp",
-      "scope": [
-        "constant.character.set.regexp",
-        "constant.other.set.regexp",
-        "keyword.operator.quantifier.regexp",
-        "support.other.match.begin.regexp",
-        "constant.character.escape.regexp",
-        "support.other.match.end.regexp",
-        "string.regexp.quoted",
-        "string.regexp.interpolated.ruby",
-        "punctuation.section.regexp.ruby"
-      ],
-      "settings": {
-        "foreground": "#D16969"
       }
     },
     
