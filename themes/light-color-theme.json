@@ -79,6 +79,7 @@
     "inputOption.activeBorder": "#00000000",
     "inputOption.activeForeground": "#4078f2",
     "input.placeholderForeground": "#a0a1a7",
+    "inputOption.hoverBackground": "#e3ebff",
     "textLink.foreground": "#4078f2",
     "textLink.activeForeground": "#4078f2",
     "editor.background": "#f9f9f9",
@@ -201,8 +202,8 @@
     "notificationsWarningIcon.foreground": "#e9a700",
     "notificationsInfoIcon.foreground": "#4078f2",
     "notificationCenter.border": "#d5d5d5",
-    "notificationCenterHeader.foreground": "#FFFFFF",
-    "notificationCenterHeader.background": "#4078f2",
+    "notificationCenterHeader.foreground": "#383a42",
+    "notificationCenterHeader.background": "#f9f9f9",
     "notifications.border": "#e7e7e7",
     "gitDecoration.addedResourceForeground": "#50a14f",
     "gitDecoration.conflictingResourceForeground": "#6c6cc4",
@@ -265,15 +266,36 @@
     "editorGroup.emptyBackground": "#f9f9f9",
     "panelSection.border": "#a0a1a75e",
     "statusBarItem.activeBackground": "#FFFFFF25",
-    "settings.headerForeground": "#383a42",
-    "settings.focusedRowBackground": "#ffffff07",
+    "settings.rowHoverBackground": "#e3ebff",
+    "settings.modifiedItemIndicator": "#4078f2", 
+    "settings.headerForeground": "#383a42", 
+    "settings.focusedRowBackground": "#e3ebff",
+    "settings.focusedRowBorder": "#4078f2",
+    "settings.dropdownBackground": "#f9f9f9",
+    "settings.dropdownBorder": "#a0a1a734",
+    "settings.checkboxBackground": "#f9f9f9", 
+    "settings.checkboxBorder": "#a0a1a734", 
+    "settings.textInputBackground": "#f9f9f9", 
+    "settings.textInputBorder": "#a0a1a734",
     "walkThrough.embeddedEditorBackground": "#00000050",
     "breadcrumb.activeSelectionForeground": "#383a42",
     "editorGutter.commentRangeForeground": "#424242",
     "debugExceptionWidget.background": "#f9f9f9",
     "debugExceptionWidget.border": "#a0a1a7c7",
     "toolbar.hoverBackground": "#c3d4ff",
-    "toolbar.activeBackground": "#c3d4ff"
+    "toolbar.activeBackground": "#c3d4ff",
+    
+    "keybindingLabel.background": "#f9f9f9",
+    "keybindingLabel.foreground": "#383a42",
+    "keybindingLabel.border": "#a0a1a734",
+    "keybindingLabel.bottomBorder": "#a0a1a734",
+
+    "keybindingTable.headerBackground": "#f9f9f9",
+    "keybindingTable.rowsBackground": "#f9f9f9",
+
+    "searchEditor.findMatchBackground": "#e3ebfffa", // Matches your theme's other hover states
+    "searchEditor.findMatchBorder": "#4078f280",
+
   },
   "tokenColors": [
     {
@@ -383,7 +405,7 @@
     {
       "name": "DECIMAL NUMBER",
       "scope": [
-        "constant.numeric", 
+        "constant.numeric",
         "punctuation.separator.decimal.period.php"
       ],
       "settings": {
@@ -444,7 +466,7 @@
     {
       "name": "INVALID",
       "scope": [
-        "invalid", 
+        "invalid",
         "invalid.illegal",
         "source.yaml invalid.illegal",
         "markup.fenced_code invalid.illegal" // TODO: CONTRIBUTE
@@ -470,8 +492,6 @@
         "foreground": "#D16969"
       }
     },
-    
-
     // EXTRA STYLES
     {
       "name": "EXTRA BLACK",
@@ -566,7 +586,7 @@
       "settings": {
         "foreground": "#50A14F"
       }
-    }, 
+    },
     {
       "name": "EXTRA",
       "scope": [
@@ -576,7 +596,7 @@
       "settings": {
         "foreground": "#67876D"
       }
-    }, 
+    },
     {
       "name": "EXTRA CLASS1",
       "scope": [
@@ -689,17 +709,17 @@
       }
     },
     { // TODO: IN DARK MODE MOVE THIS TO COMMENT SECTION
-    "name": "EXTRA KEYWORDS PUNCTUATION",
-    "scope": [
-      "punctuation.definition.directive",
-      "source.objc storage.modifier",
-      "source.objc storage.type",
-      "source.objc punctuation.definition",
-      "punctuation.section.embedded.begin.php",
-      "punctuation.section.embedded.end.php",
-      "constant.other.php"
-    ],
-    "settings": {
+      "name": "EXTRA KEYWORDS PUNCTUATION",
+      "scope": [
+        "punctuation.definition.directive",
+        "source.objc storage.modifier",
+        "source.objc storage.type",
+        "source.objc punctuation.definition",
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php",
+        "constant.other.php"
+      ],
+      "settings": {
         "foreground": "#A626A4"
       }
     },
@@ -757,7 +777,6 @@
         "foreground": "#4078F2"
       }
     },
-
     { // JSON KEY
       "name": "JSON KEY",
       "scope": [
@@ -782,7 +801,6 @@
         "foreground": "#e45649ef"
       }
     },
-    
     // MARKDOWN STYLES
     {
       "name": "STRING",
