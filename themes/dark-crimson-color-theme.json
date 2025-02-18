@@ -309,7 +309,7 @@
     "editorOverviewRuler.border": "#2a2b2d",
     "editorRuler.foreground": "#FFFFFF66",
     "editorLink.activeForeground": "#3a8bbd",
-    "editorHoverWidget.background": "#282a31",
+    "editorHoverWidget.background": "#0d0d0d",
     "editorHoverWidget.border": "#2a2b2d",
     "editorHoverWidget.foreground": "#FFFFFF",
     "editorError.background": "#e34e1c44",
@@ -575,26 +575,26 @@
         "source.sass support.type.property-name",
         // CSS END
         "source.dart",
-        "keyword.control.ternary",
-        "storage.type.function.arrow",
+        // "keyword.control.ternary",
+        // "storage.type.function.arrow",
         "keyword.operator.assignment",
-        "keyword.operator.arithmetic",
-        "keyword.operator.comparison",
-        "keyword.operator.increment",
-        "keyword.operator.relational",
-        "keyword.operator.logical",
-        "keyword.operator.bitwise",
-        "keyword.operator.ternary",
-        "keyword.operator.decrement",
-        "keyword.operator.spread",
+        // "keyword.operator.arithmetic",
+        // "keyword.operator.comparison",
+        // "keyword.operator.increment",
+        // "keyword.operator.relational",
+        // "keyword.operator.logical",
+        // "keyword.operator.bitwise",
+        // "keyword.operator.ternary",
+        // "keyword.operator.decrement",
+        // "keyword.operator.spread",
         "punctuation.separator.dictionary.pair",
         "punctuation.separator.dictionary.key-value",
-        "keyword.operator.lua",
-        "keyword.operator.channel",
+        // "keyword.operator.lua",
+        // "keyword.operator.channel",
         "variable.other.property.cpp",
         "support.constant.cocoa.objc",
         "support.variable.magic.python",
-        "keyword.other.r",
+        // "keyword.other.r",
         "punctuation.definition.constant",
         "comment.punctuation.comma.sass",
         "support.function.interpolation.sass",
@@ -603,10 +603,10 @@
         "variable.other.constant.js",
         "variable.other.constant.ts",
         "variable.other.constant.tsx",
-        "keyword.operator.arrow",
-        "keyword.operator.increment-decrement",
-        "keyword.operator.class",
-        "keyword.operator.c",
+        // "keyword.operator.arrow",
+        // "keyword.operator.increment-decrement",
+        // "keyword.operator.class",
+        // "keyword.operator.c",
         "source.powershell keyword.operator",
         "source.sass keyword.operator",
         "source.swift keyword.operator",
@@ -889,6 +889,18 @@
       "settings": {
         "fontStyle": "strikethrough"
       }
-    }
+    },
+    // TODO: MERGE THEM TO DEDICATED COLOR AFTER SETTING ALL
+    {
+      "name": "OPERATORS",
+      "scope": [
+        "entity.name.function.operator",
+        "punctuation.separator.pointer-access",
+        "entity.name.function.templated"
+      ],
+      "settings": {
+        "foreground": "#2e95cc",
+      }
+    },
   ]
 }
