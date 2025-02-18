@@ -36,14 +36,14 @@
     "markdown.previewStyles": [],
     "themes": [
       {
-        "label": "BedarX Pro Dark Amber",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-amber-color-theme.json"
-      },
-      {
         "label": "BedarX Pro Dark Crimson",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-crimson-color-theme.json"
+      },
+      {
+        "label": "BedarX Pro Dark Amber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-amber-color-theme.json"
       },
       {
         "label": "BedarX Pro Light",
@@ -51,5 +51,22 @@
         "path": "./themes/light-color-theme.json"
       }
     ]
-  }
+  },
+  "badges": [
+    {
+      "url": "https://vsmarketplacebadges.dev/version/",
+      "href": "https://marketplace.visualstudio.com/items/",
+      "description": "Extension version"
+    },
+    {
+      "url": "https://vsmarketplacebadges.dev/installs/",
+      "href": "https://marketplace.visualstudio.com/items/",
+      "description": "Extension installs"
+    },
+    {
+      "url": "https://vsmarketplacebadges.dev/rating/",
+      "href": "https://marketplace.visualstudio.com/items/",
+      "description": "Extension Rating"
+    }
+  ]
 }
