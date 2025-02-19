@@ -14,7 +14,7 @@
     "editorLineNumber.foreground": "#FFFFFF66",
     "editorLineNumber.activeForeground": "#FFFFFF",
     "editorCursor.foreground": "#FFFFFF",
-    "badge.background": "#31343c",
+    "badge.background": "#2e95d3", // TODO(badge): UPDATE THIS TO BUTTON COLOR, IF IT IS FITS OKAY 
     "badge.foreground": "#FFFFFF",
     "activityBar.background": "#0d0d0d",
     "activityBar.border": "#2f2f2f",
@@ -343,13 +343,14 @@
     "editorMultiCursor.primary.foreground": "#FFFFFF",
     "editorMultiCursor.secondary.foreground": "#FFFFFF",
     "editorGroupHeader.border": "#00000000",
+    // TODO(minimap): CHECK THIS LATER
     "minimapGutter.addedBackground": "#33e694",
     "minimapGutter.modifiedBackground": "#e69533",
     "minimapGutter.deletedBackground": "#e34e1c", // TODO: UPDATE THIS LATER
     "minimap.findMatchHighlight": "#3a8bbd44",
     "minimap.selectionHighlight": "#2e95d344",
-    "minimap.errorHighlight": "#ff400044", // TODO: UPDATE THIS LATER
-    "minimap.warningHighlight": "#e6953344", // TODO: UPDATE THIS LATER
+    "minimap.errorHighlight": "#f71a2d", // TODO: UPDATE THIS LATER
+    "minimap.warningHighlight": "#f39806", // TODO: UPDATE THIS LATER
     "textLink.foreground": "#2e95d3",
     "textLink.activeForeground": "#3a8bbd",
     "editorWhitespace.foreground": "#ffffff1a"
