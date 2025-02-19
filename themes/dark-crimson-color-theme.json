@@ -364,7 +364,11 @@
         "comment.block.documentation",
         "meta.preprocessor.c",
         "punctuation.definition.tag",
-        "meta.toc-list.banner.line.objc"
+        "meta.toc-list.banner.line.objc",
+        "markup.fenced_code",
+        "markup.fenced_code punctuation.definition",
+        "entity.other.document.begin.yaml",
+        "entity.other.document.end.yaml"
       ],
       "settings": {
         "foreground": "#ffffff80"
@@ -493,25 +497,20 @@
       }
     },
     {
-      "name": "Constants",
+      "name": "Constants / Numeric Constants / Support",
       "scope": [
         "constant",
         "support.constant",
-      ],
-      "settings": {
-        "foreground": "#d82f79"
-      }
-    },
-    {
-      "name": "Constant and Numeric Constants",
-      "scope": [
         "constant.numeric",
         "constant.character.numeric",
         "constant.integer",
         "constant.floating-point",
         "punctuation.separator.decimal.period.php",
         "punctuation.definition.list.begin.markdown",
-        "punctuation.separator.dot.decimal.rust"
+        "punctuation.separator.dot.decimal.rust",
+        "support.type",
+        "support.class",
+        "entity.name.namespace.cpp"
       ],
       "settings": {
         "foreground": "#d82f79"
@@ -589,21 +588,11 @@
         "support.constant.variable.powershell",
         "variable.language",
         "support.type.property-name.css",
-        "constant.character.sql"
+        "constant.character.sql",
+        "constant.other.placeholder"
       ],
       "settings": {
         "foreground": "#2e95cc",
-      }
-    },
-    {
-      "name": "Support",
-      "scope": [
-        "support.type",
-        "support.class",
-        "entity.name.namespace.cpp"
-      ],
-      "settings": {
-        "foreground": "#d82f79"
       }
     },
     {
@@ -648,7 +637,7 @@
     },
     // EXTRA STYLES
     {
-      "name": "EXTRA BLACK",
+      "name": "EXTRA WHITES",
       "scope": [
         "variable.other",
         "keyword.control.flow.block-scalar.folded.yaml",
@@ -676,27 +665,6 @@
       }
     },
     {
-      "name": "EXTRA PUNCTUATION BLACK",
-      "scope": [
-        "markup.fenced_code",
-        "markup.fenced_code punctuation.definition",
-        "entity.other.document.begin.yaml",
-        "entity.other.document.end.yaml"
-      ],
-      "settings": {
-        "foreground": "#ffffff80"
-      }
-    },
-    {
-      "name": "OTHER STRING",
-      "scope": [
-        "constant.other.placeholder"
-      ],
-      "settings": {
-        "foreground": "#2e95cc"
-      }
-    },
-    {
       "name": "EXTRA CLASS1",
       "scope": [
         "entity.name.tag",
@@ -712,7 +680,7 @@
         "entity.other.attribute-name.pseudo-class",
         
         // CSS END HERE
-        "support.class",
+        // "support.class",
         "storage.modifier.import",
         "storage.type.java",
         "entity.other.inherited-class",
