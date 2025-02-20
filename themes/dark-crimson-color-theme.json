@@ -421,7 +421,7 @@
       }
     },
     {
-      "name": "Text / Variable / General",
+      "name": "Text / General",
       "scope": [
         "text",
         "source punctuation",
@@ -485,43 +485,42 @@
         "foreground": "#2e95cc"
       }
     },
-    {
+    { // TODO: START FROM HERE...
       "name": "Tag / Class",
       "scope": [
-        "entity.name.tag",
-        "entity.name.class",
         "support.class",
+        "entity.name.tag",
+        "entity.name.type",
+        "entity.name.class",
+        "meta.definition.class",
+        "entity.name.namespace",
+        "entity.name.type.class",
         "entity.other.inherited-class",
+        "entity.other.attribute-name.class",
+        "entity.other.attribute-name.pseudo-class",
         "entity.other.attribute-name",
-        "string.other.link.title.markdown",
-        "string.other.link.description.markdown",
+        "entity.other.attribute-name.id",
+        "entity.other.attribute-name.pseudo-element",
         "entity.other.keyframe-offset",
         "markup.fenced_code entity.other.keyframe-offset",
-        "keyword.control.unit",
         "keyword.other.unit",
-        "entity.name.namespace.rust",
-        "storage.type.object",
-        "entity.name.tag",
+        "keyword.control.unit",
+        "string.other.link.title.markdown",
+        "string.other.link.description.markdown",
         "source.yaml storage.type.tag-handle",
         "markup.fenced_code storage.type.tag-handle",
         "source.yaml support.type.tag-prefix",
         "markup.fenced_code support.type.tag-prefix.yaml",
-        "entity.name.type",
-        "entity.other.attribute-name.pseudo-element",
-        "entity.other.attribute-name.id",
-        "entity.other.attribute-name.class",
-        "entity.other.attribute-name.pseudo-class",
+        "storage.type.object",
+        "storage.type.generic",
         "storage.modifier.import",
+        "storage.modifier.package.java",
         "storage.type.java",
-        "entity.other.inherited-class",
-        "entity.name.class",
-        "support.type.python",
-        "entity.name.type.class",
-        "support.type.exception.python",
-        "storage.type.r",
+        "support.type",
+        // "storage.type.r",
         "variable.other.constant.ruby",
         "keyword.operator.pattern.case.shell",
-        "support.type.swift",
+        // "support.type.swift",
         "entity.other.attribute.lua",
         "entity.name.function.preprocessor.objc",
         "constant.other.key.perl",
@@ -534,13 +533,13 @@
         "meta.object-literal.key.js",
         "meta.object-literal.key.ts",
         "meta.object-literal.key.tsx",
+        "support.type.primitive.ts",
+        "support.type.primitive.tsx",
         "source.json punctuation",
         "source.json support.type.property-name",
         "markup.fenced_code support.type.property-name.json",
         "markup.fenced_code punctuation.support.type.property-name.begin.json",
         "markup.fenced_code punctuation.support.type.property-name.end.json",
-        "support.type.primitive.ts",
-        "support.type.primitive.tsx",
       ],
       "settings": {
         "foreground": "#d82f79"
@@ -572,20 +571,20 @@
       }
     },
     {
-      "name": "Constants / Numeric Constants / Support",
+      "name": "Constants / Numeric Constants / Support / Other",
       "scope": [
         "constant",
         "support.constant",
-        "constant.numeric",
-        "constant.character.numeric",
         "constant.integer",
+        "constant.numeric",
         "constant.floating-point",
+        "constant.character.numeric",
         "punctuation.separator.decimal.period.php",
         "punctuation.definition.list.begin.markdown",
         "punctuation.separator.dot.decimal.rust",
-        "support.type",
-        "support.class",
-        "entity.name.namespace.cpp",
+        // "support.type",
+        // "support.class",
+        // "entity.name.namespace.cpp",
         "punctuation.definition.quote.begin.markdown"
       ],
       "settings": {
@@ -783,8 +782,8 @@
         "constant.character.escape.regexp",
         "support.other.match.end.regexp",
         "string.regexp.quoted",
-        "string.regexp.interpolated.ruby",
-        "punctuation.section.regexp.ruby"
+        "string.regexp.interpolated",
+        "punctuation.section.regexp"
       ],
       "settings": {
         "foreground": "#e34e1c"
@@ -830,7 +829,7 @@
         "punctuation.definition.block.tag.jsdoc"
       ],
       "settings": {
-        "foreground": "#e9950c"
+        "foreground": "#2e95cc"
       }
     },
     {
