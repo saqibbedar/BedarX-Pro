@@ -3,7 +3,7 @@
   "type": "dark",
   "colors": {
     "descriptionForeground": "#ffffff99",
-    "errorForeground": "#e34e1c", // TODO(error): UPDATE THIS LATER
+    "errorForeground": "#e34e1c",
     "widget.shadow": "#00000044",
 
     "titleBar.activeBackground": "#0d0d0d",
@@ -45,7 +45,7 @@
     "button.background": "#2e95d3",
     "button.foreground": "#FFFFFF",
     "button.hoverBackground": "#3a8bbd",
-    "badge.background": "#2e95d3", // TODO(badge): UPDATE THIS TO BUTTON COLOR, IF IT IS FITS OKAY 
+    "badge.background": "#2e95d3",
     "badge.foreground": "#FFFFFF",
     
     "dropdown.background": "#1c1d22",
@@ -402,18 +402,25 @@
       "name": "Comment",
       "scope": [
         "comment",
-        "punctuation.definition.comment",
         "comment.block.documentation",
-        "meta.preprocessor.c",
+        "comment.punctuation.comma.sass",
+
         "punctuation.definition.tag",
+        "punctuation.definition.comment",
+        "punctuation.definition.markdown",
+        "punctuation.definition.directive",
+        "punctuation.section.embedded.end.php",
+        "punctuation.section.embedded.begin.php",
+
+        "entity.other.document.end.yaml",
+        "entity.other.document.begin.yaml",
+
+        "meta.preprocessor.c",
         "meta.toc-list.banner.line.objc",
+        
         "markup.fenced_code",
         "markup.fenced_code punctuation.definition",
-        "entity.other.document.begin.yaml",
-        "entity.other.document.end.yaml",
-        "punctuation.definition.directive",
-        "punctuation.section.embedded.begin.php",
-        "punctuation.section.embedded.end.php",
+
         "constant.other.php"
       ],
       "settings": {
@@ -424,35 +431,42 @@
       "name": "Text / General",
       "scope": [
         "text",
-        "source punctuation",
+
         "meta.brace",
         "meta.array",
-        "meta.structure.dictionary.json",
-        "punctuation.separator.array",
-        "punctuation.separator.key-value",
-        "punctuation.terminator",
-        "punctuation.separator",
-        "text.html.markdown punctuation.definition",
-        "markup.fenced_code punctuation.definition",
-        "markup.fenced_code punctuation.definition.entity",
-        "variable.parameter.keyframe-list",
         "meta.property-value",
-        "source.css meta.property-name",
-        "markup.fenced_code meta.property-name",
-        "punctuation.definition.template-expression.begin.js",
-        "punctuation.definition.template-expression.end.js",
-        "keyword.operator.access.dot.rust",
-        "keyword.operator.namespace.rust",
-        "keyword.operator.key-value.rust",
-        "constant.other.caps.rust",
-        "keyword.operator.type.annotation",
+        "meta.structure.dictionary.json",
+
         "variable",
         "variable.other",
         "variable.parameter",
         "entity.name.variable",
         "variable.other.enummember.ts", 
         "variable.other.enummember.tsx",
-        "keyword.operator.assignment"
+        "variable.parameter.keyframe-list",
+
+        "punctuation.separator",
+        "punctuation.terminator",
+        "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.end.js",
+
+        "keyword.operator.assignment",
+        "keyword.operator.namespace.rust",
+        "keyword.operator.key-value.rust",
+        "keyword.operator.type.annotation",
+        "keyword.operator.access.dot.rust",
+        "keyword.operator.other.powershell",
+
+        "markup.fenced_code meta.property-name",
+        "markup.fenced_code punctuation.definition",
+        "markup.fenced_code punctuation.definition.entity",
+
+        "source punctuation",
+        "source.css meta.property-name",
+
+        "text.html.markdown punctuation.definition",
+
+        "constant.other.caps.rust",
       ],
       "settings": {
         "foreground": "#FFFFFF"
@@ -462,81 +476,81 @@
       "name": "Keyword / Annotation",
       "scope": [
         "keyword",
+        "keyword.other",
         "keyword.control",
         "keyword.operator",
-        "keyword.other",
+        "keyword.declaration.dart",
+        "keyword.operator.assignment.r",
+        "keyword.operator.assignment.compound",
+        "keyword.operator.assignment.arithmetic",
+        "keyword.operator.assignment.powershell",
+
         "punctuation.definition.keyword",
+        "punctuation.accessor",
+        "punctuation.definition.constant.css",
+        "punctuation.definition.variable.ruby",
+        "punctuation.section.embedded.begin.swift",
+
+        "entity.name.tag.tsx",
         "entity.name.tag.html",
         "entity.name.tag.js.jsx",
-        "entity.name.tag.tsx",
-        "text.xml entity.name.tag",
-        "punctuation.definition.constant.css",
-        "keyword.operator.assignment.arithmetic",
-        "keyword.operator.assignment.r",
-        "punctuation.definition.variable.ruby",
-        "punctuation.accessor.optional.js",
-        "punctuation.accessor.optional.ts",
+
         "annotation",
-        "support.variable.property",
         "storage.type.annotation",
-        "punctuation.section.embedded.begin.swift"
+        "text.xml entity.name.tag",
+        "support.variable.property"
       ],
       "settings": {
         "foreground": "#2e95cc"
       }
     },
-    { // TODO: START FROM HERE...
+    {
       "name": "Tag / Class",
       "scope": [
+        "support.type",
         "support.class",
+
         "entity.name.tag",
         "entity.name.type",
         "entity.name.class",
-        "meta.definition.class",
-        "entity.name.namespace",
-        "entity.name.type.class",
-        "entity.other.inherited-class",
-        "entity.other.attribute-name.class",
-        "entity.other.attribute-name.pseudo-class",
+        "entity.other.attribute",
         "entity.other.attribute-name",
-        "entity.other.attribute-name.id",
-        "entity.other.attribute-name.pseudo-element",
+        "entity.other.inherited-class",
         "entity.other.keyframe-offset",
-        "markup.fenced_code entity.other.keyframe-offset",
+        "entity.other.attribute-name.id",
+        "entity.name.function.preprocessor.objc",
+
+        "source.json punctuation",
+        "source.yaml support.type.tag-prefix",
+        "source.yaml storage.type.tag-handle",
+        "source.ruby constant.language.symbol",
+        "source.json support.type.property-name",
+        "support.variable.property.js",
+        "support.variable.property.ts",
+        "support.variable.property.tsx",
+        "support.type.primitive.ts",
+        "support.type.primitive.tsx",
+
+        "storage.type.java",
+        "storage.type.object",
+        "storage.type.generic",
+        "storage.type.powershell",
+        "storage.modifier.import",
+        "storage.modifier.package.java",
+
         "keyword.other.unit",
         "keyword.control.unit",
         "string.other.link.title.markdown",
         "string.other.link.description.markdown",
-        "source.yaml storage.type.tag-handle",
-        "markup.fenced_code storage.type.tag-handle",
-        "source.yaml support.type.tag-prefix",
-        "markup.fenced_code support.type.tag-prefix.yaml",
-        "storage.type.object",
-        "storage.type.generic",
-        "storage.modifier.import",
-        "storage.modifier.package.java",
-        "storage.type.java",
-        "support.type",
-        // "storage.type.r",
-        "variable.other.constant.ruby",
-        "keyword.operator.pattern.case.shell",
-        // "support.type.swift",
-        "entity.other.attribute.lua",
-        "entity.name.function.preprocessor.objc",
+        "meta.definition.class",
+        "meta.object-literal.key.js",
         "constant.other.key.perl",
         "constant.other.bareword.perl",
-        "source.ruby constant.language.symbol",
         "variable.other.readwrite.instance.ruby",
-        "support.variable.property.js",
-        "support.variable.property.ts",
-        "support.variable.property.tsx",
-        "meta.object-literal.key.js",
-        "meta.object-literal.key.ts",
-        "meta.object-literal.key.tsx",
-        "support.type.primitive.ts",
-        "support.type.primitive.tsx",
-        "source.json punctuation",
-        "source.json support.type.property-name",
+
+        "markup.fenced_code storage.type.tag-handle",
+        "markup.fenced_code support.type.tag-prefix.yaml",
+        "markup.fenced_code entity.other.keyframe-offset",
         "markup.fenced_code support.type.property-name.json",
         "markup.fenced_code punctuation.support.type.property-name.begin.json",
         "markup.fenced_code punctuation.support.type.property-name.end.json",
@@ -549,22 +563,30 @@
       "name": "String",
       "scope": [
         "string",
-        "punctuation.definition.string",
         "string.interpolated",
-        "markup.inline.raw.string",
-        "punctuation.definition.raw.markdown",
-        "markup.underline.link.markdown",
-        "markup.underline.link.image.markdown",
-        "source.yaml string.quoted.double entity.name.tag",
-        "markup.fenced_code string.quoted.double.yaml entity.name.tag.yaml",
+        "string.quoted.single.imports",
+        "string.quoted.double.imports",
+
+        "source.sass variable.other.value",
         "source.css support.constant.property-value",
         "source.sass support.constant.property-value",
+        "source.yaml string.quoted.double entity.name.tag",
+
+        "markup.inline.raw.string",
+        "markup.underline.link.markdown",
+        "markup.underline.link.image.markdown",
+        "markup.fenced_code string.quoted.double.yaml entity.name.tag.yaml",
+        
         "support.constant.font-name.css",
-        "support.constant.color.w3c-standard-color-name.css",
         "support.sass variable.other.value",
-        "source.sass variable.other.value",
+        "support.constant.color.w3c-standard-color-name.css",
+
+        "punctuation.definition.string",
+        "punctuation.definition.raw.markdown",
+
         "entity.name.import.go",
-        "constant.character.escape"
+
+        "constant.character.escape",
       ],
       "settings": {
         "foreground": "#00a67d"
@@ -574,18 +596,20 @@
       "name": "Constants / Numeric Constants / Support / Other",
       "scope": [
         "constant",
-        "support.constant",
-        "constant.integer",
         "constant.numeric",
+        "constant.integer",
         "constant.floating-point",
+        "constant.numeric.decimal",
         "constant.character.numeric",
+
+        "punctuation.separator.dot.decimal.rust",
         "punctuation.separator.decimal.period.php",
         "punctuation.definition.list.begin.markdown",
-        "punctuation.separator.dot.decimal.rust",
-        // "support.type",
-        // "support.class",
-        // "entity.name.namespace.cpp",
-        "punctuation.definition.quote.begin.markdown"
+        "punctuation.definition.quote.begin.markdown",
+
+        "support.constant",
+
+        "variable.other.constant.ruby",
       ],
       "settings": {
         "foreground": "#d82f79"
@@ -595,29 +619,29 @@
       "name": "Function / Method",
       "scope": [
         "variable.function",
-        "entity.name.function",
-        "string.other.link",
+
+        "support.function",
         "support.type.vendored",
         "support.other.variable",
-        "meta.function-call.generic",
         "support.function.builtin",
+        "support.function.construct",
+        "support.function.any-method",
+        "support.variable.class.function",
+
+        "meta.function-call.generic",
         "meta.method-call.groovy meta.method.groovy",
         "meta.class.body.groovy meta.method.body.java storage.type.groovy",
-        "punctuation.definition.decorator",
+        "entity.name.function",
         "entity.name.function.decorator",
-        "support.function.any-method",
+
+        "punctuation.decorator",
+        "punctuation.definition.decorator",
         "text.tex support.function",
         "text.tex punctuation.definition.function",
-        "support.variable.class.function",
-        "keyword.control.cucumber.table",
-        "entity.name.function.decorator",
-        "support.function.construct",
-        "support.function",
-        "punctuation.decorator",
-        // "punctuation.definition.directive", // UPDATE THIS LATER(PUNCTUATION)
-        "markup.fenced_code keyword.other.operator.overload.cpp", // TODO: CONTRIBUTE
+        "string.other.link",
         "source.java constant.other.key",
-        "markup.fenced_code constant.other.key"
+        "keyword.control.cucumber.table",
+        "markup.fenced_code keyword.other.operator.overload.cpp"
       ],
       "settings": {
         "foreground": "#f22c3d"
@@ -626,32 +650,41 @@
     {
       "name": "Special Functions / Variables",
       "scope": [
-        "support.function.builtin.python",
-        "entity.name.function.decorator.python",
-        "punctuation.definition.decorator.python",
-        "meta.attribute.python",
-        "source.css support.function",
-        "entity.name.function.dart",
         "support.function.lua",
         "support.function.cocoa.objc",
+        "support.function.powershell",
+        "support.function.kernel.ruby",
         "support.function.library.lua",
-        "variable.other.object.property",
-        "variable.other.enummember",
-        "entity.name.variable.enum-member",
-        "variable.other.property",
-        "entity.name.function.preprocessor.cpp",
-        "variable.other.constant",
+        "support.function.builtin.shell",
+        "support.function.builtin.python",
+
         "variable.other.php",
         "variable.language.php",
-        "punctuation.definition.variable.php",
-        "meta.embedded.block variable punctuation.definition.variable.php",
-        "support.function.kernel.ruby",
+        "variable.other.property",
+        "variable.other.constant",
+        "variable.other.enummember",
+        "variable.other.object.property",
+
+
+        "entity.name.function.dart",
         "entity.name.function.macro.rust",
+        "entity.name.variable.enum-member",
+        "entity.name.function.preprocessor.cpp",
+        "entity.name.function.decorator.python",
+        
+        "source.css support.function",
         "source.sass entity.name.function",
         "source.sass support.function",
-        "support.function.builtin.shell",
+        "source.perl variable.other",
+
+        "punctuation.definition.decorator.python",
+        "punctuation.definition.variable.php",
         "punctuation.definition.variable.perl",
-        "source.perl variable.other"
+
+        "meta.attribute.python",
+        "meta.embedded.block variable punctuation.definition.variable.php",
+
+        "markup.fenced_code.block"
       ],
       "settings": {
         "foreground": "#e9950c",
@@ -660,71 +693,65 @@
     {
       "name": "Special Function / Variable / Extra",
       "scope": [
-        "storage.type",
-        "variable.parameter.function.language.special",
-        "variable.language.special.self.python",
-        "support.variable.automatic.powershell",
-        "support.constant.variable.powershell",
-        "variable.language",
-        "support.type.property-name.css",
-        "constant.character.sql",
-        "constant.other.placeholder",
-        // "storage.type.tag.shorthand.yaml",
-        "storage.type.built-in",
-        "support.type.primitive",
+        "source.lua keyword",
         "source.cs keyword.type",
-        "source.css constant.other.color",
-        "markup.fenced_code constant.other.color",
-        "markup.fenced_code variable.parameter.keyframe-list",
-        "source.sass variable.other.name",
-        "constant.character.entity",
-        "punctuation.definition.entity.html",
-        "source.objc storage.type.built-in",
-        "storage.type.powershell",
-        "source.sass constant.language.color.rgb-value",
-        "source.sass support.type.property-name",
-        "punctuation.definition.constant.xml",
-        "keyword.other.directive",
-        "keyword.control.directive",
-        "entity.name.function.preprocessor",
-        "storage.modifier",
+        "source.sql keyword.other",
         "source.css keyword.control",
-        "keyword.declaration.dart",
-        "source.dart storage.type.annotation",
-        "markup.fenced_code storage.type.annotation",
-        "markup.fenced_code keyword.operator",
-        "markup.fenced_code storage.type",
-        "keyword.operator.instanceof",
         "source.kotlin keyword.hard",
         "source.kotlin storage.modifier",
-        "source.lua keyword",
-        "markup.fenced_code keyword",
-        "keyword.control.lua",
-        "punctuation.definition.annotation.java",
-        "meta.function.powershell storage.type.powershell",
-        "source.r meta.function.r keyword.control.r",
-        "keyword.control.r",
-        "keyword.operator.logical.ruby",
-        "keyword.other.rust",
-        "keyword.other.fn.rust",
-        "source.sql keyword.other",
-        "storage.type.annotation.java",
-        "source.swift punctuation.definition",
+        "source.sass variable.other.name",
+        "source.css constant.other.color",
+        "source.objc storage.type.built-in",
+        "source.shell constant.other.option",
         "source.objc punctuation.definition",
-        "entity.name.function.operator",
-        "punctuation.separator.pointer-access",
-        "entity.name.function.templated",
-        "punctuation.separator.annotation.result.python",
-        "keyword.operator.assignment.compound",
-        "support.class.component",
+        "source.swift punctuation.definition",
+        "source.dart storage.type.annotation",
+        "source.sass support.type.property-name",
+        "source.r meta.function.r keyword.control.r",
+        "source.sass constant.language.color.rgb-value",
+
         "constant.language",
+        "constant.character.sql",
+        "constant.character.entity",
+        "constant.other.placeholder",
         "constant.other.caps.python",
-        "variable.language.special.shell",
         "constant.other.option.shell",
-        "keyword.operator.logical.shell",
-        "meta.statement.command.shell",
         "constant.other.option.dash.shell",
-        "source.shell constant.other.option"
+
+        "support.type.primitive",
+        "support.class.component",
+        "support.type.property-name.css",
+        "support.constant.variable.powershell",
+        "support.variable.automatic.powershell",
+
+        "punctuation.definition.entity.html",
+        "punctuation.definition.constant.xml",
+        "punctuation.separator.pointer-access",
+        "punctuation.definition.annotation.java",
+        "punctuation.separator.annotation.result.python",
+
+        "storage.type",
+        "storage.modifier",
+        "storage.type.built-in",
+        "storage.type.annotation.java",
+
+        "variable.language",
+        "variable.language.special",
+        "variable.parameter.function.language.special",
+        
+        "entity.name.function.operator",
+        "entity.name.function.templated",
+        "entity.name.function.preprocessor",
+        
+        "meta.statement.command.shell",
+        "meta.function.powershell storage.type.powershell",
+        
+        "markup.fenced_code keyword",
+        "markup.fenced_code storage.type",
+        "markup.fenced_code keyword.operator",
+        "markup.fenced_code constant.other.color",
+        "markup.fenced_code storage.type.annotation",
+        "markup.fenced_code variable.parameter.keyframe-list"
       ],
       "settings": {
         "foreground": "#2e95cc",
@@ -734,27 +761,33 @@
       "name": "Miscellaneous",
       "scope": [
         "meta",
+
         "markup",
         "markup.raw",
+
         "variable.other",
-        "keyword.control.flow.block-scalar.folded.yaml",
-        "keyword.control.flow.block-scalar.literal.yaml",
-        "source.css support.type",
-        "support.type.vendored.property-name",
-        "source.sass support.type.property-name",
-        "source.dart",
-        "punctuation.separator.dictionary.pair",
-        "punctuation.separator.dictionary.key-value",
-        "variable.other.property.cpp",
-        "support.variable.magic.python",
-        "punctuation.definition.constant",
-        "comment.punctuation.comma.sass",
-        "support.function.interpolation.sass",
-        "keyword.operator.expansion.shell",
-        "string.unquoted.argument.shell",
         "variable.other.constant.js",
         "variable.other.constant.ts",
         "variable.other.constant.tsx",
+        "variable.other.property.cpp",
+        
+        "keyword.operator.expansion.shell",
+        "keyword.control.flow.block-scalar.folded.yaml",
+        "keyword.control.flow.block-scalar.literal.yaml",
+
+        "source.dart",
+        "source.css support.type",
+        "support.variable.magic.python",
+        "support.function.interpolation.sass",
+        "support.type.vendored.property-name",
+        "source.sass support.type.property-name",
+
+
+        "punctuation.definition.constant",
+        "punctuation.separator.dictionary.pair",
+        "punctuation.separator.dictionary.key-value",
+
+        "string.unquoted.argument.shell"
       ],
       "settings": {
         "foreground": "#FFFFFF"
@@ -766,23 +799,27 @@
         "invalid",
         "invalid.illegal",
         "source.yaml invalid.illegal",
-        "markup.fenced_code invalid.illegal" // TODO: CONTRIBUTE
+        "markup.fenced_code invalid.illegal"
       ],
       "settings": {
-        "foreground": "#F10000"
+        "foreground": "#ff00d4"
       }
     },
     {
       "name": "RegExp",
       "scope": [
-        "constant.character.set.regexp",
         "constant.other.set.regexp",
-        "keyword.operator.quantifier.regexp",
-        "support.other.match.begin.regexp",
+        "constant.character.set.regexp",
         "constant.character.escape.regexp",
-        "support.other.match.end.regexp",
+
         "string.regexp.quoted",
         "string.regexp.interpolated",
+
+        "support.other.match.begin.regexp",
+        "support.other.match.end.regexp",
+
+        "keyword.operator.quantifier.regexp",
+
         "punctuation.section.regexp"
       ],
       "settings": {
@@ -823,9 +860,9 @@
     {
       "name": "Documentation Keywords",
       "scope": [
-        "keyword.other.documentation",
         "storage.type.class.jsdoc",
         "storage.type.class.phpdoc",
+        "keyword.other.documentation",
         "punctuation.definition.block.tag.jsdoc"
       ],
       "settings": {
@@ -836,42 +873,11 @@
       "name": "Template Literals",
       "scope": [
         "string.template",
-        "punctuation.definition.template-expression",
-        "punctuation.section.embedded"
+        "punctuation.section.embedded",
+        "punctuation.definition.template-expression"
       ],
       "settings": {
         "foreground": "#00a67d"
-      }
-    },
-    {
-      "name": "CSS Units",
-      "scope": [
-        "keyword.other.unit",
-        "constant.numeric.css",
-        "constant.numeric.decimal.css",
-        "constant.numeric.sass"
-      ],
-      "settings": {
-        "foreground": "#d82f79" 
-      }
-    },
-    {
-      "name": "Import/Export Paths",
-      "scope": [
-        "string.quoted.single.imports",
-        "string.quoted.double.imports"
-      ],
-      "settings": {
-        "foreground": "#00a67d" 
-      }
-    },
-    {
-      "name": "Markdown Code Blocks",
-      "scope": [
-        "markup.fenced_code.block",
-      ],
-      "settings": {
-        "foreground": "#e9950c"
       }
     }
   ]
