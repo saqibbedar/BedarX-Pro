@@ -1,24 +1,20 @@
 # [BedarX Pro](https://github.com/saqibbedar/BedarX-Pro) | [GitHub Repo](https://github.com/saqibbedar/BedarX-Pro) 
 
-A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memory of my beloved father, [`Bedar Bakhshal`](./Public/aboutExtension.md). Designed for both **light** and **dark mode**, this theme brings a sleek, futuristic aesthetic to your coding experience with carefully balanced colors for readability and visual comfort.
+A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memory of my beloved father, [`Bedar Bakhshal`](./Public/aboutExtension.md). Designed for both **light** and **dark mode**.
 
-[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/my_url) 
+<!-- [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/my_url) 
 [![Version](https://vsmarketplacebadges.dev/version/my_url)](https://marketplace.visualstudio.com/items?itemName=my_url) 
-[![Installs](https://vsmarketplacebadges.dev/installs/my_url)](https://marketplace.visualstudio.com/items?my_url)
+[![Installs](https://vsmarketplacebadges.dev/installs/my_url)](https://marketplace.visualstudio.com/items?my_url) -->
 
-## Theme Previews
+## SCREENSHOTS
 
 ### Default - Dark Crimson
 
-![ScreenShot](#Pending)
-
-### Dark Amber
-
-![ScreenShot](#Pending)
+![ScreenShot](./Public/dark-crimson-theme.png)
 
 ### Light
 
-![ScreenShot](#Pending)
+![ScreenShot](./Public/light-theme.png)
 
 ## Donation
 
@@ -41,11 +37,13 @@ To get started, first fork and clone this repository
 
 Press `F5` to see live preview, and start editing
 
-### Contributors
+#### Thankyou for using this extension, [Leave a Star on Github ⭐](https://github.com/saqibbedar/BedarX-Pro)
+
+<!-- ### Contributors
 
 This project exists thanks to all the people who contribute.
-[![Contributors](img_url)](img_url)
+[![Contributors](img_url)](img_url) -->
 
-### Sponsors
+<!-- ### Sponsors
 
-Support this project by becoming a sponsor. 
+Support this project by becoming a sponsor.  -->

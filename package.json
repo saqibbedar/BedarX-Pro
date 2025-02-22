@@ -41,11 +41,6 @@
         "path": "./themes/dark-crimson-color-theme.json"
       },
       {
-        "label": "BedarX Pro Dark Amber",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-amber-color-theme.json"
-      },
-      {
         "label": "BedarX Pro Light",
         "uiTheme": "vs",
         "path": "./themes/light-color-theme.json"
