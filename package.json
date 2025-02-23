@@ -41,24 +41,16 @@
       }
     ]
   },
-  
   "galleryBanner": {
     "color": "#0d0d0d",
     "theme": "dark"
   },
-  "icon": "./Public/icon.png",
+  "icon": "Public/icon.png",
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
     }
   },
-  "recommendations": [
-    "saqibbedar.bedarx-pro"
-  ],
-  "extensionDependencies": [],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
   "sponsor": {
     "url": "https://buymeacoffee.com/saqibbedar"
   },
@@ -95,5 +87,12 @@
       "href": "https://marketplace.visualstudio.com/items/",
       "description": "Extension Rating"
     }
-  ]
+  ],
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.32.0"
+  }
 }

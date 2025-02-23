@@ -1,6 +1,6 @@
 # [BedarX Pro](https://github.com/saqibbedar/BedarX-Pro) | [GitHub Repo](https://github.com/saqibbedar/BedarX-Pro)
 
-A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memory of my beloved father, [`Bedar Bakhshal`](./Public/aboutExtension.md). Designed for both **light** and **dark mode**. This theme combines exceptional readability with a modern aesthetic, making your coding experience both comfortable and productive.
+A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memory of my beloved father, [`Bedar Bakhshal`](Public/aboutExtension.md). Designed for both **light** and **dark mode**. This theme combines exceptional readability with a modern aesthetic, making your coding experience both comfortable and productive.
 
 <!-- [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/my_url)
 [![Version](https://vsmarketplacebadges.dev/version/my_url)](https://marketplace.visualstudio.com/items?itemName=my_url)
@@ -10,11 +10,11 @@ A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memo
 
 ### Default - Dark Crimson
 
-![ScreenShot](./Public/dark-crimson-theme.png)
+![ScreenShot](Public/dark-crimson-theme.png)
 
 ### Light
 
-![ScreenShot](./Public/light-theme.png)
+![ScreenShot](Public/light-theme.png)
 
 ## Donation
 
