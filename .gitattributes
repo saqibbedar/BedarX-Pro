@@ -25,5 +25,5 @@ LICENSE text eol=lf
 *.png binary
 *.jpg binary
 *.gif binary
-*.ico binary standardize
+*.ico binary
 *.svg text
