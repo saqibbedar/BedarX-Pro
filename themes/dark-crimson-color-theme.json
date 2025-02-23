@@ -741,7 +741,8 @@
         "punctuation.definition.constant",
         "punctuation.separator.dictionary.pair",
         "punctuation.separator.dictionary.key-value",
-        "string.unquoted.argument.shell"
+        "string.unquoted.argument.shell",
+        "variable.other.object.java"
       ],
       "settings": {
         "foreground": "#FFFFFF"
@@ -756,7 +757,7 @@
         "markup.fenced_code invalid.illegal"
       ],
       "settings": {
-        "foreground": "#ff00d4"
+        "foreground": "#e34e1c"
       }
     },
     {
