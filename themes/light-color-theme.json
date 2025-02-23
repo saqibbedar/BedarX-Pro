@@ -345,7 +345,7 @@
         "storage.modifier",
         "storage.type",
         "storage.type.class",
-        "punctuation.definition.keyword.css",
+        "punctuation.definition.keyword.css"
       ],
       "settings": {
         "foreground": "#a626a4"
@@ -354,24 +354,19 @@
     {
       "name": "OTHER",
       "scope": [
-        "source.json punctuation",
-        "source.objc punctuation.definition",
-        "source.json support.type.property-name",
-
         "punctuation.definition.directive",
         "punctuation.section.embedded.end.php",
         "punctuation.section.embedded.begin.php",
         "punctuation.definition.annotation",
-        
+        "source.json punctuation",
+        "source.objc punctuation.definition",
+        "source.json support.type.property-name",
         "entity.name.function.preprocessor",
-
         "storage.type.annotation",
-
         "constant.other.php",
-
         "markup.fenced_code support.type.property-name.json",
         "markup.fenced_code punctuation.support.type.property-name.begin.json",
-        "markup.fenced_code punctuation.support.type.property-name.end.json",
+        "markup.fenced_code punctuation.support.type.property-name.end.json"
       ],
       "settings": {
         "foreground": "#a626a4"
@@ -397,7 +392,7 @@
       "name": "ANNOTATION",
       "scope": [
         "annotation",
-        "support.variable.property",
+        "support.variable.property"
       ],
       "settings": {
         "foreground": "#0184bb"
@@ -410,7 +405,7 @@
         "support.constant",
         "constant.character.numeric",
         "keyword.other.unit",
-        "keyword.control.unit",
+        "keyword.control.unit"
       ],
       "settings": {
         "foreground": "#986801"
@@ -430,18 +425,18 @@
         "support.type.swift",
         "support.type.python",
         "support.type.exception.python",
-        "source.yaml storage.type.tag-handle",
-        "source.yaml support.type.tag-prefix",
         "storage.type.r",
         "storage.type.java",
         "storage.modifier.import",
         "variable.language",
         "variable.other.constant.ruby",
         "variable.parameter.function.language.special",
+        "source.yaml storage.type.tag-handle",
+        "source.yaml support.type.tag-prefix",
         "keyword.operator.pattern.case.shell",
         "punctuation.definition.list.begin.markdown",
         "markup.fenced_code storage.type.tag-handle",
-        "markup.fenced_code support.type.tag-prefix.yaml",
+        "markup.fenced_code support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#e45649"
@@ -452,22 +447,18 @@
       "scope": [
         "string",
         "string.interpolated",
-
         "support.constant.font-name.css",
         "support.constant.property-value",
         "support.sass variable.other.value",
         "support.constant.color.w3c-standard-color-name.css",
         "source.sass variable.other.value",
         "source.yaml string.quoted.double entity.name.tag",
-
         "punctuation.definition.string",
         "punctuation.definition.raw.markdown",
-
         "markup.inline.raw.string",
         "markup.fenced_code string.quoted.double.yaml entity.name.tag.yaml",
-        
         "entity.name.import.go",
-        "text.html.markdown string.other.link",
+        "text.html.markdown string.other.link"
       ],
       "settings": {
         "foreground": "#50a14f"
@@ -531,28 +522,22 @@
         "storage.type.object",
         "storage.type.built-in",
         "storage.type.tag.shorthand.yaml",
-
-        "support.type.primitive",
         "storage.type.powershell",
         "storage.type.generic.java",
-
         "source.go storage.type",
         "source.css constant.other.color",
         "source.sass variable.other.name",
         "source.sass support.type.property-name",
         "source.css variable.parameter.keyframe-list",
         "source.sass constant.language.color.rgb-value",
-
-        "meta.property-value",
-        
-        "constant.character.entity",
-        
         "punctuation.definition.entity.html",
         "punctuation.definition.constant.xml",
-
+        "meta.property-value",
+        "support.type.primitive",
+        "constant.character.entity",
         "markup.fenced_code storage.type",
         "markup.fenced_code constant.other.color",
-        "markup.fenced_code variable.parameter.keyframe-list",
+        "markup.fenced_code variable.parameter.keyframe-list"
       ],
       "settings": {
         "foreground": "#986801"
@@ -592,52 +577,41 @@
         "constant.other.caps",
         "constant.other.option.shell",
         "constant.other.option.dash.shell",
-
         "variable.language.special.shell",
-
         "keyword.operator.logical.shell",
-
-        "meta.statement.command.shell",
+        "meta.statement.command.shell"
       ],
       "settings": {
         "foreground": "#0184BB"
       }
     },
     {
-      "name": "Miscellaneous",
+      "name": "MISCELLANEOUS",
       "scope": [
         "meta",
         "markup",
         "markup.raw",
-
         "keyword.operator.string.php",
         "keyword.operator.assignment",
         "keyword.operator.expansion.shell",
         "keyword.operator.other.powershell",
         "keyword.control.flow.block-scalar.folded.yaml",
         "keyword.control.flow.block-scalar.literal.yaml",
-
-        "support.constant.cocoa.objc",
-        "support.variable.magic.python",
-        "support.function.interpolation.sass",
-        "support.type.vendored.property-name",
-
         "entity.other.document.begin.yaml",
         "entity.other.document.end.yaml",
         "entity.other.attribute-name.html",
         "entity.other.attribute-name.js.jsx",
         "entity.other.attribute-name.tsx",
-
+        "support.constant.cocoa.objc",
+        "support.variable.magic.python",
+        "support.function.interpolation.sass",
+        "support.type.vendored.property-name",
         "source.css support.type",
         "text.xml entity.other.attribute-name",
         "source.sass support.type.property-name",
-
         "comment.punctuation.comma.sass",
-
         "string.unquoted.argument.shell",
-
         "punctuation.definition.constant",
-
         "markup.fenced_code support.type",
         "keyword.operator.access.dot",
         "keyword.operator.namespace",
@@ -660,7 +634,7 @@
       }
     },
     {
-      "name": "RegExp",
+      "name": "REGEXP",
       "scope": [
         "constant.character.set.regexp",
         "constant.other.set.regexp",
