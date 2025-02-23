@@ -52,6 +52,13 @@
       "supported": true
     }
   },
+  "recommendations": [
+    "saqibbedar.bedarx-pro"
+  ],
+  "extensionDependencies": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "sponsor": {
     "url": "https://buymeacoffee.com/saqibbedar"
   },
