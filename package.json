@@ -1,42 +1,36 @@
 {
-  "name": "material-theme",
+  "name": "bedarx-pro",
   "displayName": "BedarX Pro",
-  "description": "A ChatGPT inspired, iconic BedarX Pro theme for VS Code",
+  "description": "A ChatGPT-inspired theme with Light and Dark variants, offering exceptional readability and visual comfort.",
   "version": "0.0.1",
-  "publisher": "Saqib Bedar",
-  "icon": "./icon.png",
-  "keywords": [
-    "bedarx pro",
-    "bedarx",
-    "bedarxpro",
-    "theme",
-    "chatgpt theme",
-    "chatgpt"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/saqibbedar/BedarX-Pro/issues"
+  "publisher": "saqibbedar",
+  "author": {
+    "name": "Saqib Bedar"
   },
-  "homepage": "https://github.com/saqibbedar/BedarX-Pro",
   "repository": {
     "type": "git",
     "url": "https://github.com/saqibbedar/BedarX-Pro"
   },
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.84.0"
   },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "bedarx",
+    "bedarx pro",
+    "ChatGPT theme",
+    "high contrast",
+    "color theme"
+  ],
   "categories": [
     "Themes"
   ],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
   "contributes": {
-    "markdown.previewStyles": [],
     "themes": [
       {
-        "label": "BedarX Pro Dark Crimson",
+        "label": "BedarX Pro Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-crimson-color-theme.json"
       },
@@ -47,6 +41,37 @@
       }
     ]
   },
+  
+  "galleryBanner": {
+    "color": "#0d0d0d",
+    "theme": "dark"
+  },
+  "icon": "./Public/icon.png",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "sponsor": {
+    "url": "https://buymeacoffee.com/saqibbedar"
+  },
+  "features": [
+    "Dark and Light themes with carefully crafted color schemes",
+    "ChatGPT-inspired design for enhanced readability",
+    "Optimized syntax highlighting for 15+ programming languages",
+    "High contrast ratios for better accessibility",
+    "Custom workbench colors for improved UI experience",
+    "Enhanced terminal and debug console colors",
+    "Refined editor widget styling",
+    "Git decoration colors for clear version control status",
+    "Consistent bracket pair colorization",
+    "Carefully selected semantic highlighting"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saqibbedar/BedarX-Pro/issues"
+  },
+  "homepage": "https://github.com/saqibbedar/BedarX-Pro",
   "badges": [
     {
       "url": "https://vsmarketplacebadges.dev/version/",

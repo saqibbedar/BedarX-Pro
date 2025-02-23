@@ -41,6 +41,35 @@
 - Minor color inconsistencies in some language-specific tokens
 - Will be addressed in upcoming updates
 
+### Known Issues & Feedback Points
+
+1. Function Color Discussion
+
+   - Currently using ChatGPT-inspired red (#f22c3d) for functions
+   - Open to community feedback for potentially using more conventional colors
+   - Users can customize function colors via settings (see README)
+
+2. Minor Issues
+   - Some language-specific token color refinements needed
+   - Ongoing optimization for different programming paradigms
+   - Fine-tuning of semantic highlighting in specific contexts
+
+### Customization
+
+Users can modify function colors through settings. See README for detailed instructions.
+
+### Future Updates
+
+- Color scheme refinements based on community feedback
+- Enhanced language-specific optimizations
+- Additional theme variants
+
 ### Feedback
+
+We welcome your suggestions! Please share your thoughts on:
+
+- Function color preferences
+- Language-specific improvements
+- General theme enhancements
 
 Please report any issues or suggestions on our [GitHub repository](https://github.com/saqibbedar/BedarX-Pro/issues)
