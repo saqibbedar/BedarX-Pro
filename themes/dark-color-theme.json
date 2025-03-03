@@ -18,13 +18,13 @@
         "menubar.selectionBackground": "#363636",
         "menubar.selectionBorder": "#00000000",
         "menu.foreground": "#e5e5e5",
-        "menu.background": "#242424",
+        "menu.background": "#151515",
         "menu.selectionForeground": "#e5e5e5",
         "menu.selectionBackground": "#363636",
         "menu.selectionBorder": "#00000000",
         "menu.separatorBackground": "#3e3e3e",
         "menu.border": "#3e3e3e",
-        
+
         "activityBar.foreground": "#e5e5e5", 
         "activityBar.background": "#151515",
         "activityBar.activeBorder": "#0079ff",
@@ -60,12 +60,12 @@
         "statusBar.border": "#3e3e3e",
         "statusBar.debuggingBackground": "#0079ff",
         "statusBar.debuggingForeground": "#e5e5e5",
-        "statusBar.noFolderBackground": "#b583d0",
+        "statusBar.noFolderBackground": "#151515",
         "statusBar.noFolderForeground": "#e5e5e5",
         "statusBarItem.hoverBackground": "#363636",
         "statusBarItem.remoteBackground": "#0079ff",
         "statusBarItem.remoteForeground": "#e5e5e5",
-        "editorHoverWidget.statusBarBackground": "#363636",
+        "editorHoverWidget.statusBarBackground": "#363636", // TOOLTIP
         "statusBarItem.activeBackground": "#727272",
         
         "button.background": "#0079ff",
@@ -117,7 +117,7 @@
         "input.placeholderForeground": "#727272",
         "inputOption.hoverBackground": "#727272",
         
-        "editor.foreground": "#e5e5e5",
+        "editor.foreground": "#CCCCCC",
         "editor.background": "#1e1e1e",
         "editor.selectionBackground": "#203042",
         "editorCursor.foreground": "#bbbbbb",
@@ -257,7 +257,7 @@
         "gitDecoration.addedResourceForeground": "#47be7d",
         "gitDecoration.conflictingResourceForeground": "#5151b0",
         "gitDecoration.deletedResourceForeground": "#d43e4b",
-        "gitDecoration.ignoredResourceForeground": "#a0a1a7",
+        "gitDecoration.ignoredResourceForeground": "#949494",
         "gitDecoration.modifiedResourceForeground": "#caa467",
         "gitDecoration.stageDeletedResourceForeground": "#d43e4b",
         "gitDecoration.stageModifiedResourceForeground": "#caa467",
@@ -296,9 +296,9 @@
         "minimap.errorHighlight": "#d43e4b",
         "minimap.warningHighlight": "#e1c541",
         "minimap.background": "#1e1e1e",
-        "minimapSlider.background": "#4078f23a",
-        "minimapSlider.activeBackground": "#6390f073",
-        "minimapSlider.hoverBackground": "#4078f25e",
+        "minimapSlider.background": "#6363633b",
+        "minimapSlider.activeBackground": "#807e7e93",
+        "minimapSlider.hoverBackground": "#63636362",
         "minimap.infoHighlight":"#1e86fd",
 
         "settings.rowHoverBackground": "#272727",
@@ -394,6 +394,7 @@
                 "markup.fenced_code punctuation.support.type.property-name.end.json",
                 "punctuation.separator.annotation",
                 "punctuation.section.function",
+                "text.html.markdown string.other.link"
                 // "punctuation.separator"
             ],
             "settings": {
@@ -487,7 +488,6 @@
                 "markup.inline.raw.string",
                 "markup.fenced_code string.quoted.double.yaml entity.name.tag.yaml",
                 "entity.name.import.go",
-                "text.html.markdown string.other.link"
             ],
             "settings": {
                 "foreground": "#2e9f57"
@@ -514,7 +514,7 @@
                 "keyword.control.unit"
             ],
             "settings": {
-                "foreground": "#e8e8e8"
+                "foreground": "#cccccc"
             }
         },
         {
@@ -543,7 +543,7 @@
                 "markup.underline.link"
             ],
             "settings": {
-                "foreground": "#2f94d2"
+                "foreground": "#64c3ff"
             }
         },
         {
@@ -554,7 +554,6 @@
                 "storage.type.built-in",
                 "storage.type.tag.shorthand.yaml",
                 "storage.type.powershell",
-                // "storage.type.generic.java",
                 "source.go storage.type",
                 "source.css constant.other.color",
                 "source.sass variable.other.name",
@@ -653,16 +652,6 @@
             }
         },
         {
-            "name": "OTHER",
-            "scope": [
-                "punctuation.separator",
-                "keyword.operator.assignment"
-            ],
-            "settings": {
-                "foreground": "#a0a0a0"
-            }
-        },
-        {
             "name": "SOURCE",
             "scope": [
                 "source.perl",
@@ -672,10 +661,32 @@
                 "source.ruby",
                 "source.rust",
                 "source.sql",
+                "source.dockerfile",
                 "source.swift"
             ],
             "settings": {
                 "foreground": "#b583d0"
+            }
+        },
+        {
+            "name": "OTHER",
+            "scope": [
+                "punctuation.separator",
+                "keyword.operator.assignment",
+                "punctuation.terminator"
+            ],
+            "settings": {
+                "foreground": "#CCCCCC"
+            }
+        },
+        {
+            "name": "SOURCE2",
+            "scope": [
+                "meta",
+                "text.html.derivative"
+            ],
+            "settings": {
+                "foreground": "#CCCCCC"
             }
         },
         {
@@ -716,7 +727,7 @@
                 "text.html.markdown punctuation.definition.heading"
             ],
             "settings": {
-                "foreground": "#A626A4",
+                "foreground": "#2F94D2",
                 "fontStyle": "bold"
             }
         },
