@@ -32,7 +32,17 @@
       {
         "label": "BedarX Pro Dark",
         "uiTheme": "vs-dark",
+        "path": "./themes/dark-warm-color-theme.json"
+      },
+      {
+        "label": "BedarX Pro Dark",
+        "uiTheme": "vs-dark",
         "path": "./themes/dark-crimson-color-theme.json"
+      },
+      {
+        "label": "BedarX Pro Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-color-theme.json"
       },
       {
         "label": "BedarX Pro Light",
@@ -45,7 +55,7 @@
     "color": "#0d0d0d",
     "theme": "dark"
   },
-  "icon": "Public/icon.png",
+  "icon": "Public/theme-icon.png",
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
