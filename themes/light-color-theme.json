@@ -1,5 +1,5 @@
 {
-  "name": "BedarX Pro",
+  "name": "BedarX Pro Light",
   "type": "light",
   "colors": {
     "commandCenter.foreground": "#383a42",
@@ -261,7 +261,7 @@
     "minimapGutter.deletedBackground": "#e45649",
     "minimap.findMatchHighlight": "#4078f2aa",
     "minimap.selectionHighlight": "#4078f2aa",
-    "minimap.errorHighlight": "#e45649",
+    "minimap.errorHighlight": "#F10000",
     "minimap.warningHighlight": "#986801",
     "minimap.background": "#f9f9f9",
     "minimapSlider.background": "#4078f23a",

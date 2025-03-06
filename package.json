@@ -30,19 +30,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "BedarX Pro Dark",
+        "label": "BedarX Pro Dark Classic",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-warm-color-theme.json"
+        "path": "./themes/dark-classic-color-theme.json"
       },
       {
-        "label": "BedarX Pro Dark",
+        "label": "BedarX Pro Dark Modern",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-modern-color-theme.json"
+      },
+      {
+        "label": "BedarX Pro Dark Crimson",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-crimson-color-theme.json"
-      },
-      {
-        "label": "BedarX Pro Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-color-theme.json"
       },
       {
         "label": "BedarX Pro Light",

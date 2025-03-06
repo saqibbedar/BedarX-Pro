@@ -1,5 +1,5 @@
 {
-    "name": "BedarX Pro warm",
+    "name": "BedarX Pro Dark Modern",
     "type": "dark",
     "colors": {
         "commandCenter.foreground": "#e5e5e5",
@@ -680,7 +680,6 @@
             "scope": [
                 "variable.other.php",
                 "variable.other.normal.shell",
-                
                 "source.perl variable.other",
                 "constant.other.caps",
                 "punctuation.definition.variable.perl",
