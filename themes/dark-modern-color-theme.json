@@ -81,7 +81,6 @@
         "checkbox.border": "#414141",
         "extensionBadge.remoteForeground": "#ffffff",
         "extensionIcon.verifiedForeground": "#0079ff",
-        "extensionIcon.starForeground": "#e3941a",
         "editorCodeLens.foreground": "#6b6b6b",
         "toolbar.hoverBackground": "#5c5c5c",
         "toolbar.activeBackground": "#727272",
