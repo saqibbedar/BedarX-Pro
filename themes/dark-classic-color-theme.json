@@ -111,7 +111,7 @@
         "inputOption.activeBackground": "#495663",
         "inputOption.activeBorder": "#373f48",
         "inputOption.activeForeground": "#CCCCCC",
-        "input.placeholderForeground": "#646c74",
+        "input.placeholderForeground": "#CCCCCC99",
         "inputOption.hoverBackground": "#495663",
         "editor.foreground": "#B4BFCC",
         "editor.background": "#1a1e22",
