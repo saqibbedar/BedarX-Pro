@@ -59,7 +59,7 @@
         "statusBar.noFolderBackground": "#151a1f",
         "statusBar.noFolderForeground": "#B4BFCC",
         "statusBarItem.hoverBackground": "#2d353d",
-        "statusBarItem.remoteBackground": "#495663", // remote
+        "statusBarItem.remoteBackground": "#495663",
         "statusBarItem.remoteForeground": "#B4BFCC",
         "statusBarItem.activeBackground": "#2d353d",
         "selection.background": "#566270c9",
@@ -78,7 +78,7 @@
         "editorLink.activeForeground": "#3b8eea",
         "progressBar.background": "#3b8eea",
         "icon.foreground": "#bec9d6",
-        "toolbar.hoverBackground": "#495663", // Icons hover
+        "toolbar.hoverBackground": "#495663",
         "toolbar.activeBackground": "#566675",
         "checkbox.background": "#252b31",
         "checkbox.foreground": "#bec9d6",
@@ -108,11 +108,11 @@
         "quickInputList.focusIconForeground": "#B4BFCC",
         "quickInputTitle.background": "#151a1f",
         "quickInputList.focusBackground":"#373f48",
-        "inputOption.activeBackground": "#495663", // hover
+        "inputOption.activeBackground": "#495663",
         "inputOption.activeBorder": "#373f48",
         "inputOption.activeForeground": "#B4BFCC",
         "input.placeholderForeground": "#CCCCCC99",
-        "inputOption.hoverBackground": "#495663", // hover
+        "inputOption.hoverBackground": "#495663",
         "editor.foreground": "#B4BFCCD5",
         "editor.background": "#151a1f",
         "editor.selectionBackground": "#373f48",
@@ -320,7 +320,6 @@
                 "markup.other.anchor support.constant",
                 "markup.fenced_code punctuation.definition",
                 "source.ocaml comment constant.regexp meta.separator"
-                // "punctuation.definition.bold.markdown",
             ],
             "settings": {
                 "foreground": "#6b6b6b"
@@ -347,6 +346,9 @@
                 "punctuation.separator",
                 "punctuation.terminator",
                 "punctuation.definition.list_item",
+                "punctuation.definition.metadata.markdown",
+                "punctuation.definition.link.title.end.markdown",
+                "punctuation.definition.link.title.begin.markdown",
                 "entity.name.footnote",
                 "entity.name.record.field.elm",
                 "entity.other.attribute-name strong",
@@ -488,8 +490,8 @@
                 "support.type.nim",
                 "markup.code",
                 "markup.fenced_code.block",
-                "parameter.variable.function"
-                // "meta.function-call.arguments.python",
+                "parameter.variable.function",
+                "fenced_code.block.language"
             ],
             "settings": {
                 "foreground": "#B4BFCCD5"
@@ -550,12 +552,9 @@
                 "support.type.primitive",
                 "support.variable.property",
                 "entity.name.type",
-                "entity.other.attribute-name.id",
                 "entity.name.type.annotation.kotlin",
-                "entity.other.attribute-name.id punctuation.definition.entity",
                 "markup.mark",
                 "markup.raw.monospace",
-                "markup punctuation.definition",
                 "punctuation.definition.typeparameters",
                 "punctuation.separator.clause-head-body",
                 "punctuation.definition.storage.type.objc",
@@ -581,6 +580,7 @@
                 "constant.character.entity",
                 "constant.other.placeholder",
                 "constant.character.format.placeholder",
+                "constant.other.reference.link.markdown",
                 "source.graphql constant.character",
                 "source.reason constant.language.list",
                 "source.cpp variable.other.enummember",
@@ -593,10 +593,12 @@
                 "support.variable.class.hideshow",
                 "support.constant punctuation.definition.variable",
                 "entity.helper.apacheconf",
+                "entity.other.attribute-name.id",
                 "entity.other.attribute-name.mjml",
                 "entity.other.attribute-name.class",
                 "entity.name.type.type-parameter.cs",
                 "entity.name.function.preprocessor.c",
+                "entity.other.attribute-name.id punctuation.definition.entity",
                 "punctuation.bracket.angle",
                 "punctuation.definition.entity",
                 "punctuation.definition.constant",
@@ -740,7 +742,8 @@
                 "punctuation.separator.question-mark.cs",
                 "punctuation.separator.decimal.period.php",
                 "storage.type.number",
-                "string.quoted.double.skinparam.value"
+                "string.quoted.double.skinparam.value",
+                "markup punctuation.definition",
             ],
             "settings": {
                 "foreground": "#D19A66D5"
@@ -861,7 +864,6 @@
                 "markup.substitution",
                 "keyword.format.specifier.fsharp",
                 "variable.other.bracket punctuation.definition.variable"
-                // "meta.embedded.block.php punctuation.definition.variable.php", // start from here...
             ],
             "settings": {
                 "foreground": "#e5c07bD5"
@@ -881,21 +883,41 @@
             }
         },
         {
-            "name": "JSON",
+            "name": "REGEXP",
             "scope": [
-                "punctuation.support.type.property-name.end.json",
-                "punctuation.support.type.property-name.begin.json",
-                "source.json meta.structure.dictionary.json support.type.property-name.json",
-                // "fenced_code.block.language",
-                
+                "string.regexp",
+                "string.regexp.quoted",
+                "string.regexp.interpolated",
+                "string.regexp support.other",
+                "string.regexp constant.other",
+                "string.regexp keyword.control",
+                "string.regexp keyword.operator",
+                "string.regexp constant.character",
+                "string.regexp punctuation.section",
+                "string.regexp punctuation.definition",
+                "string.regexp punctuation.parenthesis",
+                "string.regexp constant.character.escape",
             ],
             "settings": {
-                "foreground": "#C678DDE5"
+                "foreground": "#d2a823e5"
+            }
+        },
+        {
+            "name": "JSON",
+            "scope": [
+                "support.type.property-name.json",
+                "punctuation.support.type.property-name.end.json",
+                "punctuation.support.type.property-name.begin.json",
+                "source.json meta.structure.dictionary.json support.type.property-name.json"                
+            ],
+            "settings": {
+                "foreground": "#E06C75d5"
             }
         },
         {
             "name": "ITALIC",
             "scope": [
+                "source.go storage.type",
                 "source.zig keyword.type",
                 "source.apex keyword.type",
                 "source.swift support.type",
@@ -917,6 +939,7 @@
                 "source.swift keyword.other.declaration-specifier",
                 "source.vue meta.directive punctuation.separator.key-value",
                 "support.type.julia",
+                "support.class.dart",
                 "support.type.builtin",
                 "support.type.vendored",
                 "support.class.builtin",
@@ -926,8 +949,8 @@
                 "support.function.textit",
                 "support.constant.vendored",
                 "support.function.builtin.go",
+                "keyword.type",
                 "keyword.type.cs",
-                "keyword.local.lua",
                 "keyword.other.this.cs",
                 "keyword.other.base.cs",
                 "keyword.control.clojure",
@@ -948,6 +971,7 @@
                 "entity.other",
                 "entity.name.footnote",
                 "entity.alias.import.go",
+                "entity.name.type.kotlin",
                 "entity.name.type.numeric",
                 "entity.name.type.primitive",
                 "entity.name.record.field.accessor.elm",
@@ -969,7 +993,9 @@
                 "storage.type.php",
                 "storage.type.scala",
                 "storage.type.integral",
+                "storage.type.built-in",
                 "storage.type.core.rust",
+                "storage.type.primitive.java",
                 "storage.type.function.kotlin",
                 "markup.quote",
                 "markup.italic",
@@ -987,14 +1013,8 @@
                 "punctuation.definition.comment",
                 // "storage.modifier",
                 // "storage.type.modifier",
-                "storage.type.built-in",
                 // "storage.type.primitive.dart",
-                "keyword.type",
-                "support.class.dart",
-                "storage.type.primitive.java"
                 // "storage.type.primitive",
-                // "source.go storage.type",
-                // "entity.name.type.kotlin",
                 // "keyword.other.import",
                 // "keyword.package",
                 // "keyword.import",
@@ -1017,8 +1037,7 @@
                 "variable.other.c",
                 "entity.name.lifetime.rust",
                 "storage.modifier.lifetime.rust",
-                "text.html punctuation.section.embedded",
-                "meta.attribute.id entity.other.attribute-name"
+                "text.html punctuation.section.embedded"
             ],
             "settings": {
                 "fontStyle": "bold italic"
