@@ -1,5 +1,5 @@
 {
-  "name": "BedarX Pro Crimson",
+  "name": "BedarX Pro Midnight",
   "type": "dark",
   "colors": {
     "descriptionForeground": "#B4BFCC",
@@ -57,7 +57,8 @@
     "inputOption.activeForeground": "#B4BFCC",
     "editor.background": "#101218",
     "editor.foreground": "#B4BFCC",
-    "editorLineNumber.foreground": "#3f4454",
+    "editorLineNumber.foreground": "#6B6B6B",
+    "editorCodeLens.foreground":"#6B6B6B",
     "editorLineNumber.activeForeground": "#999faf",
     "editorCursor.foreground": "#B4BFCC",
     "editorGutter.background": "#101218",
@@ -185,7 +186,7 @@
     "editorBracketHighlight.foreground1": "#3b8eea",
     "editorBracketHighlight.foreground2": "#e5c07bd9",
     "editorBracketHighlight.foreground3": "#C678DD",
-    "editorBracketHighlight.foreground4": "#03a0ae",
+    "editorBracketHighlight.foreground4": "#E06C75e5",
     "editorBracketHighlight.foreground5": "#D19A66",
     "editorBracketHighlight.foreground6": "#64c3ff",
     "editorWidget.background": "#101218",
@@ -908,7 +909,7 @@
         "string.regexp constant.character.escape",
       ],
       "settings": {
-        "foreground": "#d2a823f5"
+        "foreground": "#cc6640"
       }
     },
     {
@@ -1020,15 +1021,6 @@
         "function.anonymous keyword",
         "text.tex support.function.emph",
         "punctuation.definition.comment",
-        // "storage.modifier",
-        // "storage.type.modifier",
-        // "storage.type.primitive.dart",
-        // "storage.type.primitive",
-        // "keyword.other.import",
-        // "keyword.package",
-        // "keyword.import",
-        // "meta.import keyword.control",
-        // "keyword.control.export",
       ],
       "settings": {
         "fontStyle": "italic"

@@ -1,5 +1,5 @@
 {
-    "name": "BedarX Pro Dark Modern",
+    "name": "BedarX Pro Modern",
     "type": "dark",
     "colors": {
         "commandCenter.foreground": "#CCCCCC",
@@ -883,7 +883,7 @@
                 "string.regexp constant.character.escape",
             ],
             "settings": {
-                "foreground": "#CE9178"
+                "foreground": "#cc6640"
             }
         },
         {
@@ -896,6 +896,27 @@
             ],
             "settings": {
                 "foreground": "#E06C75F5"
+            }
+        },
+        {
+            "name": "ITALIC",
+            "scope": [
+                "comment",
+                "comment.line.roxygen.r keyword",
+                "comment.block.javadoc.java keyword",
+                "comment.block.documentation.scala keyword",
+                "comment.line.roxygen.r variable.parameter.r",
+                "comment.block.documentation.phpdoc.php keyword",
+                "comment.block.documentation storage.type.class",
+                "comment.block.javadoc.java variable.parameter.java",
+                "comment.block.documentation.scala variable.parameter",
+                "variable.other.member",
+                "variable.other.member.c",
+                "variable.other.property",
+                "variable.other.object.property",
+            ],
+            "settings": {
+                "fontStyle": "italic"
             }
         },
         {
