@@ -1,7 +1,7 @@
 {
   "name": "bedarx-pro",
   "displayName": "BedarX Pro",
-  "description": "A modern theme collection featuring Classic, Midnight, Modern and Light variants with exceptional contrast and readability.",
+  "description": "A modern theme collection featuring Arctic, Midnight, Modern and Light variants with exceptional contrast and readability.",
   "version": "0.0.1",
   "publisher": "saqibbedar",
   "author": {
@@ -19,15 +19,12 @@
     "dark theme",
     "light theme",
     "modern theme",
-    "arctic theme",
-    "Polar theme",
-    "Classic theme",
+    "classic theme",
     "midnight theme",
     "bedarx",
     "bedarx pro",
     "professional",
-    "high contrast",
-    "color theme"
+    "high contrast"
   ],
   "categories": [
     "Themes"
@@ -35,12 +32,12 @@
   "contributes": {
     "themes": [
       {
-        "label": "BedarX Pro Dark Classic",
+        "label": "BedarX Pro Classic",
         "uiTheme": "vs-dark",
         "path": "./themes/bxp-classic-theme.json"
       },
       {
-        "label": "BedarX Pro Dark Midnight",
+        "label": "BedarX Pro Midnight",
         "uiTheme": "vs-dark",
         "path": "./themes/bxp-midnight-theme.json"
       },
@@ -60,18 +57,13 @@
     "color": "#101218",
     "theme": "dark"
   },
-  "icon": "Public/theme-pack-icon.png",
-  "capabilities": {
-    "untrustedWorkspaces": {
-      "supported": true
-    }
-  },
+  "icon": "Public/bxp-theme-icon.png",
   "sponsor": {
     "url": "https://buymeacoffee.com/saqibbedar"
   },
   "features": [
-    "Four carefully crafted theme variants: Classic, Midnight, Modern and Light",
     "Professional color schemes optimized for long coding sessions",
+    "Four carefully crafted theme variants: Arctic, Midnight, Modern and Light",
     "High contrast ratios for enhanced readability and reduced eye strain",
     "Consistent syntax highlighting across 15+ programming languages",
     "Clean and modern workbench UI design",
@@ -88,24 +80,29 @@
   "homepage": "https://github.com/saqibbedar/BedarX-Pro",
   "badges": [
     {
-      "url": "https://vsmarketplacebadges.dev/version/",
-      "href": "https://marketplace.visualstudio.com/items/",
+      "url": "https://vsmarketplacebadges.dev/version/saqibbedar.bedarx-pro",
+      "href": "https://marketplace.visualstudio.com/items?itemName=saqibbedar.bedarx-pro",
       "description": "Extension version"
     },
     {
-      "url": "https://vsmarketplacebadges.dev/installs/",
-      "href": "https://marketplace.visualstudio.com/items/",
+      "url": "https://vsmarketplacebadges.dev/installs/saqibbedar.bedarx-pro",
+      "href": "https://marketplace.visualstudio.com/items?itemName=saqibbedar.bedarx-pro",
       "description": "Extension installs"
     },
     {
-      "url": "https://vsmarketplacebadges.dev/rating/",
-      "href": "https://marketplace.visualstudio.com/items/",
+      "url": "https://vsmarketplacebadges.dev/rating/saqibbedar.bedarx-pro",
+      "href": "https://marketplace.visualstudio.com/items?itemName=saqibbedar.bedarx-pro",
       "description": "Extension Rating"
     }
   ],
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish"
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
   },
   "devDependencies": {
     "@vscode/vsce": "^2.32.0"

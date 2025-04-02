@@ -5,20 +5,16 @@ A professional collection of VS Code themes crafted in memory of my beloved fath
 ## Theme Variants
 
 ### BedarX Pro Classic
-
-![Classic Theme](Public/bxp-classic-theme.png)
+![Classic Theme](https://raw.githubusercontent.com/saqibbedar/BedarX-Pro/main/Public/bxp-classic-theme.png)
 
 ### BedarX Pro Midnight
-
-![Midnight Theme](Public/bxp-midnight-theme.png)
+![Midnight Theme](https://raw.githubusercontent.com/saqibbedar/BedarX-Pro/main/Public/bxp-midnight-theme.png)
 
 ### BedarX Pro Modern
-
-![Modern Theme](Public/bxp-modern-theme.png)
+![Modern Theme](https://raw.githubusercontent.com/saqibbedar/BedarX-Pro/main/Public/bxp-modern-theme.png)
 
 ### BedarX Pro Light
-
-![Light Theme](Public/bxp-light-theme.png)
+![Light Theme](https://raw.githubusercontent.com/saqibbedar/BedarX-Pro/main/Public/bxp-light-theme.png)
 
 ## Features
 
