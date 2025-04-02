@@ -2,6 +2,13 @@
 
 All notable changes to the "BedarX Pro" theme extension will be documented in this file.
 
+## [0.0.2] - 2024-04-02
+
+### Changed
+- Updated README.md with improved documentation
+- Added .vscodeignore to optimize package size
+- Optimize extension overall size
+
 ## [0.0.1] - 2024-04-02
 
 ### Added

@@ -1,4 +1,4 @@
-# [BedarX Pro](https://github.com/saqibbedar/BedarX-Pro) | [GitHub Repo](https://github.com/saqibbedar/BedarX-Pro)
+# [BedarX Pro](https://marketplace.visualstudio.com/items?itemName=saqibbedar.bedarx-pro) | [GitHub Repo](https://github.com/saqibbedar/BedarX-Pro)
 
 A professional collection of VS Code themes crafted in memory of my beloved father, [`Bedar Bakhshal`](Public/aboutExtension.md). Featuring four carefully designed variants - Classic, Midnight, Modern, and Light - each optimized for exceptional readability and reduced eye strain during long coding sessions.
 
