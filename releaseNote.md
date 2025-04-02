@@ -4,10 +4,13 @@
 
 ### New Features
 
-- Introduced Dark Crimson theme with carefully selected color palette
-- Added Light theme variant with matching aesthetics
-- Optimized syntax highlighting for multiple programming languages
-- ChatGPT-inspired color scheme for improved readability
+- Introduced four distinctive theme variants:
+  - BedarX Pro Classic: Professional blue-grey dark theme
+  - BedarX Pro Midnight: Deep blue-based dark theme
+  - BedarX Pro Modern: Clean neutral dark theme
+  - BedarX Pro Light: Crisp light theme
+- Optimized syntax highlighting for enhanced readability
+- Carefully balanced color schemes for reduced eye strain
 
 ### Language Support
 
@@ -24,52 +27,47 @@
 
 ### UI Improvements
 
-- Carefully crafted workbench colors
-- Optimized sidebar and activity bar styling
-- Enhanced terminal colors
-- Improved panel and status bar visibility
-- Refined editor widget styling
+- Professional workbench design across all variants
+- Refined sidebar and activity bar aesthetics
+- Harmonious terminal color schemes
+- Enhanced panel and status bar visibility
+- Polished editor widget styling
+- Consistent visual hierarchy
 
 ### Accessibility
 
-- High contrast ratios for better readability
-- Distinct colors for different syntax elements
-- Clear visual hierarchy in both themes
+- Optimized contrast ratios for better readability
+- Carefully selected syntax highlighting colors
+- Clear visual distinction between UI elements
+- Color-blind friendly palette choices
 
 ### Known Issues
 
-- Minor color inconsistencies in some language-specific tokens
-- Will be addressed in upcoming updates
-
-### Known Issues & Feedback Points
-
-1. Function Color Discussion
-
-   - Currently using ChatGPT-inspired red (#f22c3d) for functions
-   - Open to community feedback for potentially using more conventional colors
-   - Users can customize function colors via settings (see README)
-
-2. Minor Issues
-   - Some language-specific token color refinements needed
-   - Ongoing optimization for different programming paradigms
-   - Fine-tuning of semantic highlighting in specific contexts
-
-### Customization
-
-Users can modify function colors through settings. See README for detailed instructions.
+- Minor color refinements needed for some language-specific tokens
+- Selection background color inconsistencies in certain UI elements
+- README preview colors in VS Code not fully themed
+- Some UI elements' selection states not responding to theme colors
+- Will be addressed in upcoming updates as VS Code API allows
 
 ### Future Updates
 
-- Color scheme refinements based on community feedback
-- Enhanced language-specific optimizations
-- Additional theme variants
+Planned improvements:
+
+- Additional language-specific optimizations
+- Fine-tuning of semantic highlighting
+- Performance optimizations
+- New theme variants based on user feedback
 
 ### Feedback
 
 We welcome your suggestions! Please share your thoughts on:
 
-- Function color preferences
+- Theme variant preferences
 - Language-specific improvements
 - General theme enhancements
 
-Please report any issues or suggestions on our [GitHub repository](https://github.com/saqibbedar/BedarX-Pro/issues)
+Please report issues or suggestions on our [GitHub repository](https://github.com/saqibbedar/BedarX-Pro/issues)
+
+---
+
+For complete documentation and customization options, see our [README](README.md).

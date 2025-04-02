@@ -13,53 +13,50 @@ Thank you for your interest in contributing to BedarX Pro! This document provide
    git clone https://github.com/YOUR-USERNAME/BedarX-Pro.git
    cd BedarX-Pro && code .
    ```
+
    Now `Press F5` to start debugging - this will open a new VS Code window with your theme applied
 
-3. **Make Changes**
+2. **Make Changes**
 
-   - Theme files are located in the `themes` folder
-   - Start your editing, changes will be reflected immediately in the debug window
+   - Theme files are located in the `themes` folder:
+     - `bxp-classic-theme.json`
+     - `bxp-midnight-theme.json`
+     - `bxp-modern-theme.json`
+     - `bxp-light-theme.json`
+   - Start editing, changes will be reflected immediately in the debug window
 
-4. **Testing**
+3. **Testing**
 
    - Test your changes across different file types
    - Ensure good contrast and readability
-   - Verify changes in both light and dark modes if applicable
+   - Verify changes in all theme variants
+   - Check terminal and UI element consistency
 
-5. **Submit Changes**
+4. **Submit Changes**
    - Create a new branch for your changes
    - Commit your changes with clear commit messages
    - Push to your fork
    - Submit a Pull Request
 
-## Color Palette
-
-| Type         | Dark Theme | Light Theme |
-| :----------- | :--------- | :---------- |
-| Text         | #FFFFFF    | #383a42     |
-| Function     | #f22c3d    | #4078f2     |
-| Type/Special | #e9950c    | #986801     |
-| Class/Tag    | #d82f79    | #e45649     |
-| String       | #00a67d    | #50A14F     |
-| Keyword      | #2e95cc    | #a626a4     |
-| Comment      | #ffffff80  | #a0a1a7     |
-| Other        | #8ED1FC    | #569cd6     |
-
 ## Guidelines
 
 ### General
 
-- Follow the existing color scheme
+- Follow the established color scheme for each variant:
+  - Classic: Professional blue-grey palette
+  - Midnight: Deep blue-based colors
+  - Modern: Clean neutral tones
+  - Light: Crisp light contrasts
 - Maintain consistent contrast ratios
 - Test changes across multiple programming languages
 - Document any significant changes
 
 ### Color Selection
 
-- Use the provided color palette
-- Ensure sufficient contrast with backgrounds
+- Use the provided color palette for each theme variant
+- Ensure sufficient contrast with backgrounds (minimum 4.5:1 ratio)
 - Consider colorblind accessibility
-- Maintain theme consistency
+- Maintain theme consistency within each variant
 
 ### Scope Changes
 
@@ -70,10 +67,18 @@ Thank you for your interest in contributing to BedarX Pro! This document provide
 
 ## Pull Request Process
 
-1. Update the README.md with details of significant changes if applicable
+1. Update the README.md with details of significant changes
 2. Update the CHANGELOG.md following the existing format
 3. The PR will be reviewed and merged after approval
 4. Version numbers will be updated by maintainers
+
+## Known Limitations
+
+When working on themes, be aware that:
+
+- README preview colors may not be fully customizable
+- Some selection backgrounds might not respond to theme changes
+- Certain UI elements have limited theming support via VS Code API
 
 ## Questions?
 
@@ -81,4 +86,4 @@ If you have questions about contributing, please open an issue in the repository
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the same license as the original project.
+By contributing, you agree that your contributions will be licensed under the MIT License.

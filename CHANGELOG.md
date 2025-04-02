@@ -2,13 +2,16 @@
 
 All notable changes to the "BedarX Pro" theme extension will be documented in this file.
 
-## [0.0.1] - 2024-01-23
+## [0.0.1] - 2024-04-02
 
 ### Added
 
-- Initial release of BedarX Pro theme
-- Dark Crimson theme with modern color palette
-- Light theme variant
+- Initial release of BedarX Pro theme collection
+- Four distinctive theme variants:
+  - BedarX Pro Classic: Professional blue-grey dark theme
+  - BedarX Pro Midnight: Deep blue-based dark theme
+  - BedarX Pro Modern: Clean neutral dark theme
+  - BedarX Pro Light: Crisp light theme
 - Comprehensive language support for popular programming languages
 - Custom workbench colors for improved UI experience
 - Optimized syntax highlighting for readability
@@ -20,6 +23,8 @@ All notable changes to the "BedarX Pro" theme extension will be documented in th
 - Distinct colors for different syntax elements
 - High contrast ratios for better accessibility
 - Git decoration colors for clear version control status
+- Professional workbench design across all variants
+- Refined sidebar and activity bar aesthetics
 
 ### Supported Languages
 
@@ -40,11 +45,11 @@ All notable changes to the "BedarX Pro" theme extension will be documented in th
 - Powershell/Bash
 - And more...
 
-### Fixed
+### Known Issues
 
-- Initial color inconsistencies in syntax highlighting
-- Bracket pair matching visibility
-- Selection and highlight contrast issues
+- README preview colors in VS Code not fully themed
+- Selection background color inconsistencies in certain UI elements
+- Some UI elements' selection states not responding to theme colors
 
 ### Development
 

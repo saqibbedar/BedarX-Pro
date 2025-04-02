@@ -1,88 +1,65 @@
 # [BedarX Pro](https://github.com/saqibbedar/BedarX-Pro) | [GitHub Repo](https://github.com/saqibbedar/BedarX-Pro)
 
-A **ChatGPT-inspired**, iconic **BedarX Pro** theme for VS Code, crafted in memory of my beloved father, [`Bedar Bakhshal`](Public/aboutExtension.md). Designed for both **light** and **dark mode**. This theme combines exceptional readability with a modern aesthetic, making your coding experience both comfortable and productive.
+A professional collection of VS Code themes crafted in memory of my beloved father, [`Bedar Bakhshal`](Public/aboutExtension.md). Featuring four carefully designed variants - Classic, Midnight, Modern, and Light - each optimized for exceptional readability and reduced eye strain during long coding sessions.
 
-<!-- [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/my_url)
-[![Version](https://vsmarketplacebadges.dev/version/my_url)](https://marketplace.visualstudio.com/items?itemName=my_url)
-[![Installs](https://vsmarketplacebadges.dev/installs/my_url)](https://marketplace.visualstudio.com/items?my_url) -->
+## Theme Variants
 
-## SCREENSHOTS
+### BedarX Pro Classic
 
-### Default - Dark Crimson
+![Classic Theme](Public/bxp-classic-theme.png)
 
-![ScreenShot](Public/dark-crimson-theme.png)
+### BedarX Pro Midnight
 
-### Light
+![Midnight Theme](Public/bxp-midnight-theme.png)
 
-![ScreenShot](Public/light-theme.png)
+### BedarX Pro Modern
+
+![Modern Theme](Public/bxp-modern-theme.png)
+
+### BedarX Pro Light
+
+![Light Theme](Public/bxp-light-theme.png)
+
+## Features
+
+- 🎨 Four distinct theme variants for every preference
+- 👀 High contrast ratios for reduced eye strain
+- 🎯 Consistent syntax highlighting across languages
+- 💻 Clean and modern workbench UI design
+- 🔍 Enhanced terminal and debug console experience
+- 🎆 Harmonious bracket pair colorization
+- 📝 Thoughtful semantic token coloring
+
+## Installation
+
+1. Open **Extensions** sidebar panel in VS Code
+2. Search for `BedarX Pro`
+3. Click **Install**
+4. Choose your preferred theme variant:
+   - BedarX Pro Classic
+   - BedarX Pro Midnight
+   - BedarX Pro Modern
+   - BedarX Pro Light
 
 ## Donation
 
-If you like this extension, you can **[Buy Me a Coffee](https://buymeacoffee.com/saqibbedar)**. It will encourage me to make this extension better and better!
+If you find this extension helpful, consider **[buying me a coffee](https://buymeacoffee.com/saqibbedar)**. Your support helps make BedarX Pro better!
 
-Thanks List:
+## Contributing
 
-- To me still.
+Please see our [contribution guidelines](CONTRIBUTING.md) for details on how to help improve BedarX Pro.
 
-## CHANGELOG
+To get started:
 
-[CHANGELOG.MD](./CHANGELOG.md)
+1. Fork and clone this repository
+2. `cd` to the `BedarX-Pro` folder
+3. Press `F5` to preview changes
+4. Start editing!
 
-## CONTRIBUTION
+## Changelog
 
-Navigate to ([https://github.com/saqibbedar/BedarX-Pro/blob/main/CONTRIBUTING.md](https://github.com/saqibbedar/BedarX-Pro/blob/main/CONTRIBUTING.md)) for detailed instructions on how to contribute to this theme.
+See [CHANGELOG.md](CHANGELOG.md) for release details.
 
-To get started, first fork and clone this repository
+---
 
-`cd` to the `BedarX-Pro` folder
-
-Press `F5` to see live preview, and start editing
-
-## Customization
-
-### Function Colors (Dark Theme Only)
-
-The Dark Crimson theme uses ChatGPT-inspired red (#f22c3d) for functions. While this matches ChatGPT's syntax highlighting, some users might prefer a different color. You can customize it specifically for the dark theme:
-
-```json
-"editor.tokenColorCustomizations": {
-  "[BedarX Pro Dark]": {
-    "textMateRules": [
-      {
-        "scope": [
-          "variable.function",
-          "support.function",
-          "entity.name.function",
-          "support.variable.class.function",
-          "meta.function-call.generic",
-          "meta.method-call.groovy meta.method.groovy",
-          "meta.class.body.groovy meta.method.body.java storage.type.groovy",
-          "punctuation.decorator",
-          "punctuation.definition.decorator",
-        ],
-        "settings": {
-          "foreground": "#your-color-here"
-        }
-      }
-    ]
-  }
-}
-```
-
-Alternative suggestions for dark theme:
-
-- Warm Orange (#e9950c) - Currently used for built-ins
-- Your preferred color that complements the dark theme
-
-Note: The Light theme uses a carefully selected blue (#4078f2) for functions that provides good readability and doesn't require customization.
-
-#### Thankyou for using this extension, [Leave a Star on Github ⭐](https://github.com/saqibbedar/BedarX-Pro)
-
-<!-- ### Contributors
-
-This project exists thanks to all the people who contribute.
-[![Contributors](img_url)](img_url) -->
-
-<!-- ### Sponsors
-
-Support this project by becoming a sponsor.  -->
+#### Thank you for using BedarX Pro! [Leave a Star on Github ⭐](https://github.com/saqibbedar/BedarX-Pro)

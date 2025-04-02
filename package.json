@@ -1,7 +1,7 @@
 {
   "name": "bedarx-pro",
   "displayName": "BedarX Pro",
-  "description": "A ChatGPT-inspired theme with Light and Dark variants, offering exceptional readability and visual comfort.",
+  "description": "A modern theme collection featuring Classic, Midnight, Modern and Light variants with exceptional contrast and readability.",
   "version": "0.0.1",
   "publisher": "saqibbedar",
   "author": {
@@ -18,9 +18,14 @@
     "theme",
     "dark theme",
     "light theme",
+    "modern theme",
+    "arctic theme",
+    "Polar theme",
+    "Classic theme",
+    "midnight theme",
     "bedarx",
     "bedarx pro",
-    "ChatGPT theme",
+    "professional",
     "high contrast",
     "color theme"
   ],
@@ -32,30 +37,30 @@
       {
         "label": "BedarX Pro Dark Classic",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-classic-color-theme.json"
+        "path": "./themes/bxp-classic-theme.json"
       },
       {
-        "label": "BedarX Pro Dark Modern",
+        "label": "BedarX Pro Dark Midnight",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-modern-color-theme.json"
+        "path": "./themes/bxp-midnight-theme.json"
       },
       {
-        "label": "BedarX Pro Dark Crimson",
+        "label": "BedarX Pro Modern",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-crimson-color-theme.json"
+        "path": "./themes/bxp-modern-theme.json"
       },
       {
         "label": "BedarX Pro Light",
         "uiTheme": "vs",
-        "path": "./themes/light-color-theme.json"
+        "path": "./themes/bxp-light-theme.json"
       }
     ]
   },
   "galleryBanner": {
-    "color": "#0d0d0d",
+    "color": "#101218",
     "theme": "dark"
   },
-  "icon": "Public/theme-icon.png",
+  "icon": "Public/theme-pack-icon.png",
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
@@ -65,16 +70,16 @@
     "url": "https://buymeacoffee.com/saqibbedar"
   },
   "features": [
-    "Dark and Light themes with carefully crafted color schemes",
-    "ChatGPT-inspired design for enhanced readability",
-    "Optimized syntax highlighting for 15+ programming languages",
-    "High contrast ratios for better accessibility",
-    "Custom workbench colors for improved UI experience",
-    "Enhanced terminal and debug console colors",
-    "Refined editor widget styling",
-    "Git decoration colors for clear version control status",
-    "Consistent bracket pair colorization",
-    "Carefully selected semantic highlighting"
+    "Four carefully crafted theme variants: Classic, Midnight, Modern and Light",
+    "Professional color schemes optimized for long coding sessions",
+    "High contrast ratios for enhanced readability and reduced eye strain",
+    "Consistent syntax highlighting across 15+ programming languages",
+    "Clean and modern workbench UI design",
+    "Refined terminal and debug console experience",
+    "Thoughtful semantic token coloring",
+    "Harmonious bracket pair colorization",
+    "Distinctive Git decoration colors",
+    "Polished editor widget styling"
   ],
   "license": "MIT",
   "bugs": {
