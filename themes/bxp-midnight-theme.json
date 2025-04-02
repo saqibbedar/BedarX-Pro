@@ -83,14 +83,14 @@
     "editorGroup.emptyBackground": "#101218",
     "editorGroup.border": "#FFFFFF19",
     "editorGroup.dropBackground": "#292e3e75",
-    "editorGroupHeader.tabsBackground": "#0d0d0d",
+    "editorGroupHeader.tabsBackground": "#101218",
     "editorGroupHeader.tabsBorder": "#FFFFFF19",
     "editorGroupHeader.border": "#00000000",
     "tab.activeBackground": "#101218",
     "tab.hoverBackground": "#292e3e75",
     "tab.activeForeground": "#B4BFCC",
     "tab.border": "#FFFFFF19",
-    "tab.inactiveBackground": "#0d0d0d",
+    "tab.inactiveBackground": "#101218",
     "tab.inactiveForeground": "#7e8795",
     "tab.activeBorderTop": "#2e95d3",
     "tab.activeModifiedBorder": "#2e95d3",
@@ -312,7 +312,7 @@
     "minimap.errorHighlight": "#dd3f51",
     "minimap.warningHighlight": "#e5c07bd5",
     "notebookStatusErrorIcon.foreground": "#dd3f51",
-    "notebookStatusSuccessIcon.foreground": "#00a67d",
+    "notebookStatusSuccessIcon.foreground": "#00a67d"
   },
   "tokenColors": [
     {
@@ -516,7 +516,7 @@
         "meta.attribute.python"
       ],
       "settings": {
-        "foreground": "#e5c07bc5",
+        "foreground": "#e5c07bc5"
       }
     },
     {
@@ -732,7 +732,7 @@
         "source.dart string.interpolated variable.parameter"
       ],
       "settings": {
-        "foreground": "#79c0ffE5",
+        "foreground": "#79c0ffE5"
       }
     },
     {
@@ -753,7 +753,7 @@
         "punctuation.separator.decimal.period.php",
         "storage.type.number",
         "string.quoted.double.skinparam.value",
-        "markup punctuation.definition",
+        "markup punctuation.definition"
       ],
       "settings": {
         "foreground": "#D19A66D5"
@@ -906,7 +906,7 @@
         "string.regexp punctuation.section",
         "string.regexp punctuation.definition",
         "string.regexp punctuation.parenthesis",
-        "string.regexp constant.character.escape",
+        "string.regexp constant.character.escape"
       ],
       "settings": {
         "foreground": "#cc6640"
@@ -1020,7 +1020,7 @@
         "sharing.modifier",
         "function.anonymous keyword",
         "text.tex support.function.emph",
-        "punctuation.definition.comment",
+        "punctuation.definition.comment"
       ],
       "settings": {
         "fontStyle": "italic"

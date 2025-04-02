@@ -490,7 +490,7 @@
                 "meta.attribute.python"
             ],
             "settings": {
-                "foreground": "#E06C75F5",
+                "foreground": "#E06C75F5"
             }
         },
         {
@@ -705,7 +705,7 @@
                 "source.dart string.interpolated variable.parameter"
             ],
             "settings": {
-                "foreground": "#79c0ffE5",
+                "foreground": "#79c0ffE5"
             }
         },
         {
@@ -726,7 +726,7 @@
                 "punctuation.separator.decimal.period.php",
                 "storage.type.number",
                 "string.quoted.double.skinparam.value",
-                "markup punctuation.definition",
+                "markup punctuation.definition"
             ],
             "settings": {
                 "foreground": "#D19A66E9"
@@ -754,7 +754,7 @@
                 "string.other.link",
                 "source.tf support.class",
                 "keyword.control.cucumber.table",
-                "variable.language",
+                "variable.language"
             ],
             "settings": {
                 "foreground": "#569CD6"
@@ -880,7 +880,7 @@
                 "string.regexp punctuation.section",
                 "string.regexp punctuation.definition",
                 "string.regexp punctuation.parenthesis",
-                "string.regexp constant.character.escape",
+                "string.regexp constant.character.escape"
             ],
             "settings": {
                 "foreground": "#cc6640"
@@ -913,7 +913,7 @@
                 "variable.other.member",
                 "variable.other.member.c",
                 "variable.other.property",
-                "variable.other.object.property",
+                "variable.other.object.property"
             ],
             "settings": {
                 "fontStyle": "italic"

@@ -504,7 +504,7 @@
         "meta.attribute.python"
       ],
       "settings": {
-        "foreground": "#325ebf",
+        "foreground": "#325ebf"
       }
     },
     {
@@ -720,7 +720,7 @@
         "source.dart string.interpolated variable.parameter"
       ],
       "settings": {
-        "foreground": "#383A42",
+        "foreground": "#383A42"
       }
     },
     {
@@ -742,7 +742,7 @@
         "storage.type.number",
         "string.quoted.double.skinparam.value",
         "markup punctuation.definition",
-        "constant.character.escape",
+        "constant.character.escape"
       ],
       "settings": {
         "foreground": "#986801"
@@ -903,10 +903,10 @@
     {
       "name": "MARKUPTAG",
       "scope": [
-        "punctuation.definition.tag",
+        "punctuation.definition.tag"
       ],
       "settings": {
-        "foreground": "#1d3872",
+        "foreground": "#1d3872"
       }
     },
     {
@@ -936,7 +936,7 @@
         "variable.other.member",
         "variable.other.member.c",
         "variable.other.property",
-        "variable.other.object.property",
+        "variable.other.object.property"
       ],
       "settings": {
         "fontStyle": "italic"
