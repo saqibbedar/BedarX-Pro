@@ -1,45 +1,36 @@
-name: Auto Release
+name: Release
 
 on:
   push:
+    paths:
+      - '.github/release-info.md'
     branches:
       - main
-    paths:
-      - ".github/release-info.md"
 
 permissions:
   contents: write
-  packages: write
 
 jobs:
-  create-release:
+  release:
+    name: Create Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Get version and description
-        id: release_info
+      - name: Debug File Content
         run: |
-          echo "version=$(grep "version:" .github/release-info.md | cut -d' ' -f2)" >> $GITHUB_OUTPUT
-          echo "title=$(grep "## Title" -A 1 .github/release-info.md | tail -n 1)" >> $GITHUB_OUTPUT
-          echo "description=$(sed -n '/## Description/,/```/p' .github/release-info.md)" >> $GITHUB_OUTPUT
-
-      - name: Create tag
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git tag -a v${{ steps.release_info.outputs.version }} -m "Release v${{ steps.release_info.outputs.version }}"
-          git push origin v${{ steps.release_info.outputs.version }}
+          echo "Checking release-info.md content:"
+          cat .github/release-info.md
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: v${{ steps.release_info.outputs.version }}
-          name: ${{ steps.release_info.outputs.title }}
-          body: ${{ steps.release_info.outputs.description }}
-          draft: false
-          prerelease: false
+        id: create_release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v0.0.3
+          release_name: BedarX Pro v0.0.3
+          body_path: .github/release-info.md
+          draft: false
+          prerelease: false
