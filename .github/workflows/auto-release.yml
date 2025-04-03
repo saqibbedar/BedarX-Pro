@@ -7,34 +7,39 @@ on:
     paths:
       - ".github/release-info.md"
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   create-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Get version and description
         id: release_info
         run: |
-          VERSION=$(grep "version:" .github/release-info.md | cut -d' ' -f2)
-          TITLE=$(grep "## Title" -A 1 .github/release-info.md | tail -n 1)
-          DESCRIPTION=$(sed -n '/## Description/,/```/p' .github/release-info.md)
-          echo "::set-output name=version::$VERSION"
-          echo "::set-output name=title::$TITLE"
-          echo "::set-output name=description::$DESCRIPTION"
+          echo "version=$(grep "version:" .github/release-info.md | cut -d' ' -f2)" >> $GITHUB_OUTPUT
+          echo "title=$(grep "## Title" -A 1 .github/release-info.md | tail -n 1)" >> $GITHUB_OUTPUT
+          echo "description=$(sed -n '/## Description/,/```/p' .github/release-info.md)" >> $GITHUB_OUTPUT
 
       - name: Create tag
         run: |
-          git tag v${{ steps.release_info.outputs.version }}
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git tag -a v${{ steps.release_info.outputs.version }} -m "Release v${{ steps.release_info.outputs.version }}"
           git push origin v${{ steps.release_info.outputs.version }}
 
       - name: Create Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.release_info.outputs.version }}
-          release_name: ${{ steps.release_info.outputs.title }}
+          name: ${{ steps.release_info.outputs.title }}
           body: ${{ steps.release_info.outputs.description }}
           draft: false
           prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
