@@ -47,10 +47,12 @@ Please see our [contribution guidelines](CONTRIBUTING.md) for details on how to 
 
 To get started:
 
-1. Fork and clone this repository
-2. `cd` to the `BedarX-Pro` folder
-3. Press `F5` to preview changes
-4. Start editing!
+1. Fork and clone the repository
+2. Create your feature branch
+3. Make your changes
+4. Update `.github/release-info.md` if releasing
+5. Push to your fork
+6. Create a Pull Request
 
 ## Changelog
 

@@ -1,5 +1,33 @@
 # Release Notes
 
+## v0.0.3 (2024-04-02)
+
+### Added
+
+- GitHub Actions workflow for automated releases
+- Release information tracking system
+
+### Improvements
+
+- Enhanced syntax highlighting colors
+- Refined dependencies token colors
+- Optimized other variables highlighting
+- Improved overall color consistency
+
+### Fixed
+
+- Dependencies foreground colors
+- Other variables token colors
+- Theme color scheme refinements
+
+## v0.0.2 (2024-04-02)
+
+### Changed
+
+- Updated README.md with improved documentation
+- Added .vscodeignore to optimize package size
+- Optimize extension overall size
+
 ## v0.0.1 (Initial Release)
 
 ### New Features
@@ -43,9 +71,8 @@
 
 ### Known Issues
 
-- Minor color refinements needed for some language-specific tokens
-- Selection background color inconsistencies in certain UI elements
 - README preview colors in VS Code not fully themed
+- Selection background color inconsistencies in certain UI elements
 - Some UI elements' selection states not responding to theme colors
 - Will be addressed in upcoming updates as VS Code API allows
 

@@ -408,8 +408,7 @@
                 "tag.decorator.js punctuation.definition.tag.js",
                 "constant.other.color",
                 "constant.string.documentation.powershell",
-                "sharing.modifier",
-                "source.pip-requirements entity.name"
+                "sharing.modifier"
             ],
             "settings": {
                 "foreground": "#C586C0"
@@ -887,15 +886,16 @@
             }
         },
         {
-            "name": "JSON",
+            "name": "DEPENDENCIES",
             "scope": [
                 "support.type.property-name.json",
+                "source.pip-requirements entity.name",
                 "punctuation.support.type.property-name.end.json",
                 "punctuation.support.type.property-name.begin.json",
                 "source.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#E06C75F5"
+                "foreground": "#C586C0"
             }
         },
         {
