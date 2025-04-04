@@ -2,6 +2,25 @@
 
 All notable changes to the "BedarX Pro" theme extension will be documented in this file.
 
+## [0.0.4] - 2024-04-02
+
+### Changed
+- Enhanced UI elements visibility and contrast
+- Updated button foregrounds to be more appealing
+- Improved badge and extension badge colors
+- Refined sidebar title and section header foregrounds
+- Optimized status bar visibility
+- Enhanced link colors for better visibility
+- Updated checkbox styling
+- Improved scrollbar and minimap slider visibility
+
+### Fixed
+- Button contrast issues
+- Dim scrollbar sliders
+- Sidebar visibility problems
+- Status bar readability
+- Badge contrast issues
+
 ## [0.0.3] - 2024-04-02
 
 ### Added
@@ -82,6 +101,7 @@ All notable changes to the "BedarX Pro" theme extension will be documented in th
 - Created comprehensive documentation
 - Established version control workflow
 
+[0.0.4]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.4
 [0.0.3]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.3
 [0.0.2]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.2
 [0.0.1]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.1

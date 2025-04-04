@@ -1,5 +1,24 @@
 # Release Notes
 
+## v0.0.4 (2024-04-02)
+
+### Improvements
+- Enhanced UI elements visibility
+- Improved button and badge foregrounds
+- Refined sidebar and status bar colors
+- Optimized scrollbar slider visibility
+- Better minimap slider contrast
+- Updated extension badge styling
+- Enhanced checkbox appearance
+- Better link highlighting
+
+### Fixed
+- Button contrast issues
+- Dim scrollbar visibility
+- Sidebar readability
+- Status bar contrast
+- Badge visibility problems
+
 ## v0.0.3 (2024-04-02)
 
 ### Added
