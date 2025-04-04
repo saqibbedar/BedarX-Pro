@@ -14,4 +14,4 @@ BedarX Pro v0.0.4
 - Updated extension badge and checkbox colors
 - Better link and text highlighting
 
-For full changelog, see CHANGELOG.md
+For full changelog, see [CHANGELOG.md](../CHANGELOG.md)
