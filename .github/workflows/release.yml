@@ -17,20 +17,29 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Debug File Content
+      - name: Get version from file
+        id: version
         run: |
-          echo "Checking release-info.md content:"
-          cat .github/release-info.md
+          echo "version=$(grep 'version:' .github/release-info.md | cut -d' ' -f2)" >> $GITHUB_OUTPUT
+
+      - name: Delete existing tag and release
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push --delete origin "v${{ steps.version.outputs.version }}" || true
+          gh release delete "v${{ steps.version.outputs.version }}" --yes || true
 
       - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v0.0.4
-          release_name: BedarX Pro v0.0.4
+          tag_name: v${{ steps.version.outputs.version }}
+          name: BedarX Pro v${{ steps.version.outputs.version }}
           body_path: .github/release-info.md
           draft: false
           prerelease: false
