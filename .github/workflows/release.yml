@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     paths:
-      - '.github/release-info.md'
+      - ".github/release-info.md"
     branches:
       - main
 
@@ -17,20 +17,30 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Debug File Content
+      - name: Get version
+        id: get_version
         run: |
-          echo "Checking release-info.md content:"
-          cat .github/release-info.md
+          VERSION=$(grep "version:" .github/release-info.md | cut -d' ' -f2)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Delete existing tag and release
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push --delete origin "v${{ steps.get_version.outputs.version }}" || true
+          gh release delete "v${{ steps.get_version.outputs.version }}" --yes || true
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
         with:
-          tag_name: v0.0.4
-          release_name: BedarX Pro v0.0.4
+          tag_name: v${{ steps.get_version.outputs.version }}
+          name: BedarX Pro v${{ steps.get_version.outputs.version }}
           body_path: .github/release-info.md
           draft: false
           prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
