@@ -1,8 +1,8 @@
 {
   "name": "bedarx-pro",
   "displayName": "BedarX Pro",
-  "description": "A modern theme collection featuring Classic, Midnight, Modern and Light variants with exceptional contrast and readability.",
-  "version": "0.0.4",
+  "description": "A modern, professional VS Code theme collection featuring BXP Dark Default, BXP Midnight Aurora, BXP Stellar Nova, and BXP Crystal Light variants. Designed for exceptional contrast, clarity, and long coding sessions.",
+  "version": "1.0.0",
   "publisher": "saqibbedar",
   "author": {
     "name": "Saqib Bedar"
@@ -18,13 +18,23 @@
     "theme",
     "dark theme",
     "light theme",
-    "modern theme",
-    "classic theme",
-    "midnight theme",
-    "bedarx",
-    "bedarx pro",
+    "midnight aurora",
+    "stellar nova",
+    "crystal light",
+    "dark default",
+    "contrast",
     "professional",
-    "high contrast"
+    "modern",
+    "developer",
+    "coding",
+    "high contrast",
+    "readability",
+    "programming",
+    "productivity",
+    "customization",
+    "workspace",
+    "syntax highlighting",
+    "color scheme"
   ],
   "categories": [
     "Themes"
@@ -32,47 +42,35 @@
   "contributes": {
     "themes": [
       {
-        "label": "BedarX Pro Classic",
+        "label": "BXP Dark Default",
         "uiTheme": "vs-dark",
-        "path": "./themes/bxp-classic-theme.json"
+        "path": "./themes/bxp-dark-default-theme.json"
       },
       {
-        "label": "BedarX Pro Midnight",
+        "label": "BXP Midnight Aurora",
         "uiTheme": "vs-dark",
-        "path": "./themes/bxp-midnight-theme.json"
+        "path": "./themes/bxp-midnight-aurora-theme.json"
       },
       {
-        "label": "BedarX Pro Modern",
+        "label": "BXP Stellar Nova",
         "uiTheme": "vs-dark",
-        "path": "./themes/bxp-modern-theme.json"
+        "path": "./themes/bxp-stellar-nova-theme.json"
       },
       {
-        "label": "BedarX Pro Light",
+        "label": "BXP Crystal Light",
         "uiTheme": "vs",
-        "path": "./themes/bxp-light-theme.json"
+        "path": "./themes/bxp-crystal-light-theme.json"
       }
     ]
   },
   "galleryBanner": {
-    "color": "#101218",
+    "color": "#161920",
     "theme": "dark"
   },
-  "icon": "Public/bxp-theme-icon.png",
+  "icon": "Public/icon.png",
   "sponsor": {
     "url": "https://buymeacoffee.com/saqibbedar"
   },
-  "features": [
-    "Professional color schemes optimized for long coding sessions",
-    "Four carefully crafted theme variants: Arctic, Midnight, Modern and Light",
-    "High contrast ratios for enhanced readability and reduced eye strain",
-    "Consistent syntax highlighting across 15+ programming languages",
-    "Clean and modern workbench UI design",
-    "Refined terminal and debug console experience",
-    "Thoughtful semantic token coloring",
-    "Harmonious bracket pair colorization",
-    "Distinctive Git decoration colors",
-    "Polished editor widget styling"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saqibbedar/BedarX-Pro/issues"

@@ -1,0 +1,15 @@
+# BedarX Pro Archive
+# This directory contains deprecated assets from previous versions
+
+description: >
+  Archive of deprecated BedarX Pro theme assets.
+  These files are kept for historical reference and documentation purposes.
+
+archive_type: "theme_assets"
+structure:
+  themes: "/themes"    # Deprecated theme previews
+  icons: "/icons"      # Previous extension icons
+
+notes: >
+  These assets are maintained for historical documentation and version tracking.
+  They should not be used in current versions

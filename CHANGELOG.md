@@ -1,8 +1,19 @@
-# Change Log
+# bedarx-pro-vscode-theme
 
-All notable changes to the "BedarX Pro" theme extension will be documented in this file.
+## [1.0.0]
 
-## [0.0.4] - 2024-04-02
+### Major Changes
+- **Removed:** BedarX Pro Classic and BedarX Pro Modern themes
+- **Renamed & Enhanced:** BedarX Pro Midnight is now **BXP Midnight Aurora** with improved palette and contrast
+- **Enhanced:** BedarX Pro Light theme updated for better clarity and consistency (now **BXP Crystal Light**)
+- **Added:** Two new themes:
+  - **BXP Dark Default:** A modern, high-contrast dark theme
+  - **BXP Stellar Nova:** A professional dark theme with stellar-inspired accents
+- **Changed:** Updated extension logo for a fresh, modern look
+
+![Banner](./Public/banner.png)
+
+## [0.0.4]
 
 ### Changed
 - Enhanced UI elements visibility and contrast
@@ -21,7 +32,7 @@ All notable changes to the "BedarX Pro" theme extension will be documented in th
 - Status bar readability
 - Badge contrast issues
 
-## [0.0.3] - 2024-04-02
+## [0.0.3]
 
 ### Added
 - GitHub Actions workflow for automated releases
@@ -38,14 +49,14 @@ All notable changes to the "BedarX Pro" theme extension will be documented in th
 - Other variables highlighting
 - Color scheme optimizations
 
-## [0.0.2] - 2024-04-02
+## [0.0.2]
 
 ### Changed
 - Updated README.md with improved documentation
 - Added .vscodeignore to optimize package size
 - Optimize extension overall size
 
-## [0.0.1] - 2024-04-02
+## [0.0.1]
 
 ### Added
 
@@ -101,6 +112,7 @@ All notable changes to the "BedarX Pro" theme extension will be documented in th
 - Created comprehensive documentation
 - Established version control workflow
 
+[1.0.0]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v1.0.0
 [0.0.4]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.4
 [0.0.3]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.3
 [0.0.2]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.2
