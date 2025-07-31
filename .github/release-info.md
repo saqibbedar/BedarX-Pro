@@ -20,4 +20,6 @@ BedarX Pro v1.0.0
 
 ![Banner](https://raw.githubusercontent.com/saqibbedar/BedarX-Pro/main/Public/banner.png)
 
+---
+
 For full changelog, see [CHANGELOG.md](https://github.com/saqibbedar/BedarX-Pro/blob/main/CHANGELOG.md)
