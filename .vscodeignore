@@ -15,4 +15,5 @@ coverage/**
 *.ts
 out/test/**
 src/**
-public/archive/**
+Public/archive/**
+Public/themes/**

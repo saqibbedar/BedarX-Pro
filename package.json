@@ -1,13 +1,13 @@
 {
   "name": "bedarx-pro",
   "displayName": "BedarX Pro",
-  "description": "BedarX Pro theme for VS Code",
+  "description": "A premium collection of elegant VS Code themes - Obsidian, Sapphire, Onyx (dark) & Pearl (light). Carefully crafted with unique color palettes, proper depth hierarchy, and eye-friendly syntax highlighting for developers.",
   "version": "2.0.0",
   "publisher": "Saqib Bedar",
   "license": "MIT",
   "icon": "Public/icon.png",
   "galleryBanner": {
-    "color": "#161920",
+    "color": "#14141A",
     "theme": "dark"
   },
   "homepage": "https://github.com/saqibbedar/BedarX-Pro",
@@ -26,7 +26,7 @@
     "url": "https://buymeacoffee.com/saqibbedar"
   },
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Themes"
@@ -35,45 +35,57 @@
     "theme",
     "dark theme",
     "light theme",
-    "midnight aurora",
-    "stellar nova",
-    "crystal light",
-    "dark default",
-    "contrast",
+    "obsidian theme",
+    "sapphire theme",
+    "onyx theme",
+    "pearl theme",
+    "bedarx",
+    "color theme",
+    "syntax highlighting",
+    "dark mode",
+    "light mode",
+    "amoled",
+    "true black",
+    "eye friendly",
+    "warm colors",
+    "cool colors",
     "professional",
     "modern",
-    "developer",
-    "coding",
-    "high contrast",
-    "readability",
+    "minimal",
+    "elegant",
+    "best dark theme",
+    "best light theme",
+    "coding theme",
+    "developer theme",
     "programming",
     "productivity",
-    "customization",
-    "workspace",
-    "syntax highlighting",
-    "color scheme"
+    "contrast",
+    "readability",
+    "one dark",
+    "dracula alternative",
+    "github theme alternative"
   ],
   "contributes": {
     "themes": [
       {
-        "label": "Dark Default",
+        "label": "BedarX Obsidian",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-default-theme.json"
+        "path": "./themes/obsidian-theme.json"
       },
       {
-        "label": "Midnight Aurora",
+        "label": "BedarX Sapphire",
         "uiTheme": "vs-dark",
-        "path": "./themes/midnight-aurora-theme.json"
+        "path": "./themes/sapphire-theme.json"
       },
       {
-        "label": "Stellar Nova",
+        "label": "BedarX Onyx",
         "uiTheme": "vs-dark",
-        "path": "./themes/stellar-nova-theme.json"
+        "path": "./themes/onyx-theme.json"
       },
       {
-        "label": "Crystal Light",
+        "label": "BedarX Pearl",
         "uiTheme": "vs",
-        "path": "./themes/crystal-light-theme.json"
+        "path": "./themes/pearl-theme.json"
       }
     ]
   },

@@ -1,7 +1,7 @@
 node_modules
 template
 *.vsix
-themes
+/themes
 temp
 tmp
 opensrc
