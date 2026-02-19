@@ -1,4 +1,43 @@
-# bedarx-pro-vscode-theme
+# BedarX Pro - Changelog
+
+## [2.0.0] - 2026-02-20
+
+### Complete Theme Redesign
+
+This is a **major release** with a completely redesigned theme collection. All themes have been rebuilt from the ground up with unique identities, proper depth hierarchy, and signature accent colors.
+
+### New Theme Collection
+
+- **BedarX Obsidian** (Dark) - Warm obsidian backgrounds with rose-coral accent `#E06B74`
+- **BedarX Sapphire** (Dark) - Cool navy backgrounds with sapphire blue accent `#4A90D9`
+- **BedarX Onyx** (Dark) - True black AMOLED-friendly with amber gold accent `#E5A054`
+- **BedarX Pearl** (Light) - Warm cream backgrounds with rose-coral accent `#D95560`
+
+### Key Improvements
+
+- **Proper Background Hierarchy** - Each theme now has 4 distinct depth levels for visual clarity
+- **Unique Signature Accents** - Every theme has its own identity color
+- **Gemstone Naming Convention** - Consistent, memorable theme names
+- **Eye-Friendly Syntax Highlighting** - Carefully balanced colors for long coding sessions
+- **Vibrant Terminal Colors** - Enhanced ANSI colors across all themes
+- **Complete UI Coverage** - 200+ UI color tokens defined per theme
+
+### Breaking Changes
+
+- **Removed:** BXP Midnight Aurora (replaced by BedarX Sapphire)
+- **Removed:** BXP Stellar Nova (replaced by BedarX Onyx)
+- **Removed:** BXP Crystal Light (replaced by BedarX Pearl)
+- **Removed:** BXP Dark Default (replaced by BedarX Obsidian)
+
+### Technical
+
+- Lowered VS Code engine requirement to `^1.60.0` for broader compatibility
+- Modernized build system with ES modules
+- Restructured color definitions with comprehensive documentation
+
+![BedarX Pro v2.0.0](./Public/banner.png)
+
+---
 
 ## [1.0.0]
 
@@ -11,7 +50,7 @@
   - **BXP Stellar Nova:** A professional dark theme with stellar-inspired accents
 - **Changed:** Updated extension logo for a fresh, modern look
 
-![Banner](./Public/banner.png)
+![Banner](./Public/archive/banner/old-banner-v1.0.0.png)
 
 ## [0.0.4]
 
@@ -112,6 +151,7 @@
 - Created comprehensive documentation
 - Established version control workflow
 
+[2.0.0]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v2.0.0
 [1.0.0]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v1.0.0
 [0.0.4]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.4
 [0.0.3]: https://github.com/saqibbedar/BedarX-Pro/releases/tag/v0.0.3
