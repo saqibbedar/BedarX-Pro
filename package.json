@@ -3,7 +3,7 @@
   "displayName": "BedarX Pro",
   "description": "A premium collection of elegant VS Code themes - Obsidian, Sapphire, Onyx (dark) & Pearl (light). Carefully crafted with unique color palettes, proper depth hierarchy, and eye-friendly syntax highlighting for developers.",
   "version": "2.0.0",
-  "publisher": "Saqib Bedar",
+  "publisher": "saqibbedar",
   "license": "MIT",
   "icon": "Public/icon.png",
   "galleryBanner": {
