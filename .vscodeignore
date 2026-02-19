@@ -14,3 +14,5 @@ coverage/**
 *.map
 *.ts
 out/test/**
+src/**
+public/archive/**

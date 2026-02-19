@@ -1,19 +1,36 @@
 {
   "name": "bedarx-pro",
   "displayName": "BedarX Pro",
-  "description": "A modern, professional VS Code theme collection featuring BXP Dark Default, BXP Midnight Aurora, BXP Stellar Nova, and BXP Crystal Light variants. Designed for exceptional contrast, clarity, and long coding sessions.",
-  "version": "1.0.0",
-  "publisher": "saqibbedar",
-  "author": {
-    "name": "Saqib Bedar"
+  "description": "BedarX Pro theme for VS Code",
+  "version": "2.0.0",
+  "publisher": "Saqib Bedar",
+  "license": "MIT",
+  "icon": "Public/icon.png",
+  "galleryBanner": {
+    "color": "#161920",
+    "theme": "dark"
   },
+  "homepage": "https://github.com/saqibbedar/BedarX-Pro",
   "repository": {
     "type": "git",
     "url": "https://github.com/saqibbedar/BedarX-Pro"
   },
+  "bugs": {
+    "url": "https://github.com/saqibbedar/BedarX-Pro/issues"
+  },
+  "author": {
+    "name": "Saqib Bedar"
+  },
+  "type": "module",
+  "sponsor": {
+    "url": "https://buymeacoffee.com/saqibbedar"
+  },
   "engines": {
     "vscode": "^1.84.0"
   },
+  "categories": [
+    "Themes"
+  ],
   "keywords": [
     "theme",
     "dark theme",
@@ -36,46 +53,30 @@
     "syntax highlighting",
     "color scheme"
   ],
-  "categories": [
-    "Themes"
-  ],
   "contributes": {
     "themes": [
       {
-        "label": "BXP Dark Default",
+        "label": "Dark Default",
         "uiTheme": "vs-dark",
-        "path": "./themes/bxp-dark-default-theme.json"
+        "path": "./themes/dark-default-theme.json"
       },
       {
-        "label": "BXP Midnight Aurora",
+        "label": "Midnight Aurora",
         "uiTheme": "vs-dark",
-        "path": "./themes/bxp-midnight-aurora-theme.json"
+        "path": "./themes/midnight-aurora-theme.json"
       },
       {
-        "label": "BXP Stellar Nova",
+        "label": "Stellar Nova",
         "uiTheme": "vs-dark",
-        "path": "./themes/bxp-stellar-nova-theme.json"
+        "path": "./themes/stellar-nova-theme.json"
       },
       {
-        "label": "BXP Crystal Light",
+        "label": "Crystal Light",
         "uiTheme": "vs",
-        "path": "./themes/bxp-crystal-light-theme.json"
+        "path": "./themes/crystal-light-theme.json"
       }
     ]
   },
-  "galleryBanner": {
-    "color": "#161920",
-    "theme": "dark"
-  },
-  "icon": "Public/icon.png",
-  "sponsor": {
-    "url": "https://buymeacoffee.com/saqibbedar"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/saqibbedar/BedarX-Pro/issues"
-  },
-  "homepage": "https://github.com/saqibbedar/BedarX-Pro",
   "badges": [
     {
       "url": "https://vsmarketplacebadges.dev/version/saqibbedar.bedarx-pro",
@@ -93,6 +94,9 @@
       "description": "Extension Rating"
     }
   ],
+  "devDependencies": {
+    "@vscode/vsce": "^2.32.0"
+  },
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish"
@@ -102,7 +106,7 @@
       "supported": true
     }
   },
-  "devDependencies": {
-    "@vscode/vsce": "^2.32.0"
+  "publishConfig": {
+    "access": "public"
   }
 }
