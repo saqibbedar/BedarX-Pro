@@ -1,88 +1,112 @@
 # Contributing to BedarX Pro
 
-Thank you for your interest in contributing to BedarX Pro! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to BedarX Pro! We welcome contributions of all kinds - bug fixes, new themes, suggestions, or improvements.
 
-## How to Contribute
+## Ways to Contribute
+
+- **Report Issues** - Found a color that looks off? Let us know!
+- **Suggestions** - Ideas for improvements or new features
+- **New Themes** - Create an entirely new theme following our patterns
+- **Fixes** - Improve existing themes with better colors or coverage
+
+## Getting Started
 
 1. **Fork & Clone**
 
-   - Fork the repository on GitHub
-   - Clone your fork locally
-
    ```bash
    git clone https://github.com/YOUR-USERNAME/BedarX-Pro.git
-   cd BedarX-Pro && code .
+   cd BedarX-Pro && npm install
+   code .
    ```
 
-   Now `Press F5` to start debugging - this will open a new VS Code window with your theme applied
+2. **Understand the Structure**
 
-2. **Make Changes**
+   ```
+   src/
+   ├── colors.js      # UI color definitions for all themes
+   ├── tokenColors.js # Syntax highlighting colors
+   ├── theme.js       # Theme builder with token scopes
+   └── index.js       # Build script
+   themes/            # Generated JSON files (don't edit directly)
+   ```
 
-   - Theme files are located in the `themes` folder:
-     - `bxp-classic-theme.json`
-     - `bxp-midnight-theme.json`
-     - `bxp-modern-theme.json`
-     - `bxp-light-theme.json`
-   - Start editing, changes will be reflected immediately in the debug window
+3. **Build & Test**
 
-3. **Testing**
+   ```bash
+   node ./src/index.js   # Generates theme JSON files
+   ```
 
-   - Test your changes across different file types
-   - Ensure good contrast and readability
-   - Verify changes in all theme variants
-   - Check terminal and UI element consistency
+   Press `F5` in VS Code to launch Extension Development Host with your changes.
 
-4. **Submit Changes**
-   - Create a new branch for your changes
-   - Commit your changes with clear commit messages
-   - Push to your fork
-   - Submit a Pull Request
+## Current Theme Collection
 
-## Guidelines
+| Theme        | Type  | Signature Accent        | Background Base |
+| ------------ | ----- | ----------------------- | --------------- |
+| **Obsidian** | Dark  | Rose Coral `#E06B74`    | `#14141A`       |
+| **Sapphire** | Dark  | Sapphire Blue `#4A90D9` | `#0F1319`       |
+| **Onyx**     | Dark  | Amber Gold `#E5A054`    | `#0D0D10`       |
+| **Pearl**    | Light | Rose Coral `#D95560`    | `#FFFFFF`       |
 
-### General
+## Design Patterns to Follow
 
-- Follow the established color scheme for each variant:
-  - Classic: Professional blue-grey palette
-  - Midnight: Deep blue-based colors
-  - Modern: Clean neutral tones
-  - Light: Crisp light contrasts
-- Maintain consistent contrast ratios
-- Test changes across multiple programming languages
-- Document any significant changes
+### Background Hierarchy (4 levels)
 
-### Color Selection
+Each dark theme uses a progression from deepest to surface:
 
-- Use the provided color palette for each theme variant
-- Ensure sufficient contrast with backgrounds (minimum 4.5:1 ratio)
-- Consider colorblind accessibility
-- Maintain theme consistency within each variant
+```
+Deepest → Editor → Elevated → Surface
+```
 
-### Scope Changes
+### Color Definitions
 
-- Document the purpose of new scopes
-- Test scope changes across multiple file types
-- Ensure scopes don't conflict
-- Follow VS Code's TextMate scope naming conventions
+In `src/colors.js`, each theme export follows this structure:
+
+```javascript
+export const themeNameColors = {
+  // Core Colors
+  focusBorder: "#ACCENT",
+  foreground: "#MAIN_TEXT",
+
+  // Organized by UI section with comments
+  // Buttons, Forms, Sidebar, Editor, Terminal, etc.
+};
+```
+
+### Token Colors
+
+In `src/tokenColors.js`, syntax colors are defined:
+
+```javascript
+export const themeTokenColors = {
+  comment: "#...",
+  keyword: "#...",
+  string: "#...",
+  // etc.
+};
+```
+
+## Creating a New Theme
+
+1. **Choose a gemstone name** (e.g., Emerald, Ruby, Amber)
+2. **Define your palette**:
+   - Signature accent color
+   - 4-level background hierarchy
+   - Complementary syntax colors
+3. **Add to `colors.js`** following existing patterns
+4. **Add to `tokenColors.js`** if custom syntax needed
+5. **Register in `theme.js`** and `index.js`
+6. **Build and test** across multiple languages
 
 ## Pull Request Process
 
-1. Update the README.md with details of significant changes
-2. Update the CHANGELOG.md following the existing format
-3. The PR will be reviewed and merged after approval
-4. Version numbers will be updated by maintainers
-
-## Known Limitations
-
-When working on themes, be aware that:
-
-- README preview colors may not be fully customizable
-- Some selection backgrounds might not respond to theme changes
-- Certain UI elements have limited theming support via VS Code API
+1. Create a branch: `git checkout -b feature/your-change`
+2. Make changes and test thoroughly
+3. Update CHANGELOG.md if significant
+4. Submit PR with clear description
 
 ## Questions?
 
-If you have questions about contributing, please open an issue in the repository.
+Open an issue or start a discussion in the repository.
 
 ## License
 
